@@ -1,18 +1,15 @@
 import './Header.css'
 import logo from '../assets/logo-ironBross.jpeg'
+import ProductListSearch from './ProductListSearch'
 
-function Header({ cartItemsCount, onCartClick }) {
+function Header({ cartItemsCount, onCartClick, onProductSelect, onLogoClick }) {
   return (
     <header className="header">
       <div className="header-content">
-        <img src={logo} alt="Iron Bross Shop" className="logo" />
-        
-        <nav className="nav">
-          <a href="#productos" className="nav-link">Productos</a>
-          <a href="#ofertas" className="nav-link">Ofertas</a>
-          <a href="#contacto" className="nav-link">Contacto</a>
-        </nav>
-
+        <img src={logo} alt="Iron Bross Shop" className="logo" style={{cursor:'pointer'}} onClick={onLogoClick} />
+        <div className="header-search">
+          <ProductListSearch onProductSelect={onProductSelect} />
+        </div>
         <button className="cart-button" onClick={onCartClick}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="9" cy="21" r="1"></circle>

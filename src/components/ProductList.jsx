@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import ProductCard from './ProductCard'
 import './ProductList.css'
 
@@ -81,46 +81,36 @@ const sampleProducts = [
   }
 ]
 
-function ProductList({ onAddToCart }) {
+function ProductList({ onAddToCart, selectedProduct, selectedCategory }) {
   const [products] = useState(sampleProducts)
-  const [searchTerm, setSearchTerm] = useState('')
+  const cardsRef = useRef({})
 
-  const filteredProducts = products.filter(product =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  )
+  // Definir categorías para los productos
+  const categoryMap = {
+    creatina: [2, 4, 5], // Creatina, BCAA, Glutamina
+    performance: [3, 6, 8], // Pre-Entreno, Omega 3, Barras
+    proteina: [1], // Proteína Whey
+    vitaminas: [7], // Multivitamínico
+  }
+
+  let productsToShow = []
+  if (selectedProduct) {
+    productsToShow = [selectedProduct]
+  } else if (selectedCategory && categoryMap[selectedCategory]) {
+    productsToShow = products.filter(p => categoryMap[selectedCategory].includes(p.id))
+  }
 
   return (
     <section className="product-list">
-      <div className="search-container">
-        <input
-          type="text"
-          className="search-input"
-          placeholder="¿Que estas buscando?"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <span className="search-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="10" cy="10" r="7"></circle>
-            <line x1="21" y1="21" x2="15" y2="15"></line>
-          </svg>
-        </span>
-      </div>
-      
       <div className="products-grid">
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map(product => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              onAddToCart={onAddToCart}
-            />
-          ))
-        ) : (
-          <div className="no-results">
-            <p>No se encontraron productos que coincidan con "{searchTerm}"</p>
-          </div>
-        )}
+        {productsToShow.map(product => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            onAddToCart={onAddToCart}
+            refEl={el => (cardsRef.current[product.id] = el)}
+          />
+        ))}
       </div>
     </section>
   )

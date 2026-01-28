@@ -1,4 +1,4 @@
-import './Header.css'
+import '../styles/Header.css'
 import logo from '../assets/logo-ironBross.jpeg'
 import ProductListSearch from './ProductListSearch'
 

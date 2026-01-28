@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import ProductCard from './ProductCard'
-import './ProductList.css'
+import '../styles/ProductList.css'
 
 // Productos de ejemplo
 // NOTA: Puedes reemplazar las URLs de las imágenes con rutas a archivos locales

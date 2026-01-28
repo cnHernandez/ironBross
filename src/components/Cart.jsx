@@ -1,4 +1,4 @@
-import './Cart.css'
+import '../styles/Cart.css'
 
 function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, onClose }) {
   return (

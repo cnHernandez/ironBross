@@ -5,6 +5,7 @@
   margin: 0 2rem;
   display: flex;
   align-items: center;
+  min-width: 0;
 }
 
 .header-search .search-container {
@@ -115,9 +116,25 @@
 
 @media (max-width: 768px) {
   .header-content {
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
     padding: 0 15px;
+  }
+
+  .header-search {
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+  }
+
+  .header-search .search-input {
+    padding-right: 3.25rem;
+  }
+
+  .header-search .search-icon {
+    right: 0.75rem;
+    width: 34px;
+    height: 34px;
   }
 
   .logo {
@@ -155,6 +172,16 @@
 @media (max-width: 480px) {
   .header {
     padding: 0.75rem 0;
+  }
+
+  .header-search .search-input {
+    padding-right: 3rem;
+  }
+
+  .header-search .search-icon {
+    right: 0.6rem;
+    width: 30px;
+    height: 30px;
   }
 
   .header-content {

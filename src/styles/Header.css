@@ -41,6 +41,8 @@
   cursor: pointer;
   max-width: 220px;
   transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .logo:hover {

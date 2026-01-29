@@ -7,6 +7,11 @@ import creatinaCategoria from './assets/creatinaCategoria.png'
 import performanceCategoria from './assets/performanceCategoria.png'
 import proteinaCategoria from './assets/proteinaCategoria.png'
 import vitaminaCategoria from './assets/vitaminaCategoria.png'
+import enaAmarillo from './assets/enaAmarillo.png'
+import starNutrition from './assets/starNutrition.png'
+import xtreinght from './assets/xtreinght.png'
+import pitbull from './assets/pitbull.png'
+import gentech from './assets/gentech.png'
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -85,13 +90,16 @@ function App() {
         onProductSelect={setSelectedProduct}
         onLogoClick={() => { setSelectedCategory(null); setSelectedProduct(null); }}
       />
+      {/* Sección de título pegada al header */}
+      {(!selectedCategory && !selectedProduct) && (
+        <section className="titulo-categorias-principales">
+          <h2>EXPLORÁ NUESTRAS CATEGORÍAS PRINCIPALES:</h2>
+        </section>
+      )}
       <main className="main-content">
         {(!selectedCategory && !selectedProduct) && (
           <>
           <section className="categorias-principales">
-            <h2 className="categorias-titulo">
-              EXPLORÁ NUESTRAS CATEGORÍAS PRINCIPALES:
-            </h2>
             <div className="categorias-grid">
               <div className="categoria-row">
                 <img src={creatinaCategoria} alt="Creatina" className="categoria-img" style={{cursor:'pointer'}} onClick={() => { setSelectedCategory('creatina'); setSelectedProduct(null); }} />
@@ -100,6 +108,20 @@ function App() {
               <div className="categoria-row">
                 <img src={proteinaCategoria} alt="Proteína" className="categoria-img" style={{cursor:'pointer'}} onClick={() => { setSelectedCategory('proteina'); setSelectedProduct(null); }} />
                 <img src={vitaminaCategoria} alt="Vitaminas" className="categoria-img" style={{cursor:'pointer'}} onClick={() => { setSelectedCategory('vitaminas'); setSelectedProduct(null); }} />
+              </div>
+            </div>
+          </section>
+          <section className="marcas-section">
+            <div className="marcas-strip">
+              <div className="marcas-label">NUESTRAS MARCAS:</div>
+              <div className="marcas-logos">
+                <img src={enaAmarillo} alt="ENA" className="marca-logo" />
+                <img src={starNutrition} alt="Star Nutrition" className="marca-logo" />
+                <img src={xtreinght} alt="XtReinght" className="marca-logo" />
+                <div className="marca-logo-frame">
+                  <img src={pitbull} alt="Pitbull" className="marca-logo-pitbull" />
+                </div>
+                <img src={gentech} alt="Gentech" className="marca-logo marca-logo-gentech" />
               </div>
             </div>
           </section>

@@ -1,3 +1,126 @@
+.titulo-categorias-principales {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #FFD700;
+  color: #111;
+  padding: 1.1rem 0 1.1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.5px solid #e6c200;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  z-index: 99;
+}
+.titulo-categorias-principales h2 {
+  margin: 0;
+  color: #111;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.marcas-section {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #FFD700;
+  color: #111;
+  padding: 1.4rem 0;
+  border-top: 1.5px solid #e6c200;
+  border-bottom: 1.5px solid #e6c200;
+}
+.marcas-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  text-align: center;
+}
+.marcas-label {
+  color: #111;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.marcas-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.marca-logo {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+.marca-logo-frame {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marca-logo-pitbull {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.35);
+}
+.marca-logo-gentech {
+  padding: 0;
+  object-fit: cover;
+  object-position: center 78%;
+  background: #fff;
+}
+@media (max-width: 768px) {
+  .marcas-strip {
+    padding: 0 0.6rem;
+    gap: 0.7rem;
+  }
+  .marca-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .marca-logo-frame {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 520px) {
+  .marcas-strip {
+    flex-direction: column;
+    align-items: center;
+  }
+  .marcas-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .titulo-categorias-principales {
+    font-size: 1.05rem;
+    padding: 0.7rem 0;
+  }
+  .titulo-categorias-principales h2 {
+    font-size: 1.05rem;
+  }
+}
 /* Icono flotante de WhatsApp */
 .whatsapp-float {
   position: fixed;

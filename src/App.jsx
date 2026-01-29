@@ -12,6 +12,8 @@ import starNutrition from './assets/starNutrition.png'
 import xtreinght from './assets/xtreinght.png'
 import pitbull from './assets/pitbull.png'
 import gentech from './assets/gentech.png'
+import instagramIcon from './assets/instagram.png'
+import mailIcon from './assets/mail.png'
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -141,6 +143,16 @@ function App() {
               style={{ width: '100vw', maxWidth: '100vw', display: 'block', background: '#000' }}
             />
           </div>
+          <section className="cta-amarilla">
+            <div className="cta-amarilla__icons">
+              <a className="cta-amarilla__icon-wrapper" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img className="cta-amarilla__icon" src={instagramIcon} alt="Instagram" />
+              </a>
+              <a className="cta-amarilla__icon-wrapper" href="mailto:tuemail@dominio.com" aria-label="Email">
+                <img className="cta-amarilla__icon" src={mailIcon} alt="Email" />
+              </a>
+            </div>
+          </section>
           </>
         )}
         {(selectedCategory && !selectedProduct) && (

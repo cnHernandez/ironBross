@@ -3,6 +3,7 @@ import Header from './components/Header'
 import ProductList from './components/ProductList'
 import Cart from './components/Cart'
 import './styles/App.css'
+import bannerIron from './assets/bannerIron.jpeg'
 import creatinaCategoria from './assets/creatinaCategoria.png'
 import performanceCategoria from './assets/performanceCategoria.png'
 import proteinaCategoria from './assets/proteinaCategoria.png'
@@ -94,9 +95,14 @@ function App() {
       />
       {/* Sección de título pegada al header */}
       {(!selectedCategory && !selectedProduct) && (
-        <section className="titulo-categorias-principales">
-          <h2>EXPLORÁ NUESTRAS CATEGORÍAS PRINCIPALES:</h2>
-        </section>
+        <>
+          <section className="hero-banner">
+            <img src={bannerIron} alt="Banner Iron Bross" className="hero-banner__img" />
+          </section>
+          <section className="titulo-categorias-principales">
+            <h2>EXPLORÁ NUESTRAS CATEGORÍAS PRINCIPALES:</h2>
+          </section>
+        </>
       )}
       <main className="main-content">
         {(!selectedCategory && !selectedProduct) && (

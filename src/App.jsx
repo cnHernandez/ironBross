@@ -13,6 +13,7 @@ import starNutrition from './assets/starNutrition.png'
 import xtreinght from './assets/xtreinght.png'
 import pitbull from './assets/pitbull.png'
 import gentech from './assets/gentech.png'
+import gold from './assets/gold.png'
 import instagramIcon from './assets/instagram.png'
 import mailIcon from './assets/mail.png'
 
@@ -125,6 +126,7 @@ function App() {
               <div className="marcas-logos">
                 <img src={enaAmarillo} alt="ENA" className="marca-logo" />
                 <img src={starNutrition} alt="Star Nutrition" className="marca-logo" />
+                <img src={gold} alt="Gold" className="marca-logo" />
                 <img src={xtreinght} alt="XtReinght" className="marca-logo" />
                 <div className="marca-logo-frame">
                   <img src={pitbull} alt="Pitbull" className="marca-logo-pitbull" />
@@ -200,9 +202,8 @@ function App() {
       rel="noopener noreferrer"
       className="whatsapp-float"
       aria-label="Contactar por WhatsApp"
-      style={{ width: 64, height: 64, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, background: 'transparent' }}
     >
-      <img src="/images/iconWhat.png" alt="WhatsApp" style={{ width: 60, height: 60, objectFit: 'contain', display: 'block' }} />
+      <img src="/images/iconWhat.png" alt="WhatsApp" className="whatsapp-float__img" />
     </a>
   </div>
  )

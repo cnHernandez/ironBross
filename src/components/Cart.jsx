@@ -1,5 +1,22 @@
 import '../styles/Cart.css'
 
+const FALLBACK_IMG = `${import.meta.env.BASE_URL}images/placeholder.svg`
+
+const buildImageCandidates = (url = '') => {
+  const candidates = []
+  if (url) candidates.push(url)
+  const stripped = url.replace('ironProducts/starNutrition/', '')
+  if (stripped && stripped !== url) candidates.push(stripped)
+  return candidates
+}
+
+const getDisplayPrice = (item) => {
+  const numeric = typeof item.price === 'number' ? item.price : 0
+  return item.priceLabel || `$${numeric.toFixed(2)}`
+}
+
+const getNumericPrice = (item) => (typeof item.price === 'number' ? item.price : 0)
+
 function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, onClose }) {
   return (
     <div className="cart-overlay" onClick={onClose}>
@@ -28,7 +45,25 @@ function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, 
                 <div key={item.id} className="cart-item">
                   <div className="cart-item-image">
                     {item.imageType === 'url' ? (
-                      <img src={item.image} alt={item.name} className="cart-img" />
+                      <img
+                        src={buildImageCandidates(item.image)[0] || FALLBACK_IMG}
+                        alt={item.name}
+                        className="cart-img"
+                        loading="lazy"
+                        onError={(e) => {
+                          const candidates = buildImageCandidates(item.image)
+                          const el = e.currentTarget
+                          const current = Number(el.dataset.fallbackIndex || '0')
+                          const nextIndex = current + 1
+                          if (candidates[nextIndex]) {
+                            el.dataset.fallbackIndex = String(nextIndex)
+                            el.src = candidates[nextIndex]
+                          } else {
+                            el.onerror = null
+                            el.src = FALLBACK_IMG
+                          }
+                        }}
+                      />
                     ) : (
                       <span>{item.emoji || item.image}</span>
                     )}
@@ -36,7 +71,7 @@ function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, 
                   
                   <div className="cart-item-info">
                     <h4>{item.name}</h4>
-                    <p className="cart-item-price">${item.price.toFixed(2)}</p>
+                    <p className="cart-item-price">{getDisplayPrice(item)}</p>
                   </div>
 
                   <div className="quantity-controls">
@@ -56,7 +91,7 @@ function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, 
                   </div>
 
                   <div className="cart-item-total">
-                    ${(item.price * item.quantity).toFixed(2)}
+                    ${(getNumericPrice(item) * item.quantity).toFixed(2)}
                   </div>
 
                   <button 

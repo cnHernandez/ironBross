@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Header from './components/Header'
-import ProductList from './components/ProductList'
 import Cart from './components/Cart'
+import ProductList from './components/ProductList'
+import ProductDetail from './components/ProductDetail'
 import './styles/App.css'
 import bannerIron from './assets/bannerIron.jpeg'
 import creatinaCategoria from './assets/creatinaCategoria.png'
@@ -22,6 +23,9 @@ function App() {
   const [showCart, setShowCart] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState(null)
+  const [showProducts, setShowProducts] = useState(false)
+
+  const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
   const addToCart = (product) => {
     const existingItem = cartItems.find(item => item.id === product.id)
@@ -61,6 +65,11 @@ function App() {
     return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0)
   }
 
+  const handleSelectProduct = (product) => {
+    setSelectedProduct(product)
+    setShowCart(false)
+  }
+
   const sendWhatsAppOrder = () => {
     if (cartItems.length === 0) {
       alert('El carrito está vacío')
@@ -91,11 +100,15 @@ function App() {
       <Header 
         cartItemsCount={getTotalItems()} 
         onCartClick={() => setShowCart(!showCart)}
-        onProductSelect={setSelectedProduct}
-        onLogoClick={() => { setSelectedCategory(null); setSelectedProduct(null); }}
+        onProductSelect={(product) => {
+          setSelectedCategory(null)
+          setShowProducts(false)
+          handleSelectProduct(product)
+        }}
+        onLogoClick={() => { setSelectedCategory(null); setSelectedProduct(null); setShowProducts(false); }}
       />
       {/* Sección de título pegada al header */}
-      {(!selectedCategory && !selectedProduct) && (
+      {(!showProducts && !selectedCategory && !selectedProduct) && (
         <>
           <section className="hero-banner">
             <img src={bannerIron} alt="Banner Iron Bross" className="hero-banner__img" />
@@ -106,7 +119,7 @@ function App() {
         </>
       )}
       <main className="main-content">
-        {(!selectedCategory && !selectedProduct) && (
+        {(!showProducts && !selectedCategory && !selectedProduct) && (
           <>
           <section className="categorias-principales">
             <div className="categorias-grid">
@@ -125,7 +138,17 @@ function App() {
               <div className="marcas-label">NUESTRAS MARCAS:</div>
               <div className="marcas-logos">
                 <img src={enaAmarillo} alt="ENA" className="marca-logo" />
-                <img src={starNutrition} alt="Star Nutrition" className="marca-logo" />
+                <img
+                  src={starNutrition}
+                  alt="Star Nutrition"
+                  className="marca-logo"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    setShowProducts(true)
+                    setSelectedCategory(null)
+                    setSelectedProduct(null)
+                  }}
+                />
                 <img src={gold} alt="Gold" className="marca-logo" />
                 <img src={xtreinght} alt="XtReinght" className="marca-logo" />
                 <div className="marca-logo-frame">
@@ -143,7 +166,7 @@ function App() {
           </section>
           <div className="video-container">
             <video
-              src="/videoGim.mp4"
+              src={asset('videoGim.mp4')}
               autoPlay
               loop
               muted
@@ -163,7 +186,7 @@ function App() {
           </section>
           </>
         )}
-        {(selectedCategory && !selectedProduct) && (
+        {showProducts && (selectedCategory && !selectedProduct) && (
           <div className="breadcrumb-categorias">
             <span className="breadcrumb-link" onClick={() => setSelectedCategory(null)} style={{cursor:'pointer', color:'#FFD700'}}>categorías</span>
             <span> &gt; </span>
@@ -175,14 +198,94 @@ function App() {
             </span>
           </div>
         )}
-        {(selectedProduct && !selectedCategory) && (
+        {showProducts && (selectedCategory && selectedProduct) && (
+          <div className="breadcrumb-categorias">
+            <span
+              className="breadcrumb-link"
+              onClick={() => { setSelectedCategory(null); setSelectedProduct(null); }}
+              style={{cursor:'pointer', color:'#FFD700'}}
+            >
+              categorías
+            </span>
+            <span> &gt; </span>
+            <span
+              className="breadcrumb-link"
+              onClick={() => setSelectedProduct(null)}
+              style={{cursor:'pointer', color:'#FFD700'}}
+            >
+              {selectedCategory === 'creatina' && 'Creatina'}
+              {selectedCategory === 'performance' && 'Performance'}
+              {selectedCategory === 'proteina' && 'Proteína'}
+              {selectedCategory === 'vitaminas' && 'Vitaminas'}
+            </span>
+            <span> &gt; </span>
+            <span className="breadcrumb-actual">{selectedProduct.name}</span>
+          </div>
+        )}
+        {!showProducts && (selectedProduct && !selectedCategory) && (
           <div className="breadcrumb-categorias">
             <span className="breadcrumb-link" onClick={() => setSelectedProduct(null)} style={{cursor:'pointer', color:'#FFD700'}}>buscador</span>
             <span> &gt; </span>
             <span className="breadcrumb-actual">{selectedProduct.name}</span>
           </div>
         )}
-        <ProductList onAddToCart={addToCart} selectedProduct={selectedProduct} selectedCategory={selectedCategory} />
+        {!showProducts && selectedProduct && (
+          <ProductDetail
+            product={selectedProduct}
+            onAddToCart={addToCart}
+            onBack={() => setSelectedProduct(null)}
+          />
+        )}
+        {showProducts && (
+          selectedProduct ? (
+            <>
+              <div className="breadcrumb-categorias">
+                <span
+                  className="breadcrumb-link"
+                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
+                  style={{cursor:'pointer', color:'#FFD700'}}
+                >
+                  inicio
+                </span>
+                <span> &gt; </span>
+                <span
+                  className="breadcrumb-link"
+                  onClick={() => setSelectedProduct(null)}
+                  style={{cursor:'pointer', color:'#FFD700'}}
+                >
+                  Star Nutrition
+                </span>
+                <span> &gt; </span>
+                <span className="breadcrumb-actual">{selectedProduct.name}</span>
+              </div>
+              <ProductDetail
+                product={selectedProduct}
+                onAddToCart={addToCart}
+                onBack={() => setSelectedProduct(null)}
+              />
+            </>
+          ) : (
+            <>
+              <div className="breadcrumb-categorias">
+                <span
+                  className="breadcrumb-link"
+                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
+                  style={{cursor:'pointer', color:'#FFD700'}}
+                >
+                  inicio
+                </span>
+                <span> &gt; </span>
+                <span className="breadcrumb-actual">Star Nutrition</span>
+              </div>
+              <section className="products-page">
+                <ProductList
+                  onSelectProduct={handleSelectProduct}
+                  selectedCategory={selectedCategory}
+                />
+              </section>
+            </>
+          )
+        )}
         {showCart && (
           <Cart
             items={cartItems}
@@ -203,7 +306,7 @@ function App() {
       className="whatsapp-float"
       aria-label="Contactar por WhatsApp"
     >
-      <img src="/images/iconWhat.png" alt="WhatsApp" className="whatsapp-float__img" />
+      <img src={asset('images/iconWhat.png')} alt="WhatsApp" className="whatsapp-float__img" />
     </a>
   </div>
  )

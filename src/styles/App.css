@@ -321,11 +321,13 @@
 .breadcrumb-link {
   text-decoration: underline;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .breadcrumb-actual {
   color: #FFD700;
   font-weight: 600;
   margin-left: 0.5rem;
+  text-transform: uppercase;
 }
 /* Separador del breadcrumb */
 .breadcrumb-sep {

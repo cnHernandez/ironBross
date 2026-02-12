@@ -27,6 +27,42 @@ function App() {
 
   const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
+  const titleCase = (txt = '') => {
+    if (!txt) return ''
+    return String(txt)
+      .toLowerCase()
+      .split(' ')
+      .filter(Boolean)
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ')
+  }
+
+  const upperCase = (txt = '') => {
+    if (!txt) return ''
+    return String(txt).toUpperCase()
+  }
+
+  const getCategoryOrBrandLabel = (key) => {
+    if (!key) return ''
+    const k = String(key).toLowerCase()
+    const brands = {
+      'gold': 'Gold',
+      'xtrenght': 'Xtrenght',
+      'gentech': 'Gentech',
+      'pitbull': 'Pitbull',
+      'star nutrition': 'Star Nutrition'
+    }
+    const categories = {
+      'creatina': 'Creatina',
+      'performance': 'Performance',
+      'proteina': 'Proteína',
+      'vitaminas': 'Vitaminas'
+    }
+    if (brands[k]) return brands[k]
+    if (categories[k]) return categories[k]
+    return titleCase(key)
+  }
+
   const addToCart = (product) => {
     const existingItem = cartItems.find(item => item.id === product.id)
     
@@ -229,9 +265,15 @@ function App() {
         {/* El breadcrumb para producto ya se muestra en el bloque de showProducts && selectedProduct más abajo, así que aquí lo eliminamos para evitar duplicados. */}
         {!showProducts && (selectedProduct && !selectedCategory) && (
           <div className="breadcrumb-categorias">
-            <span className="breadcrumb-link" onClick={() => setSelectedProduct(null)} style={{cursor:'pointer', color:'#FFD700'}}>buscador</span>
+            <span className="breadcrumb-link" onClick={() => setSelectedProduct(null)} style={{cursor:'pointer', color:'#FFD700'}}>{upperCase('buscador')}</span>
             <span className="breadcrumb-sep"> &gt; </span>
-            <span className="breadcrumb-actual">{selectedProduct.name}</span>
+            {selectedProduct.brand ? (
+              <>
+                <span className="breadcrumb-link" style={{color:'#FFD700'}}>{upperCase(getCategoryOrBrandLabel(selectedProduct.brand))}</span>
+                <span className="breadcrumb-sep"> &gt; </span>
+              </>
+            ) : null}
+            <span className="breadcrumb-actual">{upperCase(selectedProduct.name)}</span>
           </div>
         )}
         {!showProducts && selectedProduct && (
@@ -250,17 +292,17 @@ function App() {
                   className="breadcrumb-link"
                   onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
                   style={{cursor:'pointer', color:'#FFD700'}}>
-                  inicio
+                  {upperCase('inicio')}
                 </span>
-                {selectedCategory === 'gold' || selectedCategory === 'star nutrition' || selectedCategory === 'xtrenght' || selectedCategory === 'gentech' || selectedCategory === 'pitbull' ? (
+                {(selectedCategory === null) || selectedCategory === 'gold' || selectedCategory === 'star nutrition' || selectedCategory === 'xtrenght' || selectedCategory === 'gentech' || selectedCategory === 'pitbull' ? (
                   <>
                     <span className="breadcrumb-sep"> &gt; </span>
                     <span
-                      className="breadcrumb-link"
-                      onClick={() => setSelectedProduct(null)}
-                      style={{cursor:'pointer', color:'#FFD700'}}>
-                      {selectedCategory === 'gold' ? 'Gold' : selectedCategory === 'star nutrition' ? 'Star Nutrition' : selectedCategory === 'xtrenght' ? 'Xtrenght' : selectedCategory === 'gentech' ? 'Gentech' : 'Pitbull'}
-                    </span>
+                          className="breadcrumb-link"
+                          onClick={() => setSelectedProduct(null)}
+                          style={{cursor:'pointer', color:'#FFD700'}}>
+                      {upperCase(getCategoryOrBrandLabel(selectedCategory) || getCategoryOrBrandLabel('star nutrition'))}
+                        </span>
                   </>
                 ) : (
                   <>
@@ -269,15 +311,12 @@ function App() {
                       className="breadcrumb-link"
                       onClick={() => setSelectedProduct(null)}
                       style={{cursor:'pointer', color:'#FFD700'}}>
-                      {selectedCategory === 'creatina' && 'Creatina'}
-                      {selectedCategory === 'performance' && 'Performance'}
-                      {selectedCategory === 'proteina' && 'Proteína'}
-                      {selectedCategory === 'vitaminas' && 'Vitaminas'}
+                      {upperCase(getCategoryOrBrandLabel(selectedCategory))}
                     </span>
                   </>
                 )}
                 <span className="breadcrumb-sep"> &gt; </span>
-                <span className="breadcrumb-actual">{selectedProduct.name}</span>
+                <span className="breadcrumb-actual">{upperCase(selectedProduct.name)}</span>
               </div>
               <ProductDetail
                 product={selectedProduct}
@@ -292,10 +331,10 @@ function App() {
                   className="breadcrumb-link"
                   onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
                   style={{cursor:'pointer', color:'#FFD700'}}>
-                  inicio
+                  {upperCase('inicio')}
                 </span>
                 <span className="breadcrumb-sep"> &gt; </span>
-                <span className="breadcrumb-actual">{selectedCategory === 'gold' ? 'Gold' : selectedCategory === 'xtrenght' ? 'Xtrenght' : selectedCategory === 'gentech' ? 'Gentech' : selectedCategory === 'pitbull' ? 'Pitbull' : 'Star Nutrition'}</span>
+                <span className="breadcrumb-actual">{upperCase(getCategoryOrBrandLabel(selectedCategory) || getCategoryOrBrandLabel('star nutrition'))}</span>
               </div>
               <section className="products-page">
                 <ProductList

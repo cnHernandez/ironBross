@@ -215,7 +215,7 @@ const rawProducts = [
   {
     id: 22,
     name: 'STAR NUTRITION TNT-DYNAMITE 240GRS',
-    category: 'PREENTRENOS',
+    category: 'PRE ENTRENOS',
     brand: 'STAR NUTRITION',
     price: '$$$',
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-tnt-dynamite-240grs-grape-attack-23853e22914e56b34117501761600282-1024-1024_imkznn.webp',
@@ -224,7 +224,7 @@ const rawProducts = [
   {
     id: 23,
     name: 'STAR NUTRITION PUMP 3D EVOLUTION RIPPED 315 GRS',
-    category: 'PREENTRENOS',
+    category: 'PRE ENTRENOS',
     brand: 'STAR NUTRITION',
     price: '$$$',
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-pump-3d-evolution-ripped-315-grs-strawberry-lime-51eb2b71eed1b854c317501808792439-1024-1024_zfmbu2.webp',
@@ -233,7 +233,7 @@ const rawProducts = [
   {
     id: 24,
     name: 'STAR NUTRITION JUST PLANT 2 LBS',
-    category: 'PROTEINAS',
+    category: 'PROTEINAS Y GANADORES DE PESO',
     brand: 'STAR NUTRITION',
     price: '$$$',
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-just-plant-2-lbs-7f5bc8a7052c51838f17501813976470-1024-1024_modymo.webp',
@@ -260,7 +260,7 @@ const rawProducts = [
   {
     id: 27,
     name: 'STAR NUTRITION HMB 180 CAPS',
-    category: 'PERFORMANCE',
+    category: 'PROTEINAS Y GANADORES DE PESO',
     brand: 'STAR NUTRITION',
     price: '$$$',
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-hmb-180-caps-296a42e519638c918017502062026924-1024-1024_ytewnk.webp',
@@ -296,7 +296,7 @@ const rawProducts = [
   {
     id: 31,
     name: 'STAR NUTRITION HYDROPLUS SPORT DRINK 700 GRS',
-    category: 'BEBIDAS ISOTONICAS',
+    category: 'PRE ENTRENOS',
     brand: 'STAR NUTRITION',
     price: '$$$',
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-hydroplus-sport-drink-700-grs-blue-razz-044c85592e98582de317580389117292-1024-1024_qt7hdw.webp',
@@ -314,7 +314,7 @@ const rawProducts = [
   {
     id: 33,
     name: 'STAR NUTRITION PLATINUM WHEY PROTEIN 2 LBS',
-    category: 'PROTEINAS',
+    category: 'PROTEINAS Y GANADORES DE PESO',
     brand: 'STAR NUTRITION',
     price: '$$$',
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-platinum-whey-protein-2-lbs-vainilla-ad490ec0480c3cd26217501868129692-1024-1024_oxzbcg.webp',

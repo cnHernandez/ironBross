@@ -456,6 +456,661 @@ const rawProducts = [
     description: 'STAR NUTRITION NITRO WHEY es una proteína avanzada de rápida absorción diseñada para maximizar la recuperación muscular.\n\nContenido: 908 gramos\n\nModo de uso: Mezclar 1 medida en agua o leche después del entrenamiento.'
   }
 ]
+// Productos GOLD
+rawProducts.push(
+  {
+    id: 49,
+    name: "AMINO ESSENTIAL 240GRS",
+    category: "AMINOACIDOS",
+    description: "Amino Essential de GOLD NUTRITION es una completa fórmula de aminoácidos esenciales (EAAs) que incluye todos los aminoácidos que el cuerpo no puede producir, fundamentales para el crecimiento muscular y la recuperación óptima.\nBeneficios:\n• Contiene los 9 aminoácidos esenciales en proporciones óptimas\n• Estimula la síntesis de proteínas musculares\n• Previene el catabolismo durante entrenamientos intensos\n• Mejora la resistencia y retrasa la fatiga\n• Favorece una recuperación más rápida\n• Fórmula en polvo de rápida absorción\nDisponible en los deliciosos sabores: Mango\nContenido: 240 gramos\nModo de uso: Mezclar una medida (8g) con 200ml de agua. Tomar una porción durante el entrenamiento para máximo aprovechamiento. En días de descanso, tomar una porción entre comidas para mantener un balance de aminoácidos positivo.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912648/amino-essential-mango-240g-1-d89eb2f634f36e492517496775438794-1024-1024_ppy2nf.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 50,
+    name: "AMINO GOLD 280GRS",
+    category: "AMINOACIDOS",
+    description: "Amino Gold de GOLD NUTRITION es una avanzada fórmula de aminoácidos de cadena ramificada (BCAAs) enriquecida con L-Glutamina y electrolitos, diseñada para maximizar el rendimiento durante el entrenamiento y acelerar la recuperación muscular.\nBeneficios:\n• Proporciona BCAAs en proporción óptima 2:1:1 (leucina, isoleucina, valina)\n• Contiene L-Glutamina para mejorar la recuperación\n• Enriquecido con electrolitos para una mejor hidratación\n• Aumenta la resistencia durante entrenamientos intensos\n• Reduce el dolor muscular post-entrenamiento\n• Previene el catabolismo muscular\nDisponible en los deliciosos sabores: Grapefruit\nContenido: 280 gramos\nModo de uso: Mezclar una medida (10g) con 250ml de agua. Tomar una porción durante el entrenamiento para maximizar el rendimiento. En días de alta intensidad, puede tomarse una porción adicional después del entrenamiento para potenciar la recuperación.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912847/amino-gold-grapefruit-280g-1-db515a372b705485d017496776541419-1024-1024_fqpglm.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 51,
+    name: "L-GLUTAMINE MICRONIZED 225GRS",
+    category: "AMINOACIDOS",
+    description: "L-Glutamine Micronized de GOLD NUTRITION es glutamina micronizada de máxima pureza, el aminoácido más abundante en el tejido muscular, esencial para la recuperación, el sistema inmunológico y la salud intestinal.\nBeneficios:\n• Favorece la recuperación muscular post-entrenamiento\n• Contribuye al mantenimiento del sistema inmunológico\n• Ayuda a preservar la masa muscular en periodos de definición\n• Promueve la salud intestinal\n• Formato micronizado para mayor biodisponibilidad\n• Reduce el tiempo de recuperación entre entrenamientos\nDisponible en los deliciosos sabores: Neutro\nContenido: 225 gramos\nModo de uso: Tomar 5g (una cucharada) al día, preferentemente después del entrenamiento o antes de dormir, disuelta en agua o tu bebida favorita. Para resultados óptimos, mantener un consumo regular.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912727/l-glutamine-the-power-of-recovery-225g-1-d8d38c1e652f1ded9117496774879696-1024-1024_g2a0kh.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 52,
+    name: "COLLAGEN HIDROLIZED +AH+Q10+VIT C 60CÁP",
+    category: "COLAGENOS Y RESVERATROL",
+    description: "Collagen Hidrolized en cápsulas de GOLD NUTRITION ofrece todos los beneficios del colágeno hidrolizado, ácido hialurónico, coenzima Q10 y vitamina C en un práctico formato, ideal para personas con ritmo de vida acelerado que buscan mantener la salud y belleza de piel, articulaciones, cabello y uñas.\nBeneficios:\n• Formato en cápsulas para mayor comodidad y precisión\n• Promueve la producción natural de colágeno en el organismo\n• Reduce visiblemente líneas finas y arrugas\n• Mejora la elasticidad y firmeza de la piel\n• Fortalece cabello y uñas\n• Apoya la salud y movilidad articular\nDisponible en los deliciosos sabores: Único (cápsulas)\nContenido: 60 cápsulas\nModo de uso: Tomar 2 cápsulas al día con un vaso de agua, preferentemente con el desayuno o antes de dormir. Para mejores resultados, consumir de forma constante durante al menos 2-3 meses consecutivos.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912759/hydrolyzed-collagen-60-comp-523a7c6d0303fdb5f117496820713436-1024-1024_zjjgrb.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 53,
+    name: "COLLAGEN HIDROLIZED +AH+TE B,+VIT C 200GRS",
+    category: "COLAGENOS Y RESVERATROL",
+    description: "Collagen Hidrolized de GOLD NUTRITION es una fórmula premium de colágeno hidrolizado enriquecida con ácido hialurónico, coenzima Q10 y vitamina C, diseñada para nutrir la piel, articulaciones, cabello y uñas desde el interior, promoviendo una belleza natural y duradera.\nBeneficios:\n• Mejora la elasticidad y firmeza de la piel\n• Reduce la aparición de arrugas y líneas de expresión\n• Fortalece cabello y uñas\n• Apoya la salud articular y reduce molestias\n• Promueve la producción natural de colágeno gracias a la vitamina C\n• Acción antioxidante por la coenzima Q10\nDisponible en los deliciosos sabores: Pomelo Rosado, Frutilla\nContenido: 200 gramos\nModo de uso: Mezclar una medida (6,7g) en 200ml de agua o jugo, preferentemente por la mañana en ayunas o por la noche antes de dormir. Consumir diariamente para resultados óptimos. Los efectos notables comienzan a partir de las 4-6 semanas de uso constante.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912768/hydrolyzed-collagen-pomelo-rosado-200g-993ee38b92c060384b17496819682826-1024-1024_rmauit.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 54,
+    name: "CREATINE CREAPURE 200GR",
+    category: "CREATINAS",
+    description: "GOLD NUTRITION Creatine CREAPURE 200 Gramos La Creatina Monohidrato Creapure® de Gold Nutrition es el suplemento definitivo para quienes buscan maximizar su fuerza, potencia y volumen muscular. Elaborada en Alemania bajo estrictos estándares farmacéuticos por AlzChem Trostberg GmbH, esta creatina garantiza una pureza excepcional del 99.99%, libre de impurezas y contaminantes, lo que la convierte en la opción más segura y efectiva del mercado.\n¿Por qué elegir Creapure®?\nCreapure® es una marca registrada reconocida mundialmente por su: - Pureza certificada - Seguridad de grado farmacéutico - Control y trazabilidad total en su producción\nCada envase incluye un sello oficial Creapure® y un código de autenticidad (25GL21), asegurando la calidad y originalidad del producto.\nBeneficios clave\nIncrementa la fuerza y la potencia muscular para entrenamientos intensos.\nFavorece el aumento de masa muscular y acelera la recuperación entre series.\nRetrasa la fatiga muscular, mejorando tu rendimiento y resistencia.\nInformación nutricional\nPorción: 5 g (1 cucharadita)\nPor envase: 40 porciones\nContenido de creatina monohidrato por porción: 5000 mg\nLibre de gluten, apto para veganos y sin ingredientes añadidos que aporten calorías.\nModo de uso\nDisolver 1 porción (5 g) en 200–250 ml de agua. Se recomienda su consumo antes o después del entrenamiento para obtener mejores resultados.\nCertificaciones y garantías\nSello oficial Creapure®\nLibre de impurezas: dicianamida, dihidrotriazina\nCumple con estándares GMP, HACCP e ISO\nPresentación\nPolvo instantáneo\nContenido neto: 200 gramos\nAdvertencias: No utilizar durante el embarazo o la lactancia. Mantener fuera del alcance de los niños. No reemplaza una dieta equilibrada. Consultar al médico en caso de supervisión especial.\nCon GOLD NUTRITION Creatine CREAPURE, potencia tu entrenamiento con la pureza y calidad alemana que tu cuerpo necesita para alcanzar su máximo rendimiento.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912779/creatine-creapure-monohidrato-200g-1-4da8ee608d90bdd36d17628758389024-1024-1024_sjs46h.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 55,
+    name: "CREATINE MONOHYDRATE 300GR",
+    category: "CREATINAS",
+    description: "Creatine Monohydrate de GOLD NUTRITION es un suplemento de creatina monohidrato pura de la más alta calidad y pureza, diseñado para aumentar la fuerza, potencia y rendimiento durante entrenamientos intensos.\nBeneficios:\n• Aumenta los niveles de ATP para mayor energía en ejercicios explosivos\n• Mejora la fuerza y potencia muscular\n• Facilita la ganancia de masa muscular\n• Ayuda a retrasar la fatiga durante entrenamientos intensos\n• 100% creatina monohidrato pura micronizada\n• Incrementa el volumen celular muscular\nDisponible en los deliciosos sabores: Neutro\nContenido: 300 gramos\nModo de uso: Tomar 5g (una cucharada) al día, preferentemente después del entrenamiento mezclada con agua, jugo o tu bebida favorita. En fase de carga, puedes tomar 20g diarios (divididos en 4 tomas) durante 5-7 días, seguido por fase de mantenimiento de 5g diarios.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912784/creatine-monohydrate-300g-1-c7ab9af3f92c42296b17496774028064-1024-1024_f0oome.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 56,
+    name: "ZMA 60 CAPS",
+    category: "HORMONALES",
+    description: "ZMA de GOLD NUTRITION es una avanzada fórmula que combina Zinc, Magnesio y Vitamina B6 en proporciones científicamente estudiadas para optimizar los niveles hormonales, la recuperación muscular y la calidad del sueño en deportistas.\nBeneficios:\n• Contribuye a mantener niveles óptimos de testosterona\n• Mejora la calidad del sueño profundo y la recuperación\n• Optimiza la función muscular y previene calambres\n• Fortalece el sistema inmunológico\n• Incrementa la fuerza y el rendimiento físico\n• Combate deficiencias comunes en deportistas\nDisponible en los deliciosos sabores: Único (cápsulas)\nContenido: 60 cápsulas (30 servicios)\nModo de uso: Tomar 2 cápsulas al día, preferentemente con el estómago vacío 30-60 minutos antes de acostarse. Para mejores resultados, evitar consumir con alimentos ricos en calcio, ya que puede interferir con la absorción del zinc y magnesio.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912809/zma-pro-hormonales-60comp-1-1d253ada1b3c0e59c817496784990319-1024-1024_wdiytl.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 57,
+    name: "MAGNESIUM CITRATE 60 CAPS",
+    category: "MAGNESIO Y OMEGA 3",
+    description: "Magnesium Citrate de GOLD NUTRITION proporciona magnesio en forma de citrato, altamente biodisponible y de fácil absorción, fundamental para más de 300 procesos bioquímicos en el cuerpo, incluida la función muscular, nerviosa y ósea.\nBeneficios:\n• Contribuye a la reducción del cansancio y la fatiga\n• Favorece el equilibrio electrolítico y la hidratación\n• Apoya la relajación muscular y previene calambres\n• Contribuye a la salud del sistema nervioso\n• Ayuda a la correcta mineralización ósea\n• Mejora la calidad del sueño y reduce el estrés\nDisponible en los deliciosos sabores: Único (cápsulas)\nContenido: 60 cápsulas\nModo de uso: Tomar 2 cápsulas al día, preferentemente con la cena o antes de dormir para favorecer la relajación muscular y mejorar el descanso. Puede dividirse la dosis en 1 cápsula por la mañana y 1 por la noche.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912820/magnesium-citrate-800mg-1-fcb52cf09c4654cbf917496783651140-1024-1024_wwzzii.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 58,
+    name: "OMEGA 3 - FISH OIL 30 CAPS",
+    category: "MAGNESIO Y OMEGA 3",
+    description: "Omega 3 Fish Oil de GOLD NUTRITION proporciona ácidos grasos omega-3 (EPA y DHA) de alta concentración y pureza, derivados de pescados de aguas frías, fundamentales para la salud cardiovascular, cerebral, visual y para reducir la inflamación.\nBeneficios:\n• Promueve la salud cardiovascular y reduce triglicéridos\n• Apoya la función cerebral y cognitiva\n• Contribuye a reducir la inflamación en el organismo\n• Mantiene la salud de las articulaciones\n• Mejora la salud ocular y la visión\n• Alta concentración de EPA y DHA por cápsula\nDisponible en los deliciosos sabores: Único (cápsulas)\nContenido: 30 cápsulas\nModo de uso: Tomar 1 cápsula al día con las comidas para facilitar la absorción. Para condiciones inflamatorias o mayor demanda, puede aumentarse a 2 cápsulas diarias bajo supervisión profesional. Conservar en lugar fresco y seco.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912830/omega-3-fish-oil-30-comp-1-9ef9bb04c0f09e455317496784643641-1024-1024_ux492y.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 59,
+    name: "N.O GOLD 195GRS",
+    category: "PRE ENTRENOS",
+    description: "N.O Gold de GOLD NUTRITION es un potente potenciador de óxido nítrico diseñado para aumentar el flujo sanguíneo, mejorar la vasodilatación y potenciar la congestión muscular durante el entrenamiento, proporcionando un efecto pump excepcional.\nBeneficios:\n• Aumenta los niveles de óxido nítrico para máxima vasodilatación\n• Mejora el flujo sanguíneo y la entrega de nutrientes al músculo\n• Proporciona un efecto pump intenso y duradero\n• Potencia la resistencia y el rendimiento durante el entrenamiento\n• Formulado con L-Arginina, Citrulina y ingredientes sinérgicos\n• Acelera la recuperación entre series\nDisponible en los deliciosos sabores: Raspberry\nContenido: 195 gramos\nModo de uso: Mezclar una medida (6.5g) con 200ml de agua. Tomar una porción 20-30 minutos antes del entrenamiento para maximizar el efecto vasodilatador. Para mayor efectividad, consumir con el estómago vacío.",
+    price: "$$$",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912838/n-o-gold-oxido-nitrico-195g-1-962bae23ff78608f6717496778053999-1024-1024_ik8shq.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 60,
+    name: "PRE WORK GOLD 280GRS",
+    category: "PRE ENTRENOS",
+    description: "Amino Gold de GOLD NUTRITION es una avanzada fórmula de aminoácidos de cadena ramificada (BCAAs) enriquecida con L-Glutamina y electrolitos, diseñada para maximizar el rendimiento durante el entrenamiento y acelerar la recuperación muscular.\nBeneficios:\n• Proporciona BCAAs en proporción óptima 2:1:1 (leucina, isoleucina, valina)\n• Contiene L-Glutamina para mejorar la recuperación\n• Enriquecido con electrolitos para una mejor hidratación\n• Aumenta la resistencia durante entrenamientos intensos\n• Reduce el dolor muscular post-entrenamiento\n• Previene el catabolismo muscular\nDisponible en los deliciosos sabores: Grapefruit\nContenido: 280 gramos\nModo de uso: Mezclar una medida (10g) con 250ml de agua. Tomar una porción durante el entrenamiento para maximizar el rendimiento. En días de alta intensidad, puede tomarse una porción adicional después del entrenamiento para potenciar la recuperación.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912696/amino-gold-grapefruit-280g-1-db515a372b705485d017496776541419-1024-1024_nx61cu.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 61,
+    name: "100% WHEY PROTEIN 2LBS",
+    category: "PROTEINAS Y GANADORES DE PESO",
+    description: "La proteína de suero de leche 100% Whey Protein de GOLD NUTRITION es una fuente premium de proteínas de rápida absorción diseñada para ayudarte a desarrollar y mantener masa muscular magra.\nBeneficios:\n• Contiene 24g de proteína por porción para óptima recuperación muscular\n• Baja en carbohidratos y grasas\n• Fórmula de rápida absorción\n• Ayuda a la recuperación y crecimiento muscular\n• Delicioso sabor gourmet\n• Alta concentración de aminoácidos esenciales\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla, Strawberry Shake\nContenido: 908 gramos (2 libras)\nModo de uso: Mezclar una medida (30g) con 200-250ml de agua o leche. Consumir 1-3 porciones diarias, preferentemente antes o después del entrenamiento y/o entre comidas.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912856/100-why-protein-2lb-vainilla-1-f2393dc2308f18ceb017496510202313-1024-1024_yylsrd.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 62,
+    name: "100% WHEY PROTEIN 5LBS",
+    category: "PROTEINAS Y GANADORES DE PESO",
+    description: "La proteína de suero de leche 100% Whey Protein de GOLD NUTRITION es una fuente premium de proteínas de rápida absorción en formato económico de 5 libras, diseñada para ayudarte a desarrollar y mantener masa muscular magra a largo plazo.\nBeneficios:\n• Contiene 24g de proteína por porción para óptima recuperación muscular\n• Baja en carbohidratos y grasas\n• Fórmula de rápida absorción\n• Ayuda a la recuperación y crecimiento muscular\n• Delicioso sabor gourmet\n• Formato económico de mayor duración\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla, Strawberry Shake\nContenido: 2268 gramos (5 libras)\nModo de uso: Mezclar una medida (30g) con 200-250ml de agua o leche. Consumir 1-3 porciones diarias, preferentemente antes o después del entrenamiento y/o entre comidas.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912868/100-why-protein-5-lb-vainilla-1-48ebb7191935fe7f0317496510587737-1024-1024_naz14w.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 63,
+    name: "ISO GOLD PROTEIN 2LBS",
+    category: "PROTEINAS Y GANADORES DE PESO",
+    description: "ISO Gold Protein Hidrolized de GOLD NUTRITION es una proteína de suero aislada e hidrolizada premium, desarrollada para una absorción ultrarrápida y máxima pureza proteica, ideal para deportistas exigentes y personas intolerantes a la lactosa.\nBeneficios:\n• Máxima concentración proteica (90% de proteína)\n• Absorción ultrarrápida gracias al proceso de hidrólisis\n• Prácticamente libre de lactosa y grasas\n• Contribuye a la rápida recuperación y desarrollo muscular\n• Mínimo impacto digestivo\n• Ideal para periodos de definición muscular\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla\nContenido: 908 gramos (2 libras)\nModo de uso: Mezclar una medida (30g) con 200-250ml de agua fría. Consumir preferentemente después del entrenamiento para máxima absorción y aprovechamiento. También puede consumirse entre comidas o en cualquier momento que necesites un aporte rápido de proteínas.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912877/gold-nutrition-protein-iso-gold-cocolate-1-2l-907g-204c60e21b34550cd717496511862205-1024-1024_sgetju.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 64,
+    name: "MUSCLE MASS GAINER 5LBS",
+    category: "PROTEINAS Y GANADORES DE PESO",
+    description: "Muscle Mass Gainer de GOLD NUTRITION es un ganador de peso premium diseñado especialmente para personas que buscan aumentar su masa muscular de forma rápida y efectiva con una equilibrada proporción de proteínas y carbohidratos de calidad.\nBeneficios:\n• Alto aporte calórico (700-800 calorías por porción)\n• 50g de proteína y 90g de carbohidratos por porción\n• Matriz de carbohidratos de liberación diferenciada\n• Enriquecido con creatina para potenciar el crecimiento muscular\n• Bajo contenido en azúcares y grasas\n• Fácil digestión y absorción\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla\nContenido: 2268 gramos (5 libras)\nModo de uso: Mezclar dos medidas (150g) con 450-500ml de agua o leche. Consumir 1-2 porciones diarias, preferentemente después del entrenamiento y/o entre comidas para maximizar el aporte calórico.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912893/gainer-gold-nutrition-ganador-masa-muscular-2-267kg-5lb-chocolate-1-81b34f87f7c0601d5117496531757423-1024-1024_gljvnm.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 65,
+    name: "VEGETAL PROTEIN ISOLATE 2LBS",
+    category: "PROTEINAS Y GANADORES DE PESO",
+    description: "Vegetal Protein Isolate de GOLD NUTRITION es una proteína vegetal de alta calidad a base de aislado de proteína de arveja y arroz, desarrollada especialmente para veganos, vegetarianos o personas con intolerancias, ofreciendo un perfil completo de aminoácidos.\nBeneficios:\n• 100% vegetal y libre de alérgenos comunes\n• Perfil completo de aminoácidos esenciales\n• Fácil digestión y absorción\n• Ideal para veganos y vegetarianos\n• Bajo contenido en grasas y carbohidratos\n• Libre de gluten, lactosa y soya\nDisponible en los deliciosos sabores: Neutro, Manzana, Coco\nContenido: 908 gramos (2 libras)\nModo de uso: Mezclar una medida (30g) con 250ml de agua o bebida vegetal. Consumir 1-2 porciones diarias, preferentemente después del entrenamiento o entre comidas como aporte proteico.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912902/vegetal_protein_isolate_gold_nutrition_neutro_2lb-vegan-907g-1-c142ef639ff16c7bab17496513739316-1024-1024_ysoefk.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 66,
+    name: "WHEY RIPPED 2LBS",
+    category: "PROTEINAS Y GANADORES DE PESO",
+    description: "Whey Ripped de GOLD NUTRITION combina proteína de suero de alta calidad con ingredientes termogénicos y lipolíticos, creando un suplemento único que ayuda al desarrollo muscular mientras favorece la pérdida de grasa corporal.\nBeneficios:\n• 22g de proteína por porción para desarrollo y mantenimiento muscular\n• Contiene L-Carnitina y cafeína para potenciar la quema de grasas\n• Extracto de té verde con potente efecto termogénico\n• Ayuda a mantener un metabolismo acelerado\n• Apoya la recuperación muscular\n• Ideal para fases de definición muscular\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla\nContenido: 908 gramos (2 libras)\nModo de uso: Mezclar una medida (35g) con 200-250ml de agua. Consumir 1-2 porciones diarias, preferentemente por la mañana y/o después del entrenamiento. Por su contenido de cafeína, evitar el consumo 5 horas antes de dormir.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912912/whey-ripped-chocolate-1-dc3e4527420d0cf38f17496515540450-1024-1024_mjr0o6.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 67,
+    name: "LIPO GOLD ELITE 60 CAPS",
+    category: "QUEMADORES",
+    description: "Lipo Gold Elite U.C de GOLD NUTRITION es un quemador de grasa ultra concentrado de última generación que combina potentes extractos vegetales, estimulantes y nutrientes lipolíticos para maximizar la pérdida de grasa y preservar la masa muscular.\nBeneficios:\n• Fórmula ultra concentrada para máxima efectividad\n• Potente efecto termogénico que aumenta la temperatura corporal\n• Mejora la movilización y oxidación de ácidos grasos\n• Proporciona energía sostenida y enfoque mental\n• Ayuda a suprimir el apetito de forma natural\n• Incluye extractos vegetales que favorecen el metabolismo\nDisponible en los deliciosos sabores: Único (cápsulas)\nContenido: 60 cápsulas\nModo de uso: Debido a su alta concentración, comenzar con 1 cápsula antes del desayuno para evaluar tolerancia. Luego aumentar a 1 cápsula antes del desayuno y 1 cápsula antes del almuerzo o entrenamiento. No exceder las 2 cápsulas diarias. Evitar el consumo después de las 3 PM.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912972/lipo-gold-elite-60-comp-1-382c99600cbdbe923117496780640898-1024-1024_ambgwf.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 68,
+    name: "LIPOBURN HARDCORE 120 TABS",
+    category: "QUEMADORES",
+    description: "Lipoburn Hardcore de GOLD NUTRITION es un potente quemador de grasa formulado con ingredientes termogénicos y lipolíticos que aceleran el metabolismo, aumentan la energía y optimizan la oxidación de grasas durante el ejercicio y a lo largo del día.\nBeneficios:\n• Potente efecto termogénico para aumentar el gasto calórico\n• Acelera el metabolismo de las grasas\n• Proporciona energía sostenida sin nerviosismo\n• Ayuda a controlar el apetito\n• Mejora el rendimiento durante el entrenamiento\n• Optimizado para regímenes de definición muscular\nDisponible en los deliciosos sabores: Único (cápsulas)\nContenido: 120 cápsulas\nModo de uso: Tomar 2 cápsulas 30 minutos antes del desayuno y 2 cápsulas 30 minutos antes del almuerzo o entrenamiento. Por su contenido de cafeína, no consumir después de las 4 PM para evitar interferencias con el sueño. Mantener una adecuada hidratación durante el uso.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912992/lipo-burn-hardcore-quemador-grasa-120-comp-1-e038c3cce18ba236c317496780288686-1024-1024_sxcwou.webp",
+    brand: "GOLD"
+  },
+  {
+    id: 69,
+    name: "K2+D3 VITAMINS 30 COMPRIMIDOS",
+    category: "VITAMINAS",
+    description: "K2+D3 Vitamins de GOLD NUTRITION combina vitaminas K2 (MK-7) y D3 en su forma más biodisponible, una sinergia perfecta para la salud ósea, cardiovascular e inmunológica, asegurando la correcta mineralización de huesos y dientes.\nBeneficios:\n• Promueve la absorción y fijación de calcio en los huesos\n• Contribuye a la salud cardiovascular\n• Fortalece el sistema inmunológico\n• Previene la calcificación arterial\n• Mejora la densidad mineral ósea\n• Sinergia perfecta entre K2 y D3 para mayor efectividad\nDisponible en los deliciosos sabores: Único (comprimidos)\nContenido: 30 comprimidos\nModo de uso: Tomar 1 comprimido al día con una comida que contenga grasas para mejorar la absorción. Para mejores resultados, tomar de forma constante y a largo plazo como parte de un estilo de vida saludable.",
+    price: "",
+    image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770913003/vitaminas-k2d3-30-comp-apto-vegano-1-04756a78a4a4cb21ef17496782983937-1024-1024_vwlgop.webp",
+    
+    brand: "GOLD"
+  }
+)
+
+// Productos XTRENGHT
+rawProducts.push(
+  {
+    id: 70,
+    name: 'BCAA PRO 120 CAPS',
+    category: 'AMINOACIDOS',
+    description: 'XTRENGHT BCAA Pro es un suplemento de aminoácidos ramificados en cápsulas que proporciona la proporción óptima 2:1:1 de Leucina, Isoleucina y Valina. Estos aminoácidos esenciales son fundamentales para la síntesis proteica, la recuperación muscular y la prevención del catabolismo durante entrenamientos intensos.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918182/xtrenght-bcaa-pro-120-caps-d76054810b95334fca17502115228286-1024-1024_oqszza.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 71,
+    name: 'BETA ALANINE 180 CAPS',
+    category: 'AMINOACIDOS',
+    description: 'XTRENGHT Beta Alanine es un suplemento avanzado en cápsulas diseñado para aumentar los niveles de carnosina muscular, lo que retrasa la aparición de fatiga y mejora significativamente la resistencia durante entrenamientos de alta intensidad.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918197/xtrenght-beta-alanine-180-caps-f0c11d48e28b0e81be17502116568701-1024-1024_ltqtwp.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 72,
+    name: 'CARNITINE 90 CAPS',
+    category: 'AMINOACIDOS',
+    description: 'XTRENGHT L-Carnitine en cápsulas es un suplemento premium de L-Carnitina, ideal para deportistas que buscan optimizar su metabolismo de grasas y mejorar su rendimiento físico.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918220/xtrenght-l-carnitine-90-caps-dbaeaa60f2d822ba2017502117111975-1024-1024_jlmk3q.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 73,
+    name: 'GLUTAMINE 300GRS',
+    category: 'AMINOACIDOS',
+    description: 'XTRENGHT Glutamine es un suplemento de L-Glutamina pura de alta calidad, diseñado para optimizar la recuperación muscular y fortalecer el sistema inmunológico.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918225/xtrenght-glutamine-300-grs-c3b8938cad061d43bc17502115839549-1024-1024_pu9qui.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 74,
+    name: 'HYDRO BCAA PRO 360GRS',
+    category: 'AMINOACIDOS',
+    description: 'XTRENGHT Hydro BCAA es un suplemento avanzado de aminoácidos de cadena ramificada (BCAAs) en formato hidrosoluble para máxima absorción.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918245/xtrenght-hydro-bcaa-360-grs-fruit-puch-48b928f36df193a14317581169134426-1024-1024_d94ful.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 75,
+    name: 'CREATINE 250GRS',
+    category: 'CREATINAS',
+    description: 'XTRENGHT Creatine es un suplemento de monohidrato de creatina micronizada de la más alta pureza, diseñado para aumentar la fuerza, la potencia y el rendimiento.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918253/xtrenght-creatine-250-grs-7d3175448f48c2feea17502116052851-1024-1024_jg8u89.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 76,
+    name: 'CREATINE 500GRS',
+    category: 'CREATINAS',
+    description: 'XTRENGHT Creatine 500 GRS es un suplemento de monohidrato de creatina micronizada de máxima pureza en formato económico.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918266/xtrenght-creatine-500-grs-288da4621db1a0fed017502116296856-1024-1024_pqygdk.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 77,
+    name: 'NITROX 180 CAPS',
+    category: 'PRE ENTRENOS',
+    description: 'XTRENGHT Nitrox es un potente suplemento pre-entrenamiento en cápsulas diseñado para maximizar la energía, el rendimiento y el bombeo muscular.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918275/xtrenght-nitrox-180-caps-1b7b9678836547634c17502114897108-1024-1024_gilyc3.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 78,
+    name: 'ADVANCE WHEY 2LB',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: 'XTRENGHT Advanced Whey Protein es una fórmula superior que combina tres fuentes de proteína de suero (isolate, hidrolizado y concentrado).',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918283/xtrenght-advanced-whey-protein-2-lbs-chocolate-bd03733eb7fa1190c517502104246421-1024-1024_r4btht.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 79,
+    name: 'BEST WHEY 2LB',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: 'XTRENGHT Best Whey es una proteína de suero premium diseñada para maximizar la recuperación muscular y el crecimiento.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918313/xtrenght-best-whey-2-lbs-chocolate-b831e06cf715eda02c17502094071340-1024-1024_ynlla2.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 80,
+    name: 'BEST WHEY 3KG BIG SIZE',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: 'XTRENGHT Best Whey Big Size es una proteína de suero premium en formato económico de 3 kg.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918307/xtrenght-best-whey-2-lbs-chocolate-b831e06cf715eda02c17502094071340-1024-1024_n3f0p4.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 81,
+    name: 'NITROGAIN 1.5KG',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: 'XTRENGHT Nitrogain es un ganador de peso premium diseñado para deportistas que buscan aumentar su masa muscular de forma efectiva.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918335/xtrenght-nitrogain-1-5-kg-chocolate-878f720271f29bc17317502111693875-1024-1024_s1a33y.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 82,
+    name: 'NITROGAIN 5KG BIG SIZE',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: 'XTRENGHT Nitrogain Big Size es un ganador de peso premium en formato económico de 5 kg.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918323/xtrenght-nitrogain-big-size-5-kg-chocolate-64b8305efcbe31409217502113311659-1024-1024_mimjnp.webp',
+    brand: 'XTRENGHT'
+  },
+  {
+    id: 83,
+    name: 'CUTTER 120CAPS',
+    category: 'VITAMINAS',
+    description: 'XTRENGHT Cutter es un potente quemador de grasa en cápsulas formulado con ingredientes específicos para acelerar el metabolismo, suprimir el apetito y aumentar los niveles de energía.',
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918328/xtrenght-cutter-120-caps-dc48832355c86fe02817502116814602-1024-1024_clikle.webp',
+    brand: 'XTRENGHT'
+  }
+)
+
+// Productos PITBULL
+rawProducts.push(
+  {
+    id: 95,
+    name: 'WHEY PROTEIN 2LBS CHOCOLATE',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Este suplemento a base de proteína de suero lácteo está disponible en sabor chocolate. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular y acelerar la recuperación post-entrenamiento.  MODO DE USO: Disolver un scoop del producto (34g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES: Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. CONTIENE DERIVADOS DE LECHE, PUEDE CONTENER DERIVADOS DE SOJA.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770920799/D_NQ_NP_2X_767022-MLA99891344621_112025-F_rwvqc0.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 96,
+    name: 'WHEY PROTEIN 2LBS VAINILLA',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Este suplemento a base de proteína de suero lácteo está disponible en sabor vainilla. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular y acelerar la recuperación post-entrenamiento.  MODO DE USO: Disolver un scoop del producto (34g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES: Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. CONTIENE DERIVADOS DE LECHE, PUEDE CONTENER DERIVADOS DE SOJA.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770920804/D_NQ_NP_2X_602071-MLA99984791287_112025-F_upcyle.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 97,
+    name: 'WHEY PROTEIN 2LBS DOYPACK CHOCOLATE',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Este suplemento a base de proteína de suero lácteo. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entrenamiento o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770920814/D_NQ_NP_2X_692307-MLA99382688136_112025-F_xvgi5m.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 98,
+    name: 'WHEY PROTEIN 2LBS DOYPACK VAINILLA',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: "Este suplemento a base de proteína de suero lácteo. Cada servicio te aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entreno o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.",
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921094/D_NQ_NP_2X_756487-MLA100061589577_122025-F_sj6ls1.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 99,
+    name: 'BISGLICINATO DE MAGNESIO 120 CAPS',
+    category: 'MAGNESIO Y OMEGA 3',
+    description: `El bisglicinato es una forma altamente biodisponible de magnesio quelado con glicina, un aminoácido que facilita su absorción y minimiza posibles molestias digestivas. Gracias a su óptima asimilación, este suplemento es ideal para quienes buscan mantener niveles adecuados de magnesio sin los efectos gastrointestinales que pueden presentarse con otras formas del mineral. El magnesio es un nutriente esencial involucrado en múltiples funciones del organismo, que incluyen el equilibrio muscular, nervioso y óseo. BENEFICIOS Colabora en la relajación del sistema nervioso, en la función cardiaca y la regulación de la presión arterial, y en el mantenimiento de la salud muscular y ósea. Mejora la energía y el rendimiento físico. Brinda apoyo digestivo. MODO DE USO Consumir 4 cápsulas diarias. Antes o después del entrenamiento o antes de ir a dormir. INGREDIENTES Bisglicinato de magnesio: ANAH; ESTEARATO DE MAGNESIO.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921124/D_NQ_NP_2X_884745-MLA99988662961_112025-F_mhp3wu.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 100,
+    name: 'CITRATO DE MAGNESIO 300 G',
+    category: 'MAGNESIO Y OMEGA 3',
+    description: `El magnesio es un mineral esencial involucrado en múltiples funciones corporales, como la contraccion muscular, la produccion de energia y el equilibrio electrolitico. Cada porcion de 2.5 gramos suministra magnesio en una forma de alta biodisponiblidad, lo que permite que el cuerpo lo absorba y lo utilice de manera eficiente. BENEFICIOS Apoya la funcion muscular. Mejora el rendimiento fisico. Regula el sistema nervioso. Colabora con el mantenimiento de la salud ósea. Favorece el equilibrio electrolitico. MODO DE USO Diluir media cuchara de té (2,5grs) en un vaso de agua. Consumir con abundante agua en cualquier momento del dia. Ingesta diaria: 2,5Grs (1/2 cucharada de té) INGREDIENTES Citrato de magnesio. PUEDE CONTENER DERIVADOS DE LECHE Y SOJA`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921132/D_NQ_NP_2X_968864-MLA94881305756_102025-F_cnng7r.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 101,
+    name: 'CREATINA 402 G SABORIZADA MULTIFRUTA',
+    category: 'CREATINAS',
+    description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento fisico, particularmente en actividades de alta intensidad. Cada porcion tu ayuda a aumentar los niveles de fosfocreatina en los musculos, proporcionando mas energia rapida para esfuerzos explosivos como levantamientos de pesas, sprints y dportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (6.7grs) en 200ml de agua. Puedes consumirlo antes o despues de entrenar. INGREDIENTES Monohidrato de creatina, ARO: Saborizante de multifruta, ACI: Ácido citrico, ANAH: Dióxido de silicio, EDU : Sucralosa. Puede contener derivados de leche y soja.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921144/D_NQ_NP_2X_983028-MLA100586447187_122025-F_hettjh.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 102,
+    name: 'CREATINA 402 G SABORIZADA UVA',
+    category: 'CREATINAS',
+    description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento fisico, particularmente en actividades de alta intensidad. Cada porcion tu ayuda a aumentar los niveles de fosfocreatina en los musculos, proporcionando mas energia rapida para esfuerzos explosivos como levantamientos de pesas, sprints y dportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (6.7grs) en 200ml de agua. Puedes consumirlo antes o despues de entrenar. INGREDIENTES Monohidrato de creatina, ARO: Saborizante de multifruta, ACI: Ácido citrico, ANAH: Dióxido de silicio, EDU : Sucralosa. Puede contener derivados de leche y soja.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921152/D_NQ_NP_2X_725052-MLA99496628802_112025-F_xjaqx7.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 103,
+    name: 'CREATINA MICRONIZED 1KG',
+    category: 'CREATINAS',
+    description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento físico, particularmente en actividades de alta intensidad. Cada porción ayuda a aumentar los niveles de fosfocreatina en los músculos, proporcionando más energía rápida para esfuerzos explosivos como levantamientos de pesas, sprints y deportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Puedes consumirlo antes o después de entrenar. INGREDIENTES Monohidrato de creatina`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921173/11-6c5ceb66a57904226817692845789847-480-0_mpliut.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 104,
+    name: 'CREATINA MICRONIZED 300 G',
+    category: 'CREATINAS',
+    description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento físico, particularmente en actividades de alta intensidad. Cada porción ayuda a aumentar los niveles de fosfocreatina en los músculos, proporcionando más energía rápida para esfuerzos explosivos como levantamientos de pesas, sprints y deportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Puedes consumirlo antes o después de entrenar. INGREDIENTES Monohidrato de creatina`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921179/D_NQ_NP_2X_666462-MLA99985084933_112025-F_vzxeta.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 105,
+    name: 'COLAGENO SPORT 240 G MULTIFRUTA',
+    category: 'COLAGENOS Y RESVERATROL',
+    description: `El colágeno hidrolizado PITBULL SUPLEMENTOS es colágeno que fue dividido en partículas más pequeñas (péptidos) mediante un proceso llamado hidrolización. Al estar “pre-digerido”, el cuerpo lo absorbe más fácil y rápido. Se utiliza comúnmente para mejorar la salud de la piel, articulaciones, uñas, cabello y para favorecer la recuperación muscular. MODO DE USO Disolver un scoop (12grs) del producto, en 250 Ml de agua. Revolver hasta su completa disolución. Utilizar la cuchara del envase. INGREDIENTES Colágeno hidrolizado, ARO: saborizante de: pomelo/uva (según corresponda), citrato de magnesio, vitamina C, acido cítrico, carbonato de magnesio, COL: Cúrcuma, acido hialuronico, EDU: sucralosa y acesulfame K. PUEDE CONTENER DERIVADO DE LECHE Y DE SOJA`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921184/D_NQ_NP_2X_600085-MLA100095681958_122025-F_nxx3yh.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 106,
+    name: 'COLAGENO SPORT 240 G UVA',
+    category: 'COLAGENOS Y RESVERATROL',
+    description: `El colágeno hidrolizado PITBULL SUPLEMENTOS es colágeno que fue dividido en partículas más pequeñas (péptidos) mediante un proceso llamado hidrolización. Al estar “pre-digerido”, el cuerpo lo absorbe más fácil y rápido. Se utiliza comúnmente para mejorar la salud de la piel, articulaciones, uñas, cabello y para favorecer la recuperación muscular. MODO DE USO Disolver un scoop (12grs) del producto, en 250 Ml de agua. Revolver hasta su completa disolución. Utilizar la cuchara del envase. INGREDIENTES Colágeno hidrolizado, ARO: saborizante de: pomelo/uva (según corresponda), citrato de magnesio, vitamina C, acido cítrico, carbonato de magnesio, COL: Cúrcuma, acido hialuronico, EDU: sucralosa y acesulfame K. PUEDE CONTENER DERIVADO DE LECHE Y DE SOJA`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921198/D_NQ_NP_2X_663150-MLA100585390649_122025-F_diukoj.webp',
+    brand: 'PITBULL'
+  },
+  {
+    id: 107,
+    name: 'GLUTAMINE MICRONIZED 300 G',
+    category: 'AMINOACIDOS',
+    description: `La glutamina es un aminoácido que se encuentra de forma natural en nuestro cuerpo. Es considerado un aminoácido no esencial, lo que significa que el cuerpo puede producirlo. Sin embargo, en situaciones de estrés físico, como durante el ejercicio intenso o enfermedades, la demanda de glutamina puede superar la capacidad del cuerpo para producirla. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Preferentemente después de entrenar. INGREDIENTES L-Glutamina.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921204/D_NQ_NP_2X_893386-MLA99526846788_122025-F_bdb4t0.webp',
+    brand: 'PITBULL'
+  }
+)
+
+// Productos GENTECH
+rawProducts.push(
+  {
+    id: 84,
+    name: 'PROTEIN BAR IRON BAR 12U',
+    category: 'BARRAS PROTEICAS',
+    description: `La Protein Crisp Bar de INTEGRALMEDICA es una deliciosa barrita proteica con 12g de proteína de alta calidad y solo 2g de azúcar, ideal para complementar tu nutrición deportiva en cualquier momento del día. Esta caja incluye 12 unidades para que nunca te falte tu snack proteico favorito.
+Beneficios:
+• 12g de proteína de alta calidad por porción
+• Bajo contenido de azúcar (2g por barrita)
+• Textura crujiente y sabor irresistible
+• Ideal como snack saludable entre comidas
+• Perfecta para después del entrenamiento
+• Caja completa con 12 unidades
+Disponible en los deliciosos sabores: Dulce de Coco, Duo Crunch, Peanut Butter, Trufa de Avellanas, Cookies and Cream, Churros con Dulce de Leche
+Contenido: 540 gramos (12 barritas de 45g)
+Modo de uso: Consumir como snack entre comidas o después del entrenamiento para contribuir a tu ingesta diaria de proteínas.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919399/integralmedica-protein-crisp-bar-caja-12-unidades-trufa-de-avellana-089794e3ca3a09f5ca17497591687899-1024-1024_yqcypb.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 85,
+    name: 'PROTEIN BAR IRON BAR 20U',
+    category: 'BARRAS PROTEICAS',
+    description: `Iron Bar de GENTECH es una barra proteica de alta calidad, perfecta como snack nutritivo o post-entreno, con deliciosos sabores y textura irresistible.
+Beneficios:
+• Alto contenido proteico
+• Snack conveniente y portátil
+• Textura suave y deliciosa
+• Sin azúcar agregada
+• Ideal post-entreno
+• Múltiples sabores disponibles
+Disponible en los deliciosos sabores: Banana, Chocolate, Cookies & Cream, Dulce de Leche, Frutilla
+Contenido: 20 unidades (46g cada una)
+Modo de uso: Consumir 1 barra como snack entre comidas o después del entrenamiento. Ideal para complementar la ingesta proteica diaria.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919419/ironbarchoco-20c2783ad6f29178fd17516781881004-1024-1024_k0lyts.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 86,
+    name: 'PROTEIN BAR LOW CARB 10',
+    category: 'BARRAS PROTEICAS',
+    description: `Low Carb Protein Bar de GENTECH es la elección perfecta para quienes buscan un snack proteico delicioso sin comprometer sus objetivos de definición y control de peso.
+Beneficios:
+• Menos de 5g de carbohidratos por barra
+• 20g de proteína de alta calidad por porción
+• Ideal para dietas cetogénicas y low carb
+• Control efectivo del apetito
+• Sin azúcares agregados
+• Textura cremosa y sabor irresistible
+Disponible en los deliciosos sabores: Peanut Butter, Chocolate Cookie Crunch, Brownie
+Contenido: 10 unidades (45g cada una) - 450 gramos
+Modo de uso: Consumir 1 barra como colación entre comidas principales o post-entreno. Ideal para complementar dietas de definición y control de peso. No exceder 2 barras por día.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919427/gtlcpb010-low-carb-barra-proteica-raspberry-crunch-caja-10-unid-3eb8d64ff00dc4d23517575101946062-1024-1024_tpox1a.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 87,
+    name: 'CREATINA 250GRS',
+    category: 'CREATINAS',
+    description: `Creatina Monohidrato de GENTECH es la forma más pura y estudiada de creatina, ideal para aumentar la fuerza, potencia y masa muscular en deportistas de alto rendimiento.
+Beneficios:
+• Aumenta la fuerza y potencia muscular
+• Mejora el rendimiento en ejercicios de alta intensidad
+• Acelera la recuperación entre series
+• Incrementa la masa muscular magra
+• Fórmula micronizada para mejor absorción
+• 100% pura sin aditivos
+Contenido: 250 gramos
+Modo de uso: Mezclar 5g (1 cucharadita) con 250ml de agua o jugo, tomar 1 vez por día. Período de carga: 20g por día por 5 días, luego 5g diarios.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919446/crea250-efea70abeeb77c455e17516781695849-1024-1024_jqwx0t.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 88,
+    name: 'CREATINA 500GRS',
+    category: 'CREATINAS',
+    description: `Creatina Monohidrato de GENTECH es la forma más pura y estudiada de creatina, ideal para aumentar la fuerza, potencia y masa muscular en deportistas de alto rendimiento.
+Beneficios:
+• Aumenta la fuerza y potencia muscular
+• Mejora el rendimiento en ejercicios de alta intensidad
+• Acelera la recuperación entre series
+• Incrementa la masa muscular magra
+• Fórmula micronizada para mejor absorción
+• 100% pura sin aditivos
+Contenido: 500 gramos
+Modo de uso: Mezclar 5g (1 cucharadita) con 250ml de agua o jugo, tomar 1 vez por día. Período de carga: 20g por día por 5 días, luego 5g diarios.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919454/crea500-e90a1d9e3acc807da817516781728886-1024-1024_ysxfn1.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 89,
+    name: 'OMEGA 3 FISH OIL 60 CAPS',
+    category: 'MAGNESIO Y OMEGA 3',
+    description: `Omega 3 EPA & DHA de GENTECH proporciona ácidos grasos esenciales de alta calidad para el soporte cardiovascular, cerebral y articular.
+Beneficios:
+• Rico en EPA y DHA
+• Soporte cardiovascular
+• Mejora la función cerebral
+• Propiedades antiinflamatorias
+• Salud articular
+• Aceite de pescado puro
+Presentación: 60 cápsulas blandas
+Contenido: 84 gramos
+Modo de uso: Tomar 1-2 cápsulas por día con las comidas o según indicación médica. Mantener refrigerado después de abrir.`,
+    price: '$$$',
+    image: 'https://acdn-us.mitiendanube.com/stores/006/011/728/products/omega-6042bf09fb1163280517516784186922-1024-1024.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 90,
+    name: 'IRON GEL CON CAFEÍNA 24U',
+    category: 'PRE ENTRENOS',
+    description: `Iron Gel Turbo Coffee de GENTECH combina la energía de los carbohidratos con la potencia de la cafeína, perfecto para un impulso energético extra.
+Beneficios:
+• Doble fuente de energía: carbohidratos + cafeína
+• Mejora el rendimiento físico y mental
+• Aumenta la concentración
+• Retrasa la fatiga
+• Absorción rápida
+• Sabor delicioso a café
+Sabor: Turbo Coffee
+Contenido: 6 unidades
+Modo de uso: Consumir 1 gel 30-45 minutos antes del entrenamiento. No exceder 2 geles por día debido al contenido de cafeína.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919469/turbocoff-218ce511509741428e17516783970248-1024-1024_gjdhd8.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 91,
+    name: 'PRE WORKOUT 400GRS',
+    category: 'PRE ENTRENOS',
+    description: `Pre Workout Wild Red Berries de GENTECH es la fórmula pre-entreno más potente para maximizar tu rendimiento y energía en cada sesión de entrenamiento.
+Beneficios:
+• Aumento explosivo de energía
+• Mejora del focus y concentración
+• Mayor resistencia muscular
+• Incremento del pump muscular
+• Retraso de la fatiga
+• Fórmula con ingredientes premium
+Sabor: Red Berries (Frutos Rojos)
+Contenido: 400 gramos
+Modo de uso: Mezclar 1 scoop (10g) con 250ml de agua fría, consumir 30 minutos antes del entrenamiento. Comenzar con medio scoop para evaluar tolerancia.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919526/wild-aa7a607f9c5a1cb30717516784247122-1024-1024_pjpenl.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 92,
+    name: 'WHEY PROTEIN 7900 1KG DOYPACK',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Whey Protein 7900 de GENTECH es una proteína de suero de leche de alta calidad y rápida absorción, ideal para el crecimiento y recuperación muscular en deportistas de élite.
+Beneficios:
+• Proteína de suero de alta calidad
+• Rápida absorción y digestión
+• Promueve el crecimiento muscular
+• Acelera la recuperación post-entreno
+• Alto valor biológico
+• Sabores deliciosos y cremosos
+Disponible en los deliciosos sabores: Chocolate, Vainilla
+Contenido: 1000 gramos
+Modo de uso: Mezclar 1 scoop (30g) con 250ml de agua fría o leche. Consumir 1-2 veces por día, preferentemente después del entrenamiento y entre comidas.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919533/whey1kgchoco-41547017ac8b551fd417516781920351-1024-1024_b6cyfd.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 93,
+    name: 'WHEY PROTEIN 7900 3KG BALDE',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Whey Protein 7900 de GENTECH es una proteína de suero de leche de alta calidad y rápida absorción, ideal para el crecimiento y recuperación muscular en deportistas de élite.
+Beneficios:
+• Proteína de suero de alta calidad
+• Rápida absorción y digestión
+• Promueve el crecimiento muscular
+• Acelera la recuperación post-entreno
+• Alto valor biológico
+• Sabores deliciosos y cremosos
+Contenido: 3000 gramos
+Modo de uso: Mezclar 1 scoop (30g) con 250ml de agua fría o leche. Consumir 1-2 veces por día, preferentemente después del entrenamiento y entre comidas.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919539/gentech-whey-protein-7900-vainilla-3kg-1-0823d9fdf8a8c657b717694424175845-1024-1024_yuyqyk.webp',
+    brand: 'GENTECH'
+  },
+  {
+    id: 94,
+    name: 'MULTIVITAMINICO 60TABS',
+    category: 'VITAMINAS',
+    description: `Multivitamin de GENTECH es un complejo vitamínico completo que aporta todos los nutrientes esenciales para el óptimo funcionamiento del organismo y el soporte nutricional deportivo.
+Beneficios:
+• Complejo vitamínico completo
+• Soporte al sistema inmunológico
+• Mejora la energía y vitalidad
+• Antioxidantes naturales
+• Soporte para deportistas
+• Fórmula kosher
+Presentación: 60 comprimidos
+Contenido: 72 gramos
+Modo de uso: Tomar 1 comprimido por día con el desayuno o según indicación médica. No exceder la dosis recomendada.`,
+    price: '$$$',
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919543/multi-19dcace18c86d58f5f17516781419325-1024-1024_apv41n.webp',
+    brand: 'GENTECH'
+  }
+)
+
 
 export const products = rawProducts.map(item => {
   const name = item.name || item.product || 'Producto'

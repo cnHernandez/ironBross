@@ -149,12 +149,51 @@ function App() {
                     setSelectedProduct(null)
                   }}
                 />
-                <img src={gold} alt="Gold" className="marca-logo" />
-                <img src={xtreinght} alt="XtReinght" className="marca-logo" />
-                <div className="marca-logo-frame">
+                <img
+                  src={gold}
+                  alt="Gold"
+                  className="marca-logo"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    setShowProducts(true)
+                    setSelectedCategory('gold')
+                    setSelectedProduct(null)
+                  }}
+                />
+                <img
+                  src={xtreinght}
+                  alt="XtReinght"
+                  className="marca-logo"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    setShowProducts(true)
+                    setSelectedCategory('xtrenght')
+                    setSelectedProduct(null)
+                  }}
+                />
+                
+                <div
+                  className="marca-logo-frame"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    setShowProducts(true)
+                    setSelectedCategory('pitbull')
+                    setSelectedProduct(null)
+                  }}
+                >
                   <img src={pitbull} alt="Pitbull" className="marca-logo-pitbull" />
                 </div>
-                <img src={gentech} alt="Gentech" className="marca-logo marca-logo-gentech" />
+                <img
+                  src={gentech}
+                  alt="Gentech"
+                  className="marca-logo marca-logo-gentech"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    setShowProducts(true)
+                    setSelectedCategory('gentech')
+                    setSelectedProduct(null)
+                  }}
+                />
               </div>
             </div>
           </section>
@@ -186,46 +225,12 @@ function App() {
           </section>
           </>
         )}
-        {showProducts && (selectedCategory && !selectedProduct) && (
-          <div className="breadcrumb-categorias">
-            <span className="breadcrumb-link" onClick={() => setSelectedCategory(null)} style={{cursor:'pointer', color:'#FFD700'}}>categorías</span>
-            <span> &gt; </span>
-            <span className="breadcrumb-actual">
-              {selectedCategory === 'creatina' && 'Creatina'}
-              {selectedCategory === 'performance' && 'Performance'}
-              {selectedCategory === 'proteina' && 'Proteína'}
-              {selectedCategory === 'vitaminas' && 'Vitaminas'}
-            </span>
-          </div>
-        )}
-        {showProducts && (selectedCategory && selectedProduct) && (
-          <div className="breadcrumb-categorias">
-            <span
-              className="breadcrumb-link"
-              onClick={() => { setSelectedCategory(null); setSelectedProduct(null); }}
-              style={{cursor:'pointer', color:'#FFD700'}}
-            >
-              categorías
-            </span>
-            <span> &gt; </span>
-            <span
-              className="breadcrumb-link"
-              onClick={() => setSelectedProduct(null)}
-              style={{cursor:'pointer', color:'#FFD700'}}
-            >
-              {selectedCategory === 'creatina' && 'Creatina'}
-              {selectedCategory === 'performance' && 'Performance'}
-              {selectedCategory === 'proteina' && 'Proteína'}
-              {selectedCategory === 'vitaminas' && 'Vitaminas'}
-            </span>
-            <span> &gt; </span>
-            <span className="breadcrumb-actual">{selectedProduct.name}</span>
-          </div>
-        )}
+        {/* Breadcrumb gestionado más abajo para evitar duplicados */}
+        {/* El breadcrumb para producto ya se muestra en el bloque de showProducts && selectedProduct más abajo, así que aquí lo eliminamos para evitar duplicados. */}
         {!showProducts && (selectedProduct && !selectedCategory) && (
           <div className="breadcrumb-categorias">
             <span className="breadcrumb-link" onClick={() => setSelectedProduct(null)} style={{cursor:'pointer', color:'#FFD700'}}>buscador</span>
-            <span> &gt; </span>
+            <span className="breadcrumb-sep"> &gt; </span>
             <span className="breadcrumb-actual">{selectedProduct.name}</span>
           </div>
         )}
@@ -239,23 +244,39 @@ function App() {
         {showProducts && (
           selectedProduct ? (
             <>
+              {/* Breadcrumb para producto seleccionado desde marca o categoría */}
               <div className="breadcrumb-categorias">
                 <span
                   className="breadcrumb-link"
                   onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
-                  style={{cursor:'pointer', color:'#FFD700'}}
-                >
+                  style={{cursor:'pointer', color:'#FFD700'}}>
                   inicio
                 </span>
-                <span> &gt; </span>
-                <span
-                  className="breadcrumb-link"
-                  onClick={() => setSelectedProduct(null)}
-                  style={{cursor:'pointer', color:'#FFD700'}}
-                >
-                  Star Nutrition
-                </span>
-                <span> &gt; </span>
+                {selectedCategory === 'gold' || selectedCategory === 'star nutrition' || selectedCategory === 'xtrenght' || selectedCategory === 'gentech' || selectedCategory === 'pitbull' ? (
+                  <>
+                    <span className="breadcrumb-sep"> &gt; </span>
+                    <span
+                      className="breadcrumb-link"
+                      onClick={() => setSelectedProduct(null)}
+                      style={{cursor:'pointer', color:'#FFD700'}}>
+                      {selectedCategory === 'gold' ? 'Gold' : selectedCategory === 'star nutrition' ? 'Star Nutrition' : selectedCategory === 'xtrenght' ? 'Xtrenght' : selectedCategory === 'gentech' ? 'Gentech' : 'Pitbull'}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <span className="breadcrumb-sep"> &gt; </span>
+                    <span
+                      className="breadcrumb-link"
+                      onClick={() => setSelectedProduct(null)}
+                      style={{cursor:'pointer', color:'#FFD700'}}>
+                      {selectedCategory === 'creatina' && 'Creatina'}
+                      {selectedCategory === 'performance' && 'Performance'}
+                      {selectedCategory === 'proteina' && 'Proteína'}
+                      {selectedCategory === 'vitaminas' && 'Vitaminas'}
+                    </span>
+                  </>
+                )}
+                <span className="breadcrumb-sep"> &gt; </span>
                 <span className="breadcrumb-actual">{selectedProduct.name}</span>
               </div>
               <ProductDetail
@@ -270,12 +291,11 @@ function App() {
                 <span
                   className="breadcrumb-link"
                   onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
-                  style={{cursor:'pointer', color:'#FFD700'}}
-                >
+                  style={{cursor:'pointer', color:'#FFD700'}}>
                   inicio
                 </span>
-                <span> &gt; </span>
-                <span className="breadcrumb-actual">Star Nutrition</span>
+                <span className="breadcrumb-sep"> &gt; </span>
+                <span className="breadcrumb-actual">{selectedCategory === 'gold' ? 'Gold' : selectedCategory === 'xtrenght' ? 'Xtrenght' : selectedCategory === 'gentech' ? 'Gentech' : selectedCategory === 'pitbull' ? 'Pitbull' : 'Star Nutrition'}</span>
               </div>
               <section className="products-page">
                 <ProductList

@@ -3,12 +3,26 @@ import { products, productsByCategory } from '../data/products'
 import ProductCard from './ProductCard'
 import '../styles/ProductList.css'
 
+
 function ProductList({ onSelectProduct, selectedCategory }) {
   const cardsRef = useRef({})
 
-  const productsToShow = selectedCategory
-    ? productsByCategory[selectedCategory] || []
-    : products
+  let productsToShow = products
+  if (selectedCategory) {
+    if (selectedCategory === 'gold') {
+      productsToShow = products.filter(p => p.brand && p.brand.toLowerCase() === 'gold')
+    } else if (selectedCategory === 'xtrenght') {
+      productsToShow = products.filter(p => p.brand && p.brand.toLowerCase() === 'xtrenght')
+    } else if (selectedCategory === 'gentech') {
+      productsToShow = products.filter(p => p.brand && p.brand.toLowerCase() === 'gentech')
+    } else if (selectedCategory === 'pitbull') {
+      productsToShow = products.filter(p => p.brand && p.brand.toLowerCase() === 'pitbull')
+    } else if (productsByCategory[selectedCategory]) {
+      productsToShow = productsByCategory[selectedCategory]
+    } else {
+      productsToShow = []
+    }
+  }
 
   return (
     <section className="product-list">

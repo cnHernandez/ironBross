@@ -140,7 +140,7 @@
 .cart-item-info h4 {
   margin: 0 0 0.25rem 0;
   font-size: 1rem;
-  color: #ffffff;
+  color: #FFD700;
 }
 
 .cart-item-price {
@@ -223,7 +223,7 @@
 
 .total-label {
   font-weight: bold;
-  color: #ffffff;
+  color: #FFD700;
 }
 
 .total-amount {

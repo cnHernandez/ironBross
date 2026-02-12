@@ -17,7 +17,7 @@ function ProductCard({ product, onSelect, refEl }) {
 
   return (
     <div
-      className="product-card"
+      className={`product-card ${product.brand && product.brand.toLowerCase() === 'pitbull' ? 'pitbull' : ''}`}
       ref={refEl}
       id={`product-card-${product.id}`}
       onClick={() => onSelect?.(product)}

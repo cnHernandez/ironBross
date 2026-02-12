@@ -63,6 +63,18 @@ function App() {
     return titleCase(key)
   }
 
+  const brandKeyFromName = (name) => {
+    if (!name) return null
+    const n = String(name).toLowerCase()
+    if (n.includes('gold')) return 'gold'
+    if (n.includes('xtrenght') || n.includes('xtrenght')) return 'xtrenght'
+    if (n.includes('gentech')) return 'gentech'
+    if (n.includes('pitbull')) return 'pitbull'
+    // Star Nutrition is represented by null (showProducts + null => Star Nutrition)
+    if (n.includes('star')) return null
+    return n.replace(/\s+/g, '-')
+  }
+
   const addToCart = (product) => {
     const existingItem = cartItems.find(item => item.id === product.id)
     
@@ -269,7 +281,17 @@ function App() {
             <span className="breadcrumb-sep"> &gt; </span>
             {selectedProduct.brand ? (
               <>
-                <span className="breadcrumb-link" style={{color:'#FFD700'}}>{upperCase(getCategoryOrBrandLabel(selectedProduct.brand))}</span>
+                <span
+                  className="breadcrumb-link"
+                  style={{cursor:'pointer', color:'#FFD700'}}
+                  onClick={() => {
+                    setShowProducts(true)
+                    setSelectedCategory(brandKeyFromName(selectedProduct.brand))
+                    setSelectedProduct(null)
+                  }}
+                >
+                  {upperCase(getCategoryOrBrandLabel(selectedProduct.brand))}
+                </span>
                 <span className="breadcrumb-sep"> &gt; </span>
               </>
             ) : null}

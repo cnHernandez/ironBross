@@ -1,17 +1,19 @@
+const slugify = (text = '') => {
+  return text
+    .toString()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // eliminar diacríticos
+    .toLowerCase()
+    .trim()
+    .replace(/&/g, '-y-')
+    .replace(/[^a-z0-9]+/g, '-') // todo no alfanumérico → guión
+    .replace(/^-+|-+$/g, '')
+}
+
 const normalizeCategory = (category = '') => {
-  const upper = category.toUpperCase()
-  if (upper.includes('CREATINA')) return 'creatina'
-  if (upper.includes('PRE') && upper.includes('ENTRENO')) return 'performance'
-  if (upper.includes('PERFORMANCE')) return 'performance'
-  if (upper.includes('AMINOACIDO')) return 'performance'
-  if (upper.includes('QUEMADOR')) return 'performance'
-  if (upper.includes('BEBIDAS ISOTONICAS')) return 'performance'
-  if (upper.includes('PROTEIN')) return 'proteina'
-  if (upper.includes('GANADOR')) return 'proteina'
-  if (upper.includes('VITAMIN')) return 'vitaminas'
-  if (upper.includes('MAGNESIO') || upper.includes('OMEGA')) return 'vitaminas'
-  if (upper.includes('COLAGENO') || upper.includes('RESVERATROL')) return 'vitaminas'
-  return 'performance'
+  const cat = String(category || '').trim()
+  if (!cat) return 'sin-categoria'
+  return slugify(cat)
 }
 
 const normalizeImage = (url = '') => {
@@ -906,7 +908,7 @@ rawProducts.push(
   {
     id: 84,
     name: 'PROTEIN BAR IRON BAR 12U',
-    category: 'BARRAS PROTEICAS',
+    category: 'PROTEINAS Y GANADORES DE PESO',
     description: `La Protein Crisp Bar de INTEGRALMEDICA es una deliciosa barrita proteica con 12g de proteína de alta calidad y solo 2g de azúcar, ideal para complementar tu nutrición deportiva en cualquier momento del día. Esta caja incluye 12 unidades para que nunca te falte tu snack proteico favorito.
 Beneficios:
 • 12g de proteína de alta calidad por porción
@@ -925,7 +927,7 @@ Modo de uso: Consumir como snack entre comidas o después del entrenamiento para
   {
     id: 85,
     name: 'PROTEIN BAR IRON BAR 20U',
-    category: 'BARRAS PROTEICAS',
+    category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Iron Bar de GENTECH es una barra proteica de alta calidad, perfecta como snack nutritivo o post-entreno, con deliciosos sabores y textura irresistible.
 Beneficios:
 • Alto contenido proteico
@@ -944,7 +946,7 @@ Modo de uso: Consumir 1 barra como snack entre comidas o después del entrenamie
   {
     id: 86,
     name: 'PROTEIN BAR LOW CARB 10',
-    category: 'BARRAS PROTEICAS',
+    category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Low Carb Protein Bar de GENTECH es la elección perfecta para quienes buscan un snack proteico delicioso sin comprometer sus objetivos de definición y control de peso.
 Beneficios:
 • Menos de 5g de carbohidratos por barra

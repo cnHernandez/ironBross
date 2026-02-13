@@ -5,10 +5,12 @@ import ProductList from './components/ProductList'
 import ProductDetail from './components/ProductDetail'
 import './styles/App.css'
 import bannerIron from './assets/bannerIron.jpeg'
-import creatinaCategoria from './assets/creatinaCategoria.png'
-import performanceCategoria from './assets/performanceCategoria.png'
-import proteinaCategoria from './assets/proteinaCategoria.png'
-import vitaminaCategoria from './assets/vitaminaCategoria.png'
+import categoriaCreatina from './assets/categoriaCreatina.png'
+import categoriaPreentreno from './assets/categoriaPreentreno.png'
+import categoriaProteina from './assets/categoriaProteina.png'
+import categoriaMagnesio from './assets/categoriaMagnesio.png'
+import categoriaAmino from './assets/categoriaAmino.png'
+import categoriaColageno from './assets/categoriaColageno.png'
 import enaAmarillo from './assets/enaAmarillo.png'
 import starNutrition from './assets/starNutrition.png'
 import xtreinght from './assets/xtreinght.png'
@@ -24,6 +26,7 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState(null)
   const [showProducts, setShowProducts] = useState(false)
+  const [viewType, setViewType] = useState(null) // 'brand' | 'category' | null
 
   const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
@@ -53,9 +56,12 @@ function App() {
       'star nutrition': 'Star Nutrition'
     }
     const categories = {
-      'creatina': 'Creatina',
-      'performance': 'Performance',
-      'proteina': 'Proteína',
+      'creatinas': 'Creatinas',
+      'pre-entrenos': 'Pre Entrenos',
+      'aminoacidos': 'Aminoácidos',
+      'proteinas-y-ganadores-de-peso': 'Proteínas y Ganadores',
+      'magnesio-y-omega-3': 'Magnesio y Omega 3',
+      'colagenos-y-resveratrol': 'Colágenos y Resveratrol',
       'vitaminas': 'Vitaminas'
     }
     if (brands[k]) return brands[k]
@@ -151,9 +157,10 @@ function App() {
         onProductSelect={(product) => {
           setSelectedCategory(null)
           setShowProducts(false)
+            setViewType(null)
           handleSelectProduct(product)
         }}
-        onLogoClick={() => { setSelectedCategory(null); setSelectedProduct(null); setShowProducts(false); }}
+          onLogoClick={() => { setSelectedCategory(null); setSelectedProduct(null); setShowProducts(false); setViewType(null); }}
       />
       {/* Sección de título pegada al header */}
       {(!showProducts && !selectedCategory && !selectedProduct) && (
@@ -170,14 +177,30 @@ function App() {
         {(!showProducts && !selectedCategory && !selectedProduct) && (
           <>
           <section className="categorias-principales">
-            <div className="categorias-grid">
+              <div className="categorias-grid">
               <div className="categoria-row">
-                <img src={creatinaCategoria} alt="Creatina" className="categoria-img" style={{cursor:'pointer'}} onClick={() => { setSelectedCategory('creatina'); setSelectedProduct(null); }} />
-                <img src={performanceCategoria} alt="Performance" className="categoria-img" style={{cursor:'pointer'}} onClick={() => { setSelectedCategory('performance'); setSelectedProduct(null); }} />
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('aminoacidos'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaAmino} alt="Aminoácidos" className="categoria-img" />
+                </div>
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('creatinas'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaCreatina} alt="Creatina" className="categoria-img" />
+                </div>
               </div>
               <div className="categoria-row">
-                <img src={proteinaCategoria} alt="Proteína" className="categoria-img" style={{cursor:'pointer'}} onClick={() => { setSelectedCategory('proteina'); setSelectedProduct(null); }} />
-                <img src={vitaminaCategoria} alt="Vitaminas" className="categoria-img" style={{cursor:'pointer'}} onClick={() => { setSelectedCategory('vitaminas'); setSelectedProduct(null); }} />
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('pre-entrenos'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaPreentreno} alt="Pre Entrenos" className="categoria-img" />
+                </div>
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('proteinas-y-ganadores-de-peso'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaProteina} alt="Proteína" className="categoria-img" />
+                </div>
+              </div>
+              <div className="categoria-row">
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('colagenos-y-resveratrol'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaColageno} alt="Colágeno" className="categoria-img" />
+                </div>
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('magnesio-y-omega-3'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaMagnesio} alt="Magnesio y Omega 3" className="categoria-img" />
+                </div>
               </div>
             </div>
           </section>
@@ -194,6 +217,7 @@ function App() {
                   onClick={() => {
                     setShowProducts(true)
                     setSelectedCategory(null)
+                    setViewType('brand')
                     setSelectedProduct(null)
                   }}
                 />
@@ -205,6 +229,7 @@ function App() {
                   onClick={() => {
                     setShowProducts(true)
                     setSelectedCategory('gold')
+                    setViewType('brand')
                     setSelectedProduct(null)
                   }}
                 />
@@ -216,6 +241,7 @@ function App() {
                   onClick={() => {
                     setShowProducts(true)
                     setSelectedCategory('xtrenght')
+                    setViewType('brand')
                     setSelectedProduct(null)
                   }}
                 />
@@ -226,6 +252,7 @@ function App() {
                   onClick={() => {
                     setShowProducts(true)
                     setSelectedCategory('pitbull')
+                    setViewType('brand')
                     setSelectedProduct(null)
                   }}
                 >
@@ -239,6 +266,7 @@ function App() {
                   onClick={() => {
                     setShowProducts(true)
                     setSelectedCategory('gentech')
+                    setViewType('brand')
                     setSelectedProduct(null)
                   }}
                 />
@@ -287,6 +315,7 @@ function App() {
                   onClick={() => {
                     setShowProducts(true)
                     setSelectedCategory(brandKeyFromName(selectedProduct.brand))
+                    setViewType('brand')
                     setSelectedProduct(null)
                   }}
                 >
@@ -312,9 +341,9 @@ function App() {
               <div className="breadcrumb-categorias">
                 <span
                   className="breadcrumb-link"
-                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
+                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); setViewType(null); }}
                   style={{cursor:'pointer', color:'#FFD700'}}>
-                  {upperCase('inicio')}
+                  {upperCase(viewType === 'brand' ? 'marca' : 'categoria')}
                 </span>
                 {(selectedCategory === null) || selectedCategory === 'gold' || selectedCategory === 'star nutrition' || selectedCategory === 'xtrenght' || selectedCategory === 'gentech' || selectedCategory === 'pitbull' ? (
                   <>
@@ -351,9 +380,9 @@ function App() {
               <div className="breadcrumb-categorias">
                 <span
                   className="breadcrumb-link"
-                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); }}
+                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); setViewType(null); }}
                   style={{cursor:'pointer', color:'#FFD700'}}>
-                  {upperCase('inicio')}
+                  {upperCase(viewType === 'brand' ? 'marca' : 'categoria')}
                 </span>
                 <span className="breadcrumb-sep"> &gt; </span>
                 <span className="breadcrumb-actual">{upperCase(getCategoryOrBrandLabel(selectedCategory) || getCategoryOrBrandLabel('star nutrition'))}</span>

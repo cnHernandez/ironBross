@@ -265,20 +265,138 @@
   }
 }
 
+/* Ocultar filtros en mobile para evitar UI saturada */
+@media (max-width: 480px) {
+  /* Ocultar filtros inline en mobile; usaremos el botón/modal */
+  .brand-filters {
+    display: none;
+  }
+  .filter-button {
+    display: block;
+    margin: 0.6rem auto 1rem auto;
+    background: #FFD700;
+    color: #111;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .filter-button:active { transform: translateY(1px); }
+
+  /* Modal styles */
+  .filter-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 1rem; /* ensure spacing on mobile */
+  }
+  .filter-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 2000;
+  }
+  .filter-modal__content {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    background: #111;
+    color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 2001;
+    margin: auto; /* center inside flex container reliably */
+  }
+  .filter-modal__close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .filter-modal__title {
+    margin: 0 0 0.6rem 0;
+    color: #FFD700;
+    font-weight: 700;
+  }
+  .filter-modal__options {
+    display: grid;
+    grid-template-columns: 1fr; /* single column to fit mobile */
+    gap: 0.6rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    justify-items: center;
+  }
+
+  /* hide header/close inside modal (UX request) */
+  .filter-modal__close { display: none; }
+  .filter-modal__title { display: none; }
+
+  .filter-modal { overflow-x: hidden; }
+  .filter-modal__content { padding-left: 1rem; padding-right: 1rem; }
+  .filter-modal__options .brand-filter { width: 100%; justify-content: center; }
+}
+
+/* Desktop: show filter button, hide inline filters to avoid duplication */
+@media (min-width: 769px) {
+  .brand-filters {
+    display: none;
+  }
+  .filter-button {
+    display: inline-block;
+    background: #FFD700;
+    color: #111;
+    border: none;
+    padding: 0.55rem 1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .products-page {
+    position: relative;
+  }
+  /* approximate alignment with breadcrumb: place button to the right, slightly above product list */
+  .products-page .filter-button {
+    position: absolute;
+    right: 0;
+    top: -56px;
+  }
+}
+
 /* Mejoras responsive para filtros (radio buttons) */
 @media (max-width: 768px) {
   .brand-filters {
     padding: 0 0.5rem;
   }
   .brand-filters__options {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.6rem;
+    align-items: start;
+    justify-items: stretch;
+    margin-top: 0.5rem;
   }
   .brand-filter {
-    flex: 0 0 calc(50% - 0.6rem);
+    display: flex;
+    align-items: center;
     justify-content: center;
     padding: 0.5rem 0.6rem;
     box-sizing: border-box;
+    width: 100%;
   }
   .brand-filter span {
     display: block;
@@ -290,8 +408,13 @@
 }
 
 @media (max-width: 420px) {
+  .brand-filters__options {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .brand-filter {
-    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.45rem 0.6rem;
     gap: 0.25rem;
     flex-direction: column;
@@ -300,3 +423,48 @@
     margin-bottom: 0.4rem;
   }
 }
+
+/* Global modal styles (apply regardless of viewport) to ensure centering */
+.filter-modal {
+  position: fixed !important;
+  inset: 0;
+  z-index: 9999;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1rem;
+}
+.filter-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9998;
+}
+.filter-modal__content {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 9999;
+  margin: auto;
+}
+.filter-modal__options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  justify-items: center;
+}
+.filter-modal__options .brand-filter { width: 100%; justify-content: center; }
+

@@ -27,6 +27,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState(null)
   const [showProducts, setShowProducts] = useState(false)
   const [viewType, setViewType] = useState(null) // 'brand' | 'category' | null
+  const [activeFilter, setActiveFilter] = useState(null)
 
   const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
@@ -171,6 +172,28 @@ function App() {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
     
     window.open(whatsappUrl, '_blank')
+  }
+
+  // Breadcrumb helpers
+  const rootLabelUpper = upperCase(viewType === 'brand' ? 'marca' : 'categoria')
+
+  const computeBreadcrumbParts = () => {
+    let categoryLabel = ''
+    let brandLabel = ''
+
+    if (viewType === 'category') {
+      categoryLabel = getCategoryOrBrandLabel(selectedCategory)
+      if (activeFilter && activeFilter.type === 'brand') brandLabel = getCategoryOrBrandLabel(activeFilter.key)
+    } else if (viewType === 'brand') {
+      // brand view: selectedCategory might hold a brand key (except for Star Nutrition where it's null)
+      if (selectedCategory) brandLabel = getCategoryOrBrandLabel(selectedCategory)
+      else if (activeFilter && activeFilter.type === 'brand') brandLabel = getCategoryOrBrandLabel(activeFilter.key)
+      else brandLabel = getCategoryOrBrandLabel('star nutrition')
+
+      if (activeFilter && activeFilter.type === 'category') categoryLabel = getCategoryOrBrandLabel(activeFilter.key)
+    }
+
+    return { categoryLabel, brandLabel }
   }
 
   return (
@@ -369,68 +392,97 @@ function App() {
             onBack={() => setSelectedProduct(null)}
           />
         )}
-        {showProducts && (
-          selectedProduct ? (
+        {showProducts && (() => {
+          const { categoryLabel, brandLabel } = computeBreadcrumbParts()
+          if (selectedProduct) {
+            return (
+              <>
+                <div className="breadcrumb-categorias">
+                  <span
+                    className="breadcrumb-link"
+                    onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); setViewType(null); setActiveFilter(null); }}
+                    style={{cursor:'pointer', color:'#FFD700'}}>
+                    {rootLabelUpper}
+                  </span>
+                  {viewType === 'category' ? (
+                    <>
+                      <span className="breadcrumb-sep"> &gt; </span>
+                      <span className="breadcrumb-link" style={{cursor:'pointer', color:'#FFD700'}} onClick={() => { setSelectedProduct(null) }}>{upperCase(categoryLabel)}</span>
+                      {brandLabel && (
+                        <>
+                          <span className="breadcrumb-sep"> &gt; </span>
+                          <span className="breadcrumb-link" style={{cursor:'pointer', color:'#FFD700'}} onClick={() => { setSelectedProduct(null) }}>{upperCase(brandLabel)}</span>
+                        </>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      <span className="breadcrumb-sep"> &gt; </span>
+                      <span className="breadcrumb-link" style={{cursor:'pointer', color:'#FFD700'}} onClick={() => { setSelectedProduct(null) }}>{upperCase(brandLabel)}</span>
+                      {categoryLabel && (
+                        <>
+                          <span className="breadcrumb-sep"> &gt; </span>
+                          <span className="breadcrumb-link" style={{cursor:'pointer', color:'#FFD700'}} onClick={() => { setSelectedProduct(null) }}>{upperCase(categoryLabel)}</span>
+                        </>
+                      )}
+                    </>
+                  )}
+                  <span className="breadcrumb-sep"> &gt; </span>
+                  <span className="breadcrumb-actual">{upperCase(selectedProduct.name)}</span>
+                </div>
+                <ProductDetail
+                  product={selectedProduct}
+                  onAddToCart={addToCart}
+                  onBack={() => setSelectedProduct(null)}
+                />
+              </>
+            )
+          }
+
+          return (
             <>
-              {/* Breadcrumb para producto seleccionado desde marca o categoría */}
               <div className="breadcrumb-categorias">
                 <span
                   className="breadcrumb-link"
-                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); setViewType(null); }}
+                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); setViewType(null); setActiveFilter(null); }}
                   style={{cursor:'pointer', color:'#FFD700'}}>
-                  {upperCase(viewType === 'brand' ? 'marca' : 'categoria')}
+                  {rootLabelUpper}
                 </span>
-                {(selectedCategory === null) || selectedCategory === 'gold' || selectedCategory === 'star nutrition' || selectedCategory === 'xtrenght' || selectedCategory === 'gentech' || selectedCategory === 'pitbull' ? (
+                {viewType === 'category' ? (
                   <>
                     <span className="breadcrumb-sep"> &gt; </span>
-                    <span
-                          className="breadcrumb-link"
-                          onClick={() => setSelectedProduct(null)}
-                          style={{cursor:'pointer', color:'#FFD700'}}>
-                      {upperCase(getCategoryOrBrandLabel(selectedCategory) || getCategoryOrBrandLabel('star nutrition'))}
-                        </span>
+                    <span className="breadcrumb-actual">{upperCase(categoryLabel)}</span>
+                    {brandLabel && (
+                      <>
+                        <span className="breadcrumb-sep"> &gt; </span>
+                        <span className="breadcrumb-actual">{upperCase(brandLabel)}</span>
+                      </>
+                    )}
                   </>
                 ) : (
                   <>
                     <span className="breadcrumb-sep"> &gt; </span>
-                    <span
-                      className="breadcrumb-link"
-                      onClick={() => setSelectedProduct(null)}
-                      style={{cursor:'pointer', color:'#FFD700'}}>
-                      {upperCase(getCategoryOrBrandLabel(selectedCategory))}
-                    </span>
+                    <span className="breadcrumb-actual">{upperCase(brandLabel)}</span>
+                    {categoryLabel && (
+                      <>
+                        <span className="breadcrumb-sep"> &gt; </span>
+                        <span className="breadcrumb-actual">{upperCase(categoryLabel)}</span>
+                      </>
+                    )}
                   </>
                 )}
-                <span className="breadcrumb-sep"> &gt; </span>
-                <span className="breadcrumb-actual">{upperCase(selectedProduct.name)}</span>
-              </div>
-              <ProductDetail
-                product={selectedProduct}
-                onAddToCart={addToCart}
-                onBack={() => setSelectedProduct(null)}
-              />
-            </>
-          ) : (
-            <>
-              <div className="breadcrumb-categorias">
-                <span
-                  className="breadcrumb-link"
-                  onClick={() => { setShowProducts(false); setSelectedProduct(null); setSelectedCategory(null); setViewType(null); }}
-                  style={{cursor:'pointer', color:'#FFD700'}}>
-                  {upperCase(viewType === 'brand' ? 'marca' : 'categoria')}
-                </span>
-                <span className="breadcrumb-sep"> &gt; </span>
-                <span className="breadcrumb-actual">{upperCase(getCategoryOrBrandLabel(selectedCategory) || getCategoryOrBrandLabel('star nutrition'))}</span>
               </div>
               <section className="products-page">
                 <ProductList
                   onSelectProduct={handleSelectProduct}
                   selectedCategory={selectedCategory}
+                  viewType={viewType}
+                  onSetFilter={(f) => setActiveFilter(f)}
                 />
               </section>
             </>
           )
-        )}
+        })()}
         {showCart && (
           <Cart
             items={cartItems}

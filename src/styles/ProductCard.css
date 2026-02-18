@@ -59,6 +59,8 @@
   font-size: 1.3rem;
   margin: 0 0 0.5rem 0;
   color: #FFD700;
+  text-align: center;
+  width: 100%;
 }
 
 .product-price {
@@ -66,6 +68,8 @@
   font-weight: bold;
   color: #FFD700;
   margin-top: auto;
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 768px) {

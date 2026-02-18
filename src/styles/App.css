@@ -71,8 +71,8 @@
   background: #FFD700;
   color: #111;
   padding: 1.4rem 0;
-  border-top: 1.5px solid #e6c200;
-  border-bottom: 1.5px solid #e6c200;
+  border-top: 1.5px solid rgba(255,215,0,0.12);
+  border-bottom: 1.5px solid rgba(255,215,0,0.12);
 }
 .marcas-strip {
   display: flex;
@@ -83,11 +83,15 @@
   max-width: 1200px;
   padding: 0 1rem;
   text-align: center;
+  flex-direction: column;
 }
 .marcas-label {
   color: #111;
-  font-weight: 800;
-  letter-spacing: 0.5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3rem;
 }
 .marcas-logos {
   display: flex;
@@ -398,6 +402,39 @@
   }
   .categoria-row {
     gap: 0;
+  }
+}
+
+/* Responsive: asegurar que las imágenes de categorías sean 100% responsive y stack en mobile */
+@media (max-width: 768px) {
+  .categorias-grid {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .categoria-row {
+    flex-direction: column;
+  }
+  .categoria-tile {
+    flex: 1 1 100%;
+    width: 100%;
+    height: 260px;
+  }
+  .categoria-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .categoria-tile {
+    height: 200px;
+  }
+  .categoria-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 @media (max-width: 600px) {

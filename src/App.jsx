@@ -49,6 +49,7 @@ function App() {
     if (!key) return ''
     const k = String(key).toLowerCase()
     const brands = {
+      'ena': 'ENA',
       'gold': 'Gold',
       'xtrenght': 'Xtrenght',
       'gentech': 'Gentech',
@@ -76,6 +77,7 @@ function App() {
     if (n.includes('xtrenght') || n.includes('xtrenght')) return 'xtrenght'
     if (n.includes('gentech')) return 'gentech'
     if (n.includes('pitbull')) return 'pitbull'
+    if (n.includes('ena')) return 'ena'
     // Star Nutrition is represented by null (showProducts + null => Star Nutrition)
     if (n.includes('star')) return null
     return n.replace(/\s+/g, '-')
@@ -230,7 +232,18 @@ function App() {
             <div className="marcas-strip">
               <div className="marcas-label">NUESTRAS MARCAS:</div>
               <div className="marcas-logos">
-                <img src={enaAmarillo} alt="ENA" className="marca-logo" />
+                <img
+                  src={enaAmarillo}
+                  alt="ENA"
+                  className="marca-logo"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    setShowProducts(true)
+                    setSelectedCategory('ena')
+                    setViewType('brand')
+                    setSelectedProduct(null)
+                  }}
+                />
                 <img
                   src={starNutrition}
                   alt="Star Nutrition"

@@ -903,6 +903,801 @@ rawProducts.push(
   }
 )
 
+// Productos ENA
+rawProducts.push(
+  {
+    id: 108,
+    name: 'AMINO 4500 150TABS',
+    category: 'AMINOACIDOS',
+    description: `Amino 4500 de ENA es un completo suplemento que proporciona aminoácidos esenciales en una concentración alta de 4500mg por tableta, ideal para optimizar la recuperación muscular y promover el crecimiento de tejido magro.
+  
+  Beneficios:
+  
+  • Alta concentración de aminoácidos por tableta
+  • Favorece la síntesis proteica y el desarrollo muscular
+  • Acelera la recuperación post-entrenamiento
+  • Previene el catabolismo muscular
+  • Mejora el rendimiento deportivo
+  • Formato práctico en tabletas
+  
+  Disponible en el formato: 150 Tabletas
+  
+  Contenido: 150 tabletas
+  
+  Modo de uso: Tomar 3 tabletas antes del entrenamiento y 3 tabletas después. En días de descanso, tomar 3 tabletas en ayunas y 3 tabletas antes de dormir para optimizar la recuperación.`,
+    price: 2275,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771433974/amino_4500_150tab-1-2afbc108c0247c383717527639545279-1024-1024_ufgux1.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 109,
+    name: 'ENA Truemade Amino Full 146 GRS',
+    category: 'AMINOACIDOS',
+    description: `Truemade Amino Full de ENA es una completa fórmula de aminoácidos esenciales y BCAAs de máxima pureza, científicamente dosificada para optimizar la recuperación muscular, prevenir el catabolismo y potenciar el rendimiento durante el entrenamiento.
+  
+  Beneficios:
+  
+  • Fórmula avanzada con espectro completo de aminoácidos esenciales
+  • Proporciona BCAAs en proporción óptima para máxima efectividad
+  • Previene la degradación muscular durante ejercicios intensos
+  • Acelera la recuperación y reduce el dolor muscular post-entrenamiento
+  • Aumenta la resistencia y retrasa la fatiga durante el ejercicio
+  • Fácil disolución, rápida absorción y alta biodisponibilidad
+  
+  Disponible en el sabor: Neutro
+  
+  Contenido: 146 gramos
+  
+  Modo de uso: Mezclar 1 medida (5g) con 200ml de agua. Para prevenir el catabolismo, consumir durante el entrenamiento para optimizar la recuperación, consumir inmediatamente después del mismo para aumentar la disponibilidad de aminoácidos, tomar entre comidas. Ideal para deportistas que realizan entrenamientos intensos o de larga duración.`,
+    price: 1716,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771433987/truemade_amino_full_lemonade-146gr-1-3770dac0bc29fa905017527993887847-1024-1024_a0wz5o.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 110,
+    name: 'BCAA 12:1:1 COMP 120CAPS',
+    category: 'AMINOACIDOS',
+    description: `BCAA 12:1:1 de ENA ofrece una proporción avanzada de aminoácidos de cadena ramificada, con enfoque en la leucina para maximizar la síntesis proteica, el desarrollo muscular y la recuperación.
+  
+  Beneficios:
+  
+  • Proporción avanzada 12:1:1 con alta concentración de leucina
+  • Maximiza la síntesis proteica muscular
+  • Previene el catabolismo durante entrenamientos intensos
+  • Acelera la recuperación post-entrenamiento
+  • Preserva la masa muscular durante dietas de definición
+  • Formato práctico en cápsulas
+  
+  Disponible en el formato: 120 Cápsulas
+  
+  Contenido: 120 cápsulas
+  
+  Modo de uso: Tomar 4 cápsulas antes del entrenamiento y 4 cápsulas después. En días de descanso, tomar 4 cápsulas en ayunas para mantener un estado anabólico y preservar la masa muscular.`,
+    price: 1365,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434003/bcaa-12-1-1-1-a34bc520c00201fb2617531114388193-1024-1024_yw1k0i.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 111,
+    name: 'BCAA 2:1:1 COMP 90CAPS',
+    category: 'AMINOACIDOS',
+    description: `BCAA 2:1:1 de ENA proporciona la proporción clásica de aminoácidos de cadena ramificada, científicamente probada para mejorar la recuperación, prevenir el catabolismo y potenciar el rendimiento deportivo.
+  
+  Beneficios:
+  
+  • Proporción clásica 2:1:1 de leucina, isoleucina y valina
+  • Previene la degradación muscular durante el ejercicio
+  • Acelera la recuperación post-entrenamiento
+  • Reduce el dolor muscular
+  • Mejora la resistencia durante ejercicios prolongados
+  • Formato práctico en cápsulas
+  
+  Disponible en el formato: 90 Cápsulas
+  
+  Contenido: 90 cápsulas
+  
+  Modo de uso: Tomar 3 cápsulas antes del entrenamiento y 3 cápsulas después. En días de descanso, tomar 3 cápsulas en cualquier momento del día para ayudar a la recuperación y preservación muscular.`,
+    price: 1261,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434013/bcaa_211-90caps-b5e0ef8cab2a6ac20817531121486810-1024-1024_jb5lqz.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 112,
+    name: 'BETA ALANINE 60 TABS',
+    category: 'AMINOACIDOS',
+    description: `Beta Alanine de ENA es un suplemento avanzado que potencia tu rendimiento en entrenamientos de alta intensidad, prolongando el tiempo hasta la fatiga mediante la optimización del buffer muscular.
+  
+  Beneficios:
+  
+  • Aumenta los niveles de carnosina muscular
+  • Potencia el rendimiento en ejercicios de alta intensidad
+  • Retrasa la aparición de la fatiga muscular
+  • Mejora la capacidad anaeróbica
+  • Permite entrenamientos más intensos y prolongados
+  • Formato en prácticas tabletas
+  
+  Disponible en el formato: 60 Tabletas
+  
+  Contenido: 60 tabletas
+  
+  Modo de uso: Tomar 2 tabletas al día, preferentemente 30 minutos antes del entrenamiento. Para resultados óptimos, mantener el consumo constante para saturar los niveles de carnosina muscular.`,
+    price: 10660,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434147/beta_alanine-60-tablst-7a64008569a365895317527800801310-1024-1024_no76f4.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 113,
+    name: 'GLUTAMINA 150GRS',
+    category: 'AMINOACIDOS',
+    description: `Glutamina Micronizada de ENA proporciona el aminoácido más abundante en el tejido muscular, fundamental para la recuperación, salud intestinal y fortalecimiento del sistema inmunológico, especialmente en periodos de entrenamiento intenso.
+  
+  Beneficios:
+  
+  • Acelera la recuperación muscular post-entrenamiento
+  • Previene el catabolismo muscular
+  • Fortalece el sistema inmunológico
+  • Mejora la salud intestinal
+  • Micronizada para máxima absorción
+  • 100% pura y libre de aditivos
+  
+  Disponible en el sabor: Neutro
+  
+  Contenido: 150 gramos
+  
+  Modo de uso: Mezclar 5g (1 cucharada) con agua o jugo y consumir preferentemente después del entrenamiento o antes de dormir. En periodos de entrenamiento intenso, puede dividirse en 2 tomas diarias.`,
+    price: 16120,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434166/glutamine_micronized-150g-1-4b11a69f11f0f2428517525123104211-1024-1024_khftfh.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 114,
+    name: 'RELOAD BCAA 220GRS',
+    category: 'AMINOACIDOS',
+    description: `Reload de ENA es un completo suplemento intra-entrenamiento diseñado para mantener niveles óptimos de energía, hidratación y nutrientes durante todo tu entrenamiento, permitiéndote rendir al máximo por más tiempo.
+  
+  Beneficios:
+  
+  • Mantiene la energía durante todo el entrenamiento
+  • Previene la deshidratación y los calambres
+  • Favorece la recuperación muscular durante el ejercicio
+  • Reabastece electrolitos y nutrientes clave
+  • Retrasa la fatiga muscular
+  • Mejora el rendimiento en entrenamientos prolongados
+  
+  Disponible en los deliciosos sabores: Fruit Punch, Lemonade
+  
+  Contenido: 220 gramos
+  
+  Modo de uso: Mezclar 1 medida (11g) en 500-750ml de agua y consumir durante el entrenamiento, especialmente en sesiones de más de 45 minutos de duración o de alta intensidad.`,
+    price: 18980,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434175/reload_lemonade-1-638276098e2f657e7f17525085367503-1024-1024_tnao1f.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 115,
+    name: 'COLAGENO SPORT 407GRS',
+    category: 'COLAGENOS Y RESVERATROL',
+    description: `Colageno Sport de ENA es un suplemento diseñado específicamente para deportistas que buscan cuidar sus articulaciones y tejidos conectivos, con una fórmula potenciada con vitamina C para máxima absorción.
+  
+  Beneficios:
+  
+  • Protege y fortalece tendones, ligamentos y cartílagos
+  • Previene lesiones asociadas al desgaste deportivo
+  • Favorece la recuperación de lesiones
+  • Contiene vitamina C para potenciar la síntesis de colágeno
+  • Contribuye a la salud general de articulaciones
+  • Refrescante sabor a naranja
+  
+  Disponible en los deliciosos sabores: Naranja, Fruit Punch
+  
+  Contenido: 407 gramos
+  
+  Modo de uso: Mezclar 1 medida (13g) con 200ml de agua fría. Consumir una vez al día, preferentemente entre comidas o después del entrenamiento.`,
+    price: 26130,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434185/colagenossport-naranja-407g-1-29fa394a25b8bb507417527980679537-1024-1024_mmmhc4.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 116,
+    name: 'TM WHEY COLLAGEN 1,7LB',
+    category: 'COLAGENOS Y RESVERATROL',
+    description: `Truemade Whey Collagen de ENA es una revolucionaria fórmula que combina los beneficios de la proteína whey con colágeno hidrolizado, ofreciendo una solución integral para el desarrollo muscular y la salud de tejidos conectivos.
+  
+  Beneficios:
+  
+  • Combinación única de proteína whey y colágeno
+  • Apoya simultáneamente el desarrollo muscular y la salud articular
+  • Mejora la recuperación y previene lesiones
+  • Contribuye a la elasticidad y salud de la piel
+  • Alta biodisponibilidad de ambos componentes
+  • Delicioso sabor y fácil disolución
+  
+  Disponible en los deliciosos sabores: Chocolate, Vainilla
+  
+  Contenido: 750 gramos
+  
+  Modo de uso: Mezclar 1 medida (25g) con 200ml de agua o leche. Ideal para consumir después del entrenamiento o en cualquier momento como complemento nutricional.`,
+    price: 40950,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434198/tmwc_vainilla-1-7lb-750gr-1-c271ceda08d91266aa17527973314958-1024-1024_taw9nc.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 117,
+    name: 'CREATINA + ELECTROLITOS 302GRS',
+    category: 'CREATINAS',
+    description: `CREATINA + ELECTROLITOS es una combinación que aporta los beneficios de la creatina y optimiza la hidratación al reponer sales minerales
+  
+  Beneficios:
+  
+  • Incrementa la fuerza y potencia muscular
+  • Hidratación óptima y balance mineral
+  • Promueve el aumento de masa muscular
+  • Máxima pureza y micronización para absorción superior
+  • Retrasa la aparición de la fatiga
+  • Delicioso sabor Pink Lemonade o Blue Lemon para una toma más agradable
+  
+  Disponible en los deliciosos sabores: Pink Lemonade, Blue Lemon
+  
+  Contenido: 300 gramos
+  
+  Modo de uso: Fase de carga (opcional): 5g (1 cucharada) 4 veces al día durante 5-7 días. Fase de mantenimiento: 5g (1 cucharada) al día, preferentemente después del entrenamiento o con el desayuno en días de descanso.`,
+    price: 25090,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434209/7792981071386_ena-creatina-electrolitos-blue-lemon-293g-1-d3e3b50c8df171f78717524979973120-1024-1024_uex27h.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 118,
+    name: 'CREATINA 300GRS NEUTRO',
+    category: 'CREATINAS',
+    description: `Creatina Micronizada de ENA es un suplemento de máxima pureza que aumenta la fuerza, potencia y masa muscular, con partículas ultrafinas para una absorción superior y sin molestias digestivas.
+  
+  Beneficios:
+  
+  • Incrementa la fuerza y potencia muscular
+  • Mejora el rendimiento en ejercicios explosivos
+  • Promueve el aumento de masa muscular
+  • Máxima pureza y micronización para absorción superior
+  • Retrasa la aparición de la fatiga
+  • Delicioso sabor fruit punch para una toma más agradable
+  
+  Disponible en los deliciosos sabores: Neutro, Fruit Punch
+  
+  Contenido: 300 gramos
+  
+  Modo de uso: Fase de carga (opcional): 5g (1 cucharada) 4 veces al día durante 5-7 días. Fase de mantenimiento: 5g (1 cucharada) al día, preferentemente después del entrenamiento o con el desayuno en días de descanso.`,
+    price: 20930,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434223/crean300mono-neutro-30gr-1-bdbec4259f005c4da317527799956660-1024-1024_y0t4qz.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 119,
+    name: 'CREATINA SABORIZADA 300g',
+    category: 'CREATINAS',
+    description: `Creatina Micronizada de ENA es un suplemento de máxima pureza que aumenta la fuerza, potencia y masa muscular, con partículas ultrafinas para una absorción superior y sin molestias digestivas.
+  
+  Beneficios:
+  
+  • Incrementa la fuerza y potencia muscular
+  • Mejora el rendimiento en ejercicios explosivos
+  • Promueve el aumento de masa muscular
+  • Máxima pureza y micronización para absorción superior
+  • Retrasa la aparición de la fatiga
+  • Delicioso sabor fruit punch para una toma más agradable
+  
+  Disponible en los deliciosos sabores: Neutro, Fruit Punch
+  
+  Contenido: 300 gramos
+  
+  Modo de uso: Fase de carga (opcional): 5g (1 cucharada) 4 veces al día durante 5-7 días. Fase de mantenimiento: 5g (1 cucharada) al día, preferentemente después del entrenamiento o con el desayuno en días de descanso.`,
+    price: 27950,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434190/7792981060113-3dfc4f32e6c50a26d117478407240694-640-0_vozt4p.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 120,
+    name: 'ZMA 60CAPS',
+    category: 'HORMONALES',
+    description: `ZMA de ENA es una fórmula especializada que combina zinc, magnesio y vitamina B6 en proporciones óptimas para mejorar la recuperación, optimizar los niveles hormonales y potenciar la calidad del sueño.
+  
+  Beneficios:
+  
+  • Optimiza los niveles de testosterona
+  • Mejora la calidad del sueño y la recuperación nocturna
+  • Previene deficiencias de zinc y magnesio comunes en deportistas
+  • Promueve la síntesis proteica y el desarrollo muscular
+  • Contribuye a la correcta función del sistema inmune
+  • Mejora el rendimiento deportivo general
+  
+  Disponible en el formato: 60 Cápsulas
+  
+  Contenido: 60 cápsulas
+  
+  Modo de uso: Tomar 2 cápsulas antes de dormir con el estómago vacío para una óptima absorción. Evitar consumir con alimentos ricos en calcio o lácteos que pueden interferir con la absorción del zinc y magnesio.`,
+    price: 10530,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438853/zma-1-542601c0664d9fcf0c17525108957746-1024-1024_xmlffp.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 121,
+    name: 'CITRATO DE MAGNESIO 192GRS LEMONADE',
+    category: 'MAGNESIO Y OMEGA 3',
+    description: `ENA Citrato de Magnesio en Polvo 192 g es un suplemento diseñado para quienes buscan potenciar su bienestar diario con un aporte eficiente y de alta biodisponibilidad de magnesio. Cada porción de 3,2 g entrega 260 mg de magnesio, facilitando una absorción óptima que favorece múltiples funciones corporales esenciales.
+  
+  Principales beneficios:
+  Maximiza la absorción y biodisponibilidad del magnesio, asegurando que tu organismo lo aproveche al máximo.
+  Reduce el cansancio y la fatiga, ayudando a mantener tu energía y vitalidad durante todo el día.
+  Contribuye al mantenimiento saludable de huesos y músculos, fundamental para deportistas y personas activas.
+  Favorece el adecuado funcionamiento del sistema nervioso y muscular, promoviendo un equilibrio integral.
+  Sabor lemonade refrescante que hace su consumo agradable y libre de gluten.
+  
+  Modo de uso recomendado:
+  Disolver 1/2 scoop (3,2 g) en 200 ml de agua. Agitar bien hasta su completa disolución. Para una mejor experiencia, dejar reposar 10 minutos o usar agua caliente antes de consumir.`,
+    price: 15340,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438867/citratoenpolvo-195g-limon-1-cb539279244751b8bf17561332687881-1024-1024_vpgm6k.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 122,
+    name: 'CITRATO MAGNESIO 60 CAPS',
+    category: 'MAGNESIO Y OMEGA 3',
+    description: `Citrato de Magnesio de ENA es un suplemento mineral de alta biodisponibilidad que contribuye a la función muscular normal, reduce la fatiga, mejora la calidad del sueño y apoya la salud ósea y cardiovascular.
+  
+  Beneficios:
+  
+  • Previene y reduce calambres musculares
+  • Contribuye a la relajación muscular y recuperación
+  • Mejora la calidad del sueño
+  • Reduce la fatiga y el cansancio
+  • Apoya la salud ósea y cardiovascular
+  • Alta biodisponibilidad y fácil absorción
+  
+  Disponible en el formato: 60 Cápsulas
+  
+  Contenido: 60 cápsulas
+  
+  Modo de uso: Tomar 2 cápsulas al día, preferentemente con las comidas o antes de dormir. Para deportistas con entrenamiento intenso o personas con alta sudoración, se puede aumentar a 3 cápsulas diarias divididas en diferentes tomas.`,
+    price: 11960,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438885/citrato-de-magnesio-60-comp-1-6d72d667229c94caf017531113673673-1024-1024_jvedz8.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 123,
+    name: 'OMEGA 3 FISH OIL 60 CAPS',
+    category: 'MAGNESIO Y OMEGA 3',
+    description: `ENA Fish Oil - Omega 3 EPA & DHA 60 Softgels es un suplemento premium formulado con aceite de pescado concentrado, diseñado para aportar un equilibrio óptimo de DHA y EPA, nutrientes esenciales para el bienestar integral.
+  
+  Beneficios clave:
+  Salud cardiovascular: contribuye al mantenimiento normal del corazón.
+  Rendimiento cognitivo: favorece el funcionamiento saludable del cerebro.
+  Visión: apoya el mantenimiento de la visión.
+  Recuperación muscular: ayuda a modular la inflamación y acelerar la recuperación post entrenamiento.
+  Pureza certificada: libre de metales pesados, asegurando un consumo seguro y limpio.
+  
+  Modo de uso:
+  Consumir 2 cápsulas blandas diarias, preferentemente con comidas principales.`,
+    price: 24440,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438916/fish-oil-omega-3-1-01955c41a61a73569117631249750166-1024-1024_geury4.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 124,
+    name: 'MUSCLE MAX 90TABS',
+    category: 'PRE ENTRENOS',
+    description: `Muscle Max de ENA es un potente complejo de testosterona natural que favorece el entorno hormonal óptimo para maximizar el desarrollo muscular, la fuerza y la recuperación sin efectos secundarios adversos.
+  
+  Beneficios:
+  
+  • Promueve niveles saludables de testosterona
+  • Potencia el desarrollo de masa muscular
+  • Aumenta la fuerza y la potencia
+  • Mejora la recuperación entre entrenamientos
+  • Fórmula a base de ingredientes naturales
+  • No causa efectos secundarios adversos
+  
+  Disponible en el formato: 90 Tabletas
+  
+  Contenido: 90 tabletas
+  
+  Modo de uso: Tomar 3 tabletas al día con las comidas. Para resultados óptimos, consumir durante ciclos de 8-12 semanas, seguidos de 4 semanas de descanso para evitar la adaptación hormonal.`,
+    price: 11570,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438916/musclemax-1-5f7fd1827b6c54830c17525126413875-1024-1024_qwadrl.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 125,
+    name: 'CAFEINA 60CAPS',
+    category: 'PRE ENTRENOS',
+    description: `Cafeína de ENA es un suplemento estimulante que proporciona energía rápida y sostenida, aumenta el enfoque mental y potencia el rendimiento deportivo con una dosis precisa de cafeína anhidra de alta calidad.
+  
+  Beneficios:
+  
+  • Incrementa los niveles de energía y estado de alerta
+  • Mejora la concentración y el enfoque mental
+  • Potencia el rendimiento físico durante el entrenamiento
+  • Aumenta la resistencia y retrasa la fatiga
+  • Acelera el metabolismo y la quema de grasas
+  • Formato conveniente en cápsulas con dosis precisa
+  
+  Disponible en el formato: 60 Cápsulas
+  
+  Contenido: 60 cápsulas
+  
+  Modo de uso: Tomar 1 cápsula 30 minutos antes del entrenamiento o cuando necesites un impulso de energía. No consumir después de las 18hs o si eres sensible a la cafeína. No exceder 2 cápsulas al día.`,
+    price: 10010,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438933/cafeina-1-c52b6ff47647217d3b17525113235802-1024-1024_y9hxtp.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 126,
+    name: 'CARBO ENERGY 540GRS',
+    category: 'PRE ENTRENOS',
+    description: `Carbo Energy de ENA es un suplemento deportivo a base de carbohidratos de rápida y media absorción, diseñado para proporcionar energía sostenida durante entrenamientos y competencias de larga duración.
+  
+  Beneficios:
+  
+  • Proporciona energía rápida y sostenida durante el ejercicio
+  • Mezcla de carbohidratos para una entrega gradual de energía
+  • Retrasa la aparición de la fatiga en actividades prolongadas
+  • Mejora el rendimiento en deportes de resistencia
+  • De fácil disolución y rápida absorción
+  • No produce malestar estomacal
+  
+  Disponible en los sabores: Neutro, Blueberry
+  
+  Contenido: 540 gramos
+  
+  Modo de uso: Mezclar 2 medidas (35g) en 500ml de agua y consumir antes o durante entrenamientos o competencias prolongadas. Para actividades de más de 2 horas, consumir 1 medida cada 45-60 minutos durante el ejercicio.`,
+    price: 11960,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438948/carbo_energy_fruit-puncch-540g-10f28d56443dd53a2d17528024872297-1024-1024_gtd30c.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 127,
+    name: 'CARNITINA 60CAPS',
+    category: 'PRE ENTRENOS',
+    description: `Carnitina Pro Burn de ENA combina L-Carnitina con ingredientes termogénicos en una fórmula avanzada que optimiza el transporte de ácidos grasos al interior de las mitocondrias para maximizar la quema de grasa como fuente de energía.
+  
+  Beneficios:
+  
+  • Facilita el transporte de grasas a las mitocondrias
+  • Potencia la utilización de grasa como fuente de energía
+  • Aumenta la resistencia durante el ejercicio aeróbico
+  • Preserva la masa muscular durante la definición
+  • Mejora la recuperación post-entrenamiento
+  • Formato práctico en cápsulas
+  
+  Disponible en el formato: 60 Cápsulas
+  
+  Contenido: 60 cápsulas
+  
+  Modo de uso: Tomar 2 cápsulas al día: 1 cápsula 30 minutos antes del desayuno y 1 cápsula 30 minutos antes del entrenamiento, preferentemente cardiovascular.`,
+    price: 13260,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438959/carnitina_1500-60ps-1-332a6540d44cffaf7617527997164665-1024-1024_b24sp2.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 128,
+    name: 'ENARGY GEL + CAFEÍNA 12U',
+    category: 'PRE ENTRENOS',
+    description: `Enargy Gel+ con Cafeína de ENA es la solución ideal para deportistas de resistencia que buscan un impulso energético inmediato con el beneficio adicional de la cafeína para potenciar el rendimiento y la concentración.
+  
+  Beneficios:
+  
+  • Proporciona energía rápida y sostenida durante el ejercicio
+  • La cafeína añadida aumenta el estado de alerta y la concentración
+  • Mejora el rendimiento en deportes de resistencia
+  • Retrasa la fatiga física y mental
+  • Formato práctico en gel para consumo durante la actividad
+  • Delicioso sabor a uva
+  
+  Disponible en los deliciosos sabores: Vainilla Bean, Citrus, Uva
+  
+  Contenido: Caja con 12 sobres de 32g cada uno
+  
+  Modo de uso: Consumir 1 sobre cada 45-60 minutos durante la actividad física prolongada.`,
+    price: 15210,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438978/enargygel__mas-cafeina-vainilla_12unid-1-0ed6276c8e878f489b17528020819321-1024-1024_ngm1ju.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 129,
+    name: 'OXIDO NITRICO 210GRS',
+    category: 'PRE ENTRENOS',
+    description: `Óxido Nítrico de ENA es un potente vasodilatador que maximiza el bombeo muscular, la oxigenación y nutrición celular durante el entrenamiento, mejorando el rendimiento y acelerando la recuperación muscular.
+  
+  Beneficios:
+  
+  • Aumenta la producción de óxido nítrico
+  • Potencia la vasodilatación y el bombeo muscular
+  • Mejora el flujo sanguíneo a los músculos
+  • Optimiza la entrega de nutrientes y oxígeno
+  • Aumenta la resistencia durante el entrenamiento
+  • Acelera la recuperación post-entrenamiento
+  
+  Disponible en el sabor: Neutro
+  
+  Contenido: 210 gramos
+  
+  Modo de uso: Mezclar 7g (1 cucharada) con agua o jugo 20-30 minutos antes del entrenamiento.`,
+    price: 16120,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771438991/oxido_nitrico-210gr-naranja-1-a1f0a68e4c9e5596e317527722730571-1024-1024_ssykfw.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 130,
+    name: 'PRE WAR 400GRS',
+    category: 'PRE ENTRENOS',
+    description: `Pre War de ENA es un potente pre-entrenamiento que combina estimulantes, vasodilatadores y componentes energéticos para maximizar tu rendimiento, fuerza y concentración durante el entrenamiento más exigente.
+  
+  Beneficios:
+  
+  • Aumenta la energía y el estado de alerta
+  • Mejora la resistencia y el rendimiento
+  • Potencia el bombeo muscular y la vasodilatación
+  • Incrementa la concentración y el enfoque mental
+  • Retrasa la aparición de la fatiga
+  • Intensifica la experiencia de entrenamiento
+  
+  Disponible en los deliciosos sabores: Fruit Punch, Lemonade
+  
+  Contenido: 400 gramos
+  
+  Modo de uso: Mezclar 1 medida (13g) con 200ml de agua fría 20-30 minutos antes del entrenamiento.`,
+    price: 26520,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439004/prewar_lemonade-400gr-1-f0a1b0d04e9d0403bd17527615156616-1024-1024_qff2yn.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 131,
+    name: 'RIPPED X 60CAPS',
+    category: 'PRE ENTRENOS',
+    description: `Ripped X de ENA es un quemador de grasa concentrado que acelera el metabolismo, aumenta la termogénesis y potencia la energía, ideal para quienes buscan una definición muscular rápida y efectiva.
+  
+  Beneficios:
+  
+  • Acelera la quema de grasa corporal
+  • Aumenta los niveles de energía para entrenamientos intensos
+  • Potencia el efecto termogénico
+  • Mejora el enfoque mental y la concentración
+  • Ayuda a preservar la masa muscular durante la definición
+  • Formato conveniente en cápsulas
+  
+  Disponible en el formato: 60 Cápsulas
+  
+  Contenido: 60 cápsulas
+  
+  Modo de uso: Tomar 2 cápsulas al día: 1 cápsula 30 minutos antes del desayuno y 1 cápsula 30 minutos antes del entrenamiento o almuerzo.`,
+    price: 10400,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439010/rippedx_-1-2a19a1db56416e2dcd17525118238443-1024-1024_ptands.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 132,
+    name: 'DIET PROTEIN',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Truemade Diet Protein de ENA es una fórmula especializada para quienes buscan una alimentación con control calórico, combinando proteínas de alta calidad con ingredientes que favorecen la pérdida de grasa mientras conservan la masa muscular.
+  
+  Beneficios:
+  
+  • Fórmula específica para pérdida de grasa
+  • Alto contenido proteico para preservar masa muscular
+  • Ingredientes que favorecen el metabolismo
+  • Bajo en carbohidratos y grasas
+  • Ayuda a controlar el apetito
+  • Delicioso sabor y fácil preparación
+  
+  Disponible en los deliciosos sabores: Vainilla, Chocolate
+  
+  Contenido: 894 gramos
+  
+  Modo de uso: Mezclar 1 medida (30g) con 200-250ml de agua. Ideal como parte de un plan de alimentación controlado en calorías, consumir entre comidas o como sustituto ocasional de alguna comida.`,
+    price: 44200,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439024/enadietwheyproteindoypack-chocolate_alta-870g-cc4c5e8087a7ec1a7317527976208849-1024-1024_mwydcn.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 133,
+    name: 'PROTEIN BAR 16U',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Protein Bar de ENA es un snack proteico de alta calidad, delicioso sabor y textura que proporciona 15g de proteína por barrita, ideal para complementar la alimentación entre comidas o como recuperación post-entrenamiento.
+  
+  Beneficios:
+  
+  • 15g de proteína de alta calidad por barrita
+  • Delicioso sabor y textura no arenosa
+  • Alternativa nutritiva a los snacks convencionales
+  • Práctica para llevar y consumir en cualquier momento
+  • Ideal para mantener el aporte proteico entre comidas
+  • Perfecta para la recuperación post-entrenamiento
+  
+  Disponible en los deliciosos sabores: Frutilla, , Banana, Chocolate
+  
+  Contenido: Caja con 16 barritas de 46g cada una
+  
+  Modo de uso: Consumir 1 barrita como snack entre comidas, 30-60 minutos antes del entrenamiento o inmediatamente después del mismo para favorecer la recuperación muscular.`,
+    price: 24570,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439042/enaproteinbarcajactfrutilla-a-la-crema-750gr-16-barritas-1-f260c62d1f5cef8a4e17528012601771-1024-1024_uwratr.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 134,
+    name: 'STARTER PROTEIN 400GRS',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Starter Protein de ENA es la opción perfecta para quienes comienzan en el mundo de los suplementos, con una fórmula equilibrada de proteínas y sabor único de café con leche para disfrutar mientras complementas tu nutrición.
+  
+  Beneficios:
+  
+  • Ideal para principiantes en suplementación
+  • Fórmula balanceada de proteínas
+  • Delicioso sabor exclusivo a café con leche
+  • Apoya el desarrollo muscular
+  • Facilita la recuperación post-entrenamiento
+  • Excelente disolución y fácil preparación
+  
+  Disponible en el delicioso sabor: Café con Leche
+  
+  Contenido: 400 gramos
+  
+  Modo de uso: Mezclar 1 medida (30g) con 200ml de agua o leche. Consumir después del entrenamiento o como complemento nutricional entre comidas para aumentar el aporte proteico diario.`,
+    price: 24440,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439053/starterprotein-coffee-400gr-1-65c091ad5c18900cc517527799248533-1024-1024_xe7k86.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 135,
+    name: 'ULTRA MASS 1.5KG',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Ultra Mass de ENA es un ganador de peso premium diseñado para quienes buscan aumentar su masa muscular de manera efectiva, con una combinación óptima de proteínas, carbohidratos y calorías de calidad.
+  
+  Beneficios:
+  
+  • Fórmula completa para aumento de masa muscular
+  • Blend de proteínas para liberación sostenida
+  • Carbohidratos de calidad para máxima energía
+  • Vitaminas y minerales para un desarrollo óptimo
+  • Facilita alcanzar el superávit calórico
+  • Excelente digestibilidad y delicioso sabor
+  
+  Disponible en los deliciosos sabores: Chocolate, Vainilla
+  
+  Contenido: 1500 gramos
+  
+  Modo de uso: Mezclar 2 scoops (70g) con 300-350ml de agua o leche. Consumir como suplemento entre comidas o después del entrenamiento para maximizar el aporte calórico y nutricional.`,
+    price: 37700,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439061/ultramass_kilo_vainilla_1-5kg-11-82cc39a142f3516f4417527577611962-1024-1024_coprzz.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 136,
+    name: 'ULTRA MASS 3KG BIG SIZE',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `Ultra Mass Big Size de ENA es un ganador de peso premium en formato económico de 3kg, ideal para quienes buscan maximizar su masa muscular con un aporte nutricional completo y de calidad superior.
+  
+  Beneficios:
+  
+  • Mayor rendimiento con formato de 3kg
+  • Fórmula completa para ganancia de masa muscular
+  • Combinación óptima de proteínas y carbohidratos
+  • Aporta vitaminas y minerales esenciales
+  • Facilita alcanzar las calorías diarias necesarias
+  • Excelente digestibilidad y delicioso sabor
+  
+  Disponible en los deliciosos sabores: Chocolate, Vainilla
+  
+  Contenido: 3000 gramos
+  
+  Modo de uso: Mezclar 2 scoops (70g) con 300-350ml de agua o leche. Consumir entre comidas o después del entrenamiento para maximizar el aporte calórico y nutricional.`,
+    price: 64350,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439080/ultramass_bigsize_vainilla2-3kg-1-a2b38bf5b4bf4a58eb17527576756003-1024-1024_lbgxcg.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 137,
+    name: 'WHEY PROTEIN TRUEMADE 1LB',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `True Made de ENA en formato de 1 libra es la opción ideal para quienes buscan una proteína de alta calidad en presentación más compacta, perfecta para probar nuevos sabores o llevarte de viaje.
+  
+  Beneficios:
+  
+  • Formato más pequeño, práctico y portátil
+  • Mantiene la calidad premium de la proteína True Made
+  • 24g de proteína por porción
+  • Promueve el desarrollo muscular
+  • Facilita la recuperación
+  • Delicioso sabor y gran solubilidad
+  
+  Disponible en los deliciosos sabores: Sin Sabor, Chocolate, Cookies & Cream, Frutilla, Vainilla, Banana
+  
+  Contenido: 453 gramos (1 LB)
+  
+  Modo de uso: Mezclar 1 medida (30g) con 200ml de agua fría o leche descremada. Ideal para consumir después del entrenamiento o en cualquier momento que necesites un aporte extra de proteínas.`,
+    price: 28210,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439095/tm_wp_1lb-453gr-vainilla-1-42d322caf7232c853c17527970518657-1024-1024_erajv1.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 138,
+    name: 'WHEY PROTEIN TRUEMADE 2,05LB',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `True Made de ENA es una proteína whey de alta calidad que combina aislado y concentrado para ofrecer resultados óptimos en tu desarrollo muscular y recuperación.
+  
+  Beneficios:
+  
+  • Aporta 24g de proteína por porción
+  • Fórmula de rápida absorción
+  • Bajo contenido en grasas y carbohidratos
+  • Promueve la síntesis proteica
+  • Excelente solubilidad
+  • Delicioso sabor y textura cremosa
+  
+  Disponible en los deliciosos sabores: Double Rich Chocolate, Vanilla Ice Cream, Cookies & Cream, Strawberry Milkshake, Banana Shake
+  
+  Contenido: 930 gramos (2,05 LB)
+  
+  Modo de uso: Mezclar 1 medida (30g) con 200ml de agua fría o leche descremada. Ideal para consumir después del entrenamiento o en cualquier momento que necesites un aporte extra de proteínas.`,
+    price: 58700,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439103/tmwp2lb-930gr-vainilla_2-1-f398e8687d4b3cd76217528021654905-1024-1024_fnnxcy.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 139,
+    name: 'WHEY PROTEIN TRUEMADE 5LB',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `True Made de ENA es una proteína whey de alta calidad que combina aislado y concentrado para ofrecer resultados óptimos en tu desarrollo muscular y recuperación.`,
+    price: 111150,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439145/jveqenxdugqgvcncxtq9.jpg',
+    brand: 'ENA'
+  },
+  {
+    id: 140,
+    name: 'WHEY X PRO 1LB',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `WHEY X PRO.
+  ¡TODO EN UNO! MÁS DEFINICIÓN, MÁS ENERGÍA, RÁPIDA RECUPERACIÓN .
+  
+  Whey X Pro Complex Protein aporta una combinación explosiva de proteínas, creatina, aminoácidos, vitaminas, minerales y antioxidantes, en una nueva fórmula mejorada.`,
+    price: 29900,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439167/Wxpro1lb-Va_zz67dw.png',
+    brand: 'ENA'
+  },
+  {
+    id: 141,
+    name: 'WHEY X PRO 2LB',
+    category: 'PROTEINAS Y GANADORES DE PESO',
+    description: `¡TODO EN UNO! MÁS DEFINICIÓN, MÁS ENERGÍA, RÁPIDA RECUPERACIÓN .`,
+    price: 51350,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439202/tmwp2lb-930gr-vainilla_2-1-f398e8687d4b3cd76217528021654905-1024-1024_fnnxcy.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 142,
+    name: 'HYDROXY MAX BLACK 120TABS',
+    category: 'PRE ENTRENOS',
+    description: `Hydroxy Max Black de ENA es un potente quemador de grasa que combina ingredientes termogénicos, estimulantes y moduladores metabólicos para optimizar la pérdida de grasa mientras preserva la masa muscular durante periodos de definición.`,
+    price: 12220,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439202/hydroxymaxblack-120tablets-1-f37f21bd6b8decd56017527996167472-1024-1024_uiwgq0.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 143,
+    name: 'HYDROXY MAX NIGHT 120TABS',
+    category: 'PRE ENTRENOS',
+    description: `Hydroxy Max Night de ENA es un innovador quemador de grasa nocturno diseñado para optimizar el metabolismo durante las horas de sueño, mejorar la calidad del descanso y favorecer la recuperación mientras continúa el proceso de definición.`,
+    price: 10920,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439213/hydroxy_max-night_120tabs-1-e39bc0baaf9e4c0aa017528019223392-1024-1024_w8eo8e.webp',
+    brand: 'ENA'
+  },
+  {
+    id: 144,
+    name: 'MULTIVITAMINICO 60COMPRIMIDOS',
+    category: 'VITAMINAS',
+    description: `ENA MultiVitamin 60 CAPS es un suplemento multivitamínico avanzado especialmente formulado para quienes buscan optimizar su rendimiento físico, concentración y vitalidad diaria.`,
+    price: 15730,
+    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439221/multivitamin-1-58fc9284e174add82217561339377070-1024-1024_lw4wre.webp',
+    brand: 'ENA'
+  }
+)
+
 // Productos GENTECH
 rawProducts.push(
   {

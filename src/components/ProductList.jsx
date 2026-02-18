@@ -17,6 +17,8 @@ function ProductList({ onSelectProduct, selectedCategory }) {
       productsToShow = products.filter(p => p.brand && p.brand.toLowerCase() === 'gentech')
     } else if (selectedCategory === 'pitbull') {
       productsToShow = products.filter(p => p.brand && p.brand.toLowerCase() === 'pitbull')
+    } else if (selectedCategory === 'ena') {
+      productsToShow = products.filter(p => p.brand && p.brand.toLowerCase() === 'ena')
     } else if (productsByCategory[selectedCategory]) {
       productsToShow = productsByCategory[selectedCategory]
     } else {

@@ -12,7 +12,7 @@ const buildImageCandidates = (url = '') => {
 
 function ProductCard({ product, onSelect, refEl }) {
   const numericPrice = typeof product.price === 'number' ? product.price : 0
-  const displayPrice = product.priceLabel || `$${numericPrice.toFixed(2)}`
+  const displayPrice = product.priceLabel || `$ ${numericPrice.toLocaleString('es-AR')}`
   const imageCandidates = buildImageCandidates(product.image)
 
   return (

@@ -14,7 +14,7 @@ function ProductDetail({ product, onAddToCart, onBack }) {
   if (!product) return null
 
   const numericPrice = typeof product.price === 'number' ? product.price : 0
-  const displayPrice = product.priceLabel || `$${numericPrice.toFixed(2)}`
+  const displayPrice = product.priceLabel || `$ ${numericPrice.toLocaleString('es-AR')}`
   const imageCandidates = buildImageCandidates(product.image)
 
   return (

@@ -10,12 +10,59 @@ const buildImageCandidates = (url = '') => {
   return candidates
 }
 
-const getDisplayPrice = (item) => {
-  const numeric = typeof item.price === 'number' ? item.price : 0
-  return item.priceLabel || `$${numeric.toFixed(2)}`
+const parsePriceString = (price) => {
+  if (typeof price === 'number') return price
+  if (typeof price !== 'string') return 0
+
+  // Normalize common non-breaking spaces and trim
+  let s = price.replace(/\u00A0/g, ' ').trim()
+
+  // Extract the first numeric-looking part
+  const match = s.match(/[-+]?\d{1,3}(?:[.,\s]\d{3})*(?:[.,]\d+)?|\d+/)
+  if (!match) return 0
+
+  let numStr = match[0]
+
+  // Remove spaces used as thousand separators
+  numStr = numStr.replace(/\s+/g, '')
+
+  // If contains both '.' and ',', decide which is decimal separator
+  if (numStr.indexOf('.') !== -1 && numStr.indexOf(',') !== -1) {
+    // assume comma is thousand separator, remove commas
+    numStr = numStr.replace(/,/g, '')
+  } else {
+    // remove thousand separators (commas or dots that are followed by 3 digits)
+    numStr = numStr.replace(/(?<=\d)[.,](?=\d{3}\b)/g, '')
+  }
+
+  // Remove any remaining commas
+  numStr = numStr.replace(/,/g, '')
+
+  const n = Number(numStr)
+  if (isNaN(n)) return 0
+  return n
 }
 
-const getNumericPrice = (item) => (typeof item.price === 'number' ? item.price : 0)
+const formatCurrency = (value) => {
+  const n = Number(value) || 0
+  return `$ ${n.toLocaleString('es-AR')}`
+}
+
+const getDisplayPrice = (item) => {
+  if (item.priceLabel) return item.priceLabel
+  if (typeof item.price === 'number') return formatCurrency(item.price)
+  // fall back to original string
+  return String(item.price || '')
+}
+
+const getNumericPrice = (item) => {
+  const n = parsePriceString(item.price)
+  if (n === 0) {
+    const raw = item.price
+    if (raw && String(raw).match(/\d/)) console.warn('Cart: precio parseado como 0 para', item.name, 'raw:', raw)
+  }
+  return n
+}
 
 function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, onClose }) {
   return (
@@ -91,7 +138,7 @@ function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, 
                   </div>
 
                   <div className="cart-item-total">
-                    ${(getNumericPrice(item) * item.quantity).toFixed(2)}
+                    {formatCurrency(getNumericPrice(item) * item.quantity)}
                   </div>
 
                   <button 
@@ -108,7 +155,7 @@ function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, 
             <div className="cart-footer">
               <div className="cart-total">
                 <span className="total-label">Total:</span>
-                <span className="total-amount">${totalPrice.toFixed(2)}</span>
+                <span className="total-amount">{formatCurrency(totalPrice)}</span>
               </div>
 
               <button className="whatsapp-btn" onClick={onSendOrder}>

@@ -115,8 +115,27 @@ function App() {
     return cartItems.reduce((total, item) => total + item.quantity, 0)
   }
 
+  const parsePrice = (price) => {
+    if (typeof price === 'number') return price
+    if (typeof price !== 'string') return 0
+
+    let s = price.replace(/\u00A0/g, ' ').trim()
+    const match = s.match(/[-+]?\d{1,3}(?:[.,\s]\d{3})*(?:[.,]\d+)?|\d+/)
+    if (!match) return 0
+    let numStr = match[0]
+    numStr = numStr.replace(/\s+/g, '')
+    if (numStr.indexOf('.') !== -1 && numStr.indexOf(',') !== -1) {
+      numStr = numStr.replace(/,/g, '')
+    } else {
+      numStr = numStr.replace(/(?<=\d)[.,](?=\d{3}\b)/g, '')
+    }
+    numStr = numStr.replace(/,/g, '')
+    const n = Number(numStr)
+    return isNaN(n) ? 0 : n
+  }
+
   const getTotalPrice = () => {
-    return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0)
+    return cartItems.reduce((total, item) => total + (parsePrice(item.price) * item.quantity), 0)
   }
 
   const handleSelectProduct = (product) => {
@@ -133,16 +152,19 @@ function App() {
     let message = '¡Hola! Me gustaría hacer el siguiente pedido:\n\n'
     
     cartItems.forEach(item => {
-      message += `• ${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}\n`
+      const lineTotalNum = parsePrice(item.price) * item.quantity
+      const lineTotal = lineTotalNum.toLocaleString('es-AR')
+      message += `• ${item.name} x${item.quantity} - $ ${lineTotal}\n`
     })
-    
-    message += `\n*Total: $${getTotalPrice().toFixed(2)}*`
+
+    const totalFormatted = getTotalPrice().toLocaleString('es-AR')
+    message += `\n*Total: $ ${totalFormatted}*`
     
     // Codificar el mensaje para URL
     const encodedMessage = encodeURIComponent(message)
     
-    // Reemplaza este número con tu número de WhatsApp en formato internacional sin + ni espacios
-    const phoneNumber = '5491234567890' // Ejemplo: 549 (Argentina) + código de área + número
+    // Número de WhatsApp configurado para enviar pedidos (formato internacional sin + ni espacios)
+    const phoneNumber = '5491166493737'
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
     
@@ -291,7 +313,7 @@ function App() {
           </div>
           <section className="cta-amarilla">
             <div className="cta-amarilla__icons">
-              <a className="cta-amarilla__icon-wrapper" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a className="cta-amarilla__icon-wrapper" href="https://www.instagram.com/ironbrosnutrition/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <img className="cta-amarilla__icon" src={instagramIcon} alt="Instagram" />
               </a>
               <a className="cta-amarilla__icon-wrapper" href="mailto:tuemail@dominio.com" aria-label="Email">
@@ -410,7 +432,7 @@ function App() {
 
     {/* Icono flotante de WhatsApp */}
     <a
-      href="https://wa.me/5491234567890"
+      href="https://wa.me/5491166493737"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-float"

@@ -36,18 +36,9 @@ function ProductList({ onSelectProduct, selectedCategory, viewType, onSetFilter 
     }
   }
 
-  if (brandFilter && brandFilter !== 'all') {
-    productsToShow = productsToShow.filter(p => p.brand && p.brand.toLowerCase() === brandFilter)
-  }
-
   // Detect if the selectedCategory is actually a brand key
   const brandKeys = ['gold', 'xtrenght', 'gentech', 'pitbull', 'ena', 'star nutrition']
   const isBrandView = (selectedCategory && brandKeys.includes(selectedCategory)) || (viewType === 'brand' && !selectedCategory)
-
-  // If viewing a brand, filter by selected category filter (categories available for that brand)
-  if (isBrandView && categoryFilter && categoryFilter !== 'all') {
-    productsToShow = productsToShow.filter(p => p.categorySlug === categoryFilter)
-  }
 
   // Precompute available category slugs for a brand view
   const brandKey = selectedCategory || (viewType === 'brand' ? 'star nutrition' : null)
@@ -55,9 +46,18 @@ function ProductList({ onSelectProduct, selectedCategory, viewType, onSetFilter 
   const availableCategorySlugsForBrand = Array.from(new Set(brandProductsForSlug.map(p => p.categorySlug)))
 
   // If we're viewing a brand (including Star Nutrition when selectedCategory is null),
-  // show only that brand's products.
+  // show only that brand's products first, then apply filters on that subset.
   if (isBrandView) {
     productsToShow = brandProductsForSlug
+  }
+
+  if (brandFilter && brandFilter !== 'all') {
+    productsToShow = productsToShow.filter(p => p.brand && p.brand.toLowerCase() === brandFilter)
+  }
+
+  // If viewing a brand, filter by selected category filter (categories available for that brand)
+  if (isBrandView && categoryFilter && categoryFilter !== 'all') {
+    productsToShow = productsToShow.filter(p => p.categorySlug === categoryFilter)
   }
 
   // Precompute available brands for a category view

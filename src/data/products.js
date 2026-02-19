@@ -788,7 +788,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo está disponible en sabor chocolate. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular y acelerar la recuperación post-entrenamiento.  MODO DE USO: Disolver un scoop del producto (34g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES: Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. CONTIENE DERIVADOS DE LECHE, PUEDE CONTENER DERIVADOS DE SOJA.`,
     price: 42250,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770920799/D_NQ_NP_2X_767022-MLA99891344621_112025-F_rwvqc0.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/wheyProteinChocolate-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -797,7 +797,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo está disponible en sabor vainilla. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular y acelerar la recuperación post-entrenamiento.  MODO DE USO: Disolver un scoop del producto (34g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES: Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. CONTIENE DERIVADOS DE LECHE, PUEDE CONTENER DERIVADOS DE SOJA.`,
     price: 42250,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770920804/D_NQ_NP_2X_602071-MLA99984791287_112025-F_upcyle.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/wheyProteinVainilla-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -806,7 +806,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entrenamiento o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.`,
     price: 39000,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770920814/D_NQ_NP_2X_692307-MLA99382688136_112025-F_xvgi5m.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/doypackChocolatePitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -815,7 +815,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: "Este suplemento a base de proteína de suero lácteo. Cada servicio te aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entreno o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.",
     price: 39000,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921094/D_NQ_NP_2X_756487-MLA100061589577_122025-F_sj6ls1.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/doyPackVainillaPitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -824,7 +824,7 @@ rawProducts.push(
     category: 'MAGNESIO Y OMEGA 3',
     description: `El bisglicinato es una forma altamente biodisponible de magnesio quelado con glicina, un aminoácido que facilita su absorción y minimiza posibles molestias digestivas. Gracias a su óptima asimilación, este suplemento es ideal para quienes buscan mantener niveles adecuados de magnesio sin los efectos gastrointestinales que pueden presentarse con otras formas del mineral. El magnesio es un nutriente esencial involucrado en múltiples funciones del organismo, que incluyen el equilibrio muscular, nervioso y óseo. BENEFICIOS Colabora en la relajación del sistema nervioso, en la función cardiaca y la regulación de la presión arterial, y en el mantenimiento de la salud muscular y ósea. Mejora la energía y el rendimiento físico. Brinda apoyo digestivo. MODO DE USO Consumir 4 cápsulas diarias. Antes o después del entrenamiento o antes de ir a dormir. INGREDIENTES Bisglicinato de magnesio: ANAH; ESTEARATO DE MAGNESIO.`,
     price: 16900,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921124/D_NQ_NP_2X_884745-MLA99988662961_112025-F_mhp3wu.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/magnesioPitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -832,7 +832,7 @@ rawProducts.push(
     name: 'CITRATO DE MAGNESIO 300 G',
     category: 'MAGNESIO Y OMEGA 3',
     price: 31850,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921132/D_NQ_NP_2X_968864-MLA94881305756_102025-F_cnng7r.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/citratoMagnesio-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -841,7 +841,7 @@ rawProducts.push(
     category: 'CREATINAS',
     description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento fisico, particularmente en actividades de alta intensidad. Cada porcion tu ayuda a aumentar los niveles de fosfocreatina en los musculos, proporcionando mas energia rapida para esfuerzos explosivos como levantamientos de pesas, sprints y dportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (6.7grs) en 200ml de agua. Puedes consumirlo antes o despues de entrenar. INGREDIENTES Monohidrato de creatina, ARO: Saborizante de multifruta, ACI: Ácido citrico, ANAH: Dióxido de silicio, EDU : Sucralosa. Puede contener derivados de leche y soja.`,
     price: 18720,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921144/D_NQ_NP_2X_983028-MLA100586447187_122025-F_hettjh.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/creatinaMultifruta-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -849,7 +849,7 @@ rawProducts.push(
     name: 'CREATINA 402 G SABORIZADA UVA',
     category: 'CREATINAS',
     price: 32500,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921152/D_NQ_NP_2X_725052-MLA99496628802_112025-F_xjaqx7.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/creatinaUva-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -857,7 +857,7 @@ rawProducts.push(
     name: 'CREATINA MICRONIZED 1KG',
     category: 'CREATINAS',
     price: 100100,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921173/11-6c5ceb66a57904226817692845789847-480-0_mpliut.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/creatina1kgPitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -865,7 +865,7 @@ rawProducts.push(
     name: 'CREATINA MICRONIZED 300 G',
     category: 'CREATINAS',
     price: 55250,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921179/D_NQ_NP_2X_666462-MLA99985084933_112025-F_vzxeta.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/creatina300Pitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -873,7 +873,7 @@ rawProducts.push(
     name: 'COLAGENO SPORT 240 G MULTIFRUTA',
     category: 'COLAGENOS Y RESVERATROL',
     price: 36400,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921184/D_NQ_NP_2X_600085-MLA100095681958_122025-F_nxx3yh.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/colagenoMultifruta-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -882,7 +882,7 @@ rawProducts.push(
     category: 'COLAGENOS Y RESVERATROL',
     description: `El colágeno hidrolizado PITBULL SUPLEMENTOS es colágeno que fue dividido en partículas más pequeñas (péptidos) mediante un proceso llamado hidrolización. Al estar “pre-digerido”, el cuerpo lo absorbe más fácil y rápido. Se utiliza comúnmente para mejorar la salud de la piel, articulaciones, uñas, cabello y para favorecer la recuperación muscular. MODO DE USO Disolver un scoop (12grs) del producto, en 250 Ml de agua. Revolver hasta su completa disolución. Utilizar la cuchara del envase. INGREDIENTES Colágeno hidrolizado, ARO: saborizante de: pomelo/uva (según corresponda), citrato de magnesio, vitamina C, acido cítrico, carbonato de magnesio, COL: Cúrcuma, acido hialuronico, EDU: sucralosa y acesulfame K. PUEDE CONTENER DERIVADO DE LECHE Y DE SOJA`,
     price: 18720,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921198/D_NQ_NP_2X_663150-MLA100585390649_122025-F_diukoj.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/colagenoUva-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -891,7 +891,7 @@ rawProducts.push(
     category: 'AMINOACIDOS',
     description: `La glutamina es un aminoácido que se encuentra de forma natural en nuestro cuerpo. Es considerado un aminoácido no esencial, lo que significa que el cuerpo puede producirlo. Sin embargo, en situaciones de estrés físico, como durante el ejercicio intenso o enfermedades, la demanda de glutamina puede superar la capacidad del cuerpo para producirla. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Preferentemente después de entrenar. INGREDIENTES L-Glutamina.`,
     price: 23790,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770921204/D_NQ_NP_2X_893386-MLA99526846788_122025-F_bdb4t0.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/glutaminaPitbull-trans.png`,
     brand: 'PITBULL'
   }
 )

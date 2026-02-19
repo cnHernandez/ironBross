@@ -54,6 +54,12 @@ function ProductList({ onSelectProduct, selectedCategory, viewType, onSetFilter 
   const brandProductsForSlug = brandKey ? products.filter(p => p.brand && p.brand.toLowerCase() === brandKey) : []
   const availableCategorySlugsForBrand = Array.from(new Set(brandProductsForSlug.map(p => p.categorySlug)))
 
+  // If we're viewing a brand (including Star Nutrition when selectedCategory is null),
+  // show only that brand's products.
+  if (isBrandView) {
+    productsToShow = brandProductsForSlug
+  }
+
   // Precompute available brands for a category view
   const availableBrandsForCategory = (categoryProducts || []).map(p => (p.brand || '').toLowerCase())
 

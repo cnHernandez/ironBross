@@ -1728,7 +1728,7 @@ Disponible en los deliciosos sabores: Banana, Chocolate, Cookies & Cream, Dulce 
 Contenido: 20 unidades (46g cada una)
 Modo de uso: Consumir 1 barra como snack entre comidas o después del entrenamiento. Ideal para complementar la ingesta proteica diaria.`,
     price: 36400,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919419/ironbarchoco-20c2783ad6f29178fd17516781881004-1024-1024_k0lyts.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/ironBar20gentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1765,7 +1765,7 @@ Beneficios:
 Contenido: 250 gramos
 Modo de uso: Mezclar 5g (1 cucharadita) con 250ml de agua o jugo, tomar 1 vez por día. Período de carga: 20g por día por 5 días, luego 5g diarios.`,
     price: 24830,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919446/crea250-efea70abeeb77c455e17516781695849-1024-1024_jqwx0t.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/creatina250gentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1783,7 +1783,7 @@ Beneficios:
 Contenido: 500 gramos
 Modo de uso: Mezclar 5g (1 cucharadita) con 250ml de agua o jugo, tomar 1 vez por día. Período de carga: 20g por día por 5 días, luego 5g diarios.`,
     price: 44200,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919454/crea500-e90a1d9e3acc807da817516781728886-1024-1024_ysxfn1.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/creatina500gentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1802,7 +1802,7 @@ Presentación: 60 cápsulas blandas
 Contenido: 84 gramos
 Modo de uso: Tomar 1-2 cápsulas por día con las comidas o según indicación médica. Mantener refrigerado después de abrir.`,
     price: 34450,
-    image: 'https://acdn-us.mitiendanube.com/stores/006/011/728/products/omega-6042bf09fb1163280517516784186922-1024-1024.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/omegaGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1821,7 +1821,7 @@ Sabor: Turbo Coffee
 Contenido: 6 unidades
 Modo de uso: Consumir 1 gel 30-45 minutos antes del entrenamiento. No exceder 2 geles por día debido al contenido de cafeína.`,
     price: 22620,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919469/turbocoff-218ce511509741428e17516783970248-1024-1024_gjdhd8.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/ironGelGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1840,7 +1840,7 @@ Sabor: Red Berries (Frutos Rojos)
 Contenido: 400 gramos
 Modo de uso: Mezclar 1 scoop (10g) con 250ml de agua fría, consumir 30 minutos antes del entrenamiento. Comenzar con medio scoop para evaluar tolerancia.`,
     price: 30940,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919526/wild-aa7a607f9c5a1cb30717516784247122-1024-1024_pjpenl.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/preWorkGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1859,7 +1859,7 @@ Disponible en los deliciosos sabores: Chocolate, Vainilla
 Contenido: 1000 gramos
 Modo de uso: Mezclar 1 scoop (30g) con 250ml de agua fría o leche. Consumir 1-2 veces por día, preferentemente después del entrenamiento y entre comidas.`,
     price: 48100,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919533/whey1kgchoco-41547017ac8b551fd417516781920351-1024-1024_b6cyfd.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/wheyProtein1kgGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1877,7 +1877,7 @@ Beneficios:
 Contenido: 3000 gramos
 Modo de uso: Mezclar 1 scoop (30g) con 250ml de agua fría o leche. Consumir 1-2 veces por día, preferentemente después del entrenamiento y entre comidas.`,
     price: 131300,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919539/gentech-whey-protein-7900-vainilla-3kg-1-0823d9fdf8a8c657b717694424175845-1024-1024_yuyqyk.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/wheyProtein1kgGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1896,7 +1896,7 @@ Presentación: 60 comprimidos
 Contenido: 72 gramos
 Modo de uso: Tomar 1 comprimido por día con el desayuno o según indicación médica. No exceder la dosis recomendada.`,
     price: 10920,
-    image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770919543/multi-19dcace18c86d58f5f17516781419325-1024-1024_apv41n.webp',
+    image: `${import.meta.env.BASE_URL}src/assets/multivitaminicoGentech-trans.png`,
     brand: 'GENTECH'
   }
 )

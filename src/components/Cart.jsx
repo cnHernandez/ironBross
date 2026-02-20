@@ -118,7 +118,6 @@ function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, 
                   
                   <div className="cart-item-info">
                     <h4>{item.name}</h4>
-                    <p className="cart-item-price">{getDisplayPrice(item)}</p>
                   </div>
 
                   <div className="quantity-controls">

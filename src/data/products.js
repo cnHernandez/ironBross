@@ -790,7 +790,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo está disponible en sabor chocolate. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular y acelerar la recuperación post-entrenamiento.  MODO DE USO: Disolver un scoop del producto (34g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES: Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. CONTIENE DERIVADOS DE LECHE, PUEDE CONTENER DERIVADOS DE SOJA.`,
     price: 42250,
-    image: `${import.meta.env.BASE_URL}src/assets/wheyProteinChocolate-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/wheyProteinChocolate-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -799,7 +799,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo está disponible en sabor vainilla. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular y acelerar la recuperación post-entrenamiento.  MODO DE USO: Disolver un scoop del producto (34g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES: Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. CONTIENE DERIVADOS DE LECHE, PUEDE CONTENER DERIVADOS DE SOJA.`,
     price: 42250,
-    image: `${import.meta.env.BASE_URL}src/assets/wheyProteinVainilla-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/wheyProteinVainilla-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -808,7 +808,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entrenamiento o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.`,
     price: 39000,
-    image: `${import.meta.env.BASE_URL}src/assets/doypackChocolatePitbull-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/doypackChocolatePitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -817,7 +817,7 @@ rawProducts.push(
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo. Cada servicio te aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entrenamiento o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.`,
     price: 39000,
-    image: `${import.meta.env.BASE_URL}src/assets/doyPackVainillaPitbull-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/doyPackVainillaPitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -826,7 +826,7 @@ rawProducts.push(
     category: 'MAGNESIO Y OMEGA 3',
     description: `El bisglicinato es una forma altamente biodisponible de magnesio quelado con glicina, un aminoácido que facilita su absorción y minimiza posibles molestias digestivas. Gracias a su óptima asimilación, este suplemento es ideal para quienes buscan mantener niveles adecuados de magnesio sin los efectos gastrointestinales que pueden presentarse con otras formas del mineral. El magnesio es un nutriente esencial involucrado en múltiples funciones del organismo, que incluyen el equilibrio muscular, nervioso y óseo. BENEFICIOS Colabora en la relajación del sistema nervioso, en la función cardiaca y la regulación de la presión arterial, y en el mantenimiento de la salud muscular y ósea. Mejora la energía y el rendimiento físico. Brinda apoyo digestivo. MODO DE USO Consumir 4 cápsulas diarias. Antes o después del entrenamiento o antes de ir a dormir. INGREDIENTES Bisglicinato de magnesio: ANAH; ESTEARATO DE MAGNESIO.`,
     price: 16900,
-    image: `${import.meta.env.BASE_URL}src/assets/magnesioPitbull-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/magnesioPitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -835,7 +835,7 @@ rawProducts.push(
     category: 'MAGNESIO Y OMEGA 3',
     description: `El magnesio es un mineral esencial involucrado en múltiples funciones corporales, como la contraccion muscular, la produccion de energia y el equilibrio electrolitico. Cada porcion de 2.5 gramos suministra magnesio en una forma de alta biodisponiblidad, lo que permite que el cuerpo lo absorba y lo utilice de manera eficiente. BENEFICIOS Apoya la funcion muscular. Mejora el rendimiento fisico. Regula el sistema nervioso. Colabora con el mantenimiento de la salud ósea. Favorece el equilibrio electrolitico. MODO DE USO Diluir media cuchara de té (2,5grs) en un vaso de agua. Consumir con abundante agua en cualquier momento del dia. Ingesta diaria: 2,5Grs (1/2 cucharada de té) INGREDIENTES Citrato de magnesio. PUEDE CONTENER DERIVADOS DE LECHE Y SOJA`,
     price: 14950,
-    image: `${import.meta.env.BASE_URL}src/assets/citratoMagnesio-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/citratoMagnesio-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -844,7 +844,7 @@ rawProducts.push(
     category: 'CREATINAS',
     description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento fisico, particularmente en actividades de alta intensidad. Cada porcion tu ayuda a aumentar los niveles de fosfocreatina en los musculos, proporcionando mas energia rapida para esfuerzos explosivos como levantamientos de pesas, sprints y dportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (6.7grs) en 200ml de agua. Puedes consumirlo antes o despues de entrenar. INGREDIENTES Monohidrato de creatina, ARO: Saborizante de multifruta, ACI: Ácido citrico, ANAH: Dióxido de silicio, EDU : Sucralosa. Puede contener derivados de leche y soja.`,
     price: 18720,
-    image: `${import.meta.env.BASE_URL}src/assets/creatinaMultifruta-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/creatinaMultifruta-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -853,7 +853,7 @@ rawProducts.push(
     category: 'CREATINAS',
     description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento fisico, particularmente en actividades de alta intensidad. Cada porcion tu ayuda a aumentar los niveles de fosfocreatina en los musculos, proporcionando mas energia rapida para esfuerzos explosivos como levantamientos de pesas, sprints y dportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (6.7grs) en 200ml de agua. Puedes consumirlo antes o despues de entrenar. INGREDIENTES Monohidrato de creatina, ARO: Saborizante de multifruta, ACI: Ácido citrico, ANAH: Dióxido de silicio, EDU : Sucralosa. Puede contener derivados de leche y soja.`,
     price: 18720,
-    image: `${import.meta.env.BASE_URL}src/assets/creatinaUva-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/creatinaUva-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -862,7 +862,7 @@ rawProducts.push(
     category: 'CREATINAS',
     description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento físico, particularmente en actividades de alta intensidad. Cada porción ayuda a aumentar los niveles de fosfocreatina en los músculos, proporcionando más energía rápida para esfuerzos explosivos como levantamientos de pesas, sprints y deportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Puedes consumirlo antes o después de entrenar. INGREDIENTES Monohidrato de creatina`,
     price: 50700,
-    image: `${import.meta.env.BASE_URL}src/assets/creatina1kgPitbull-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/creatina1kgPitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -871,7 +871,7 @@ rawProducts.push(
     category: 'CREATINAS',
     description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento físico, particularmente en actividades de alta intensidad. Cada porción ayuda a aumentar los niveles de fosfocreatina en los músculos, proporcionando más energía rápida para esfuerzos explosivos como levantamientos de pesas, sprints y deportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Puedes consumirlo antes o después de entrenar. INGREDIENTES Monohidrato de creatina`,
     price: 23790,
-    image: `${import.meta.env.BASE_URL}src/assets/creatina300Pitbull-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/creatina300Pitbull-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -880,7 +880,7 @@ rawProducts.push(
     category: 'COLAGENOS Y RESVERATROL',
     description: `El colágeno hidrolizado PITBULL SUPLEMENTOS es colágeno que fue dividido en partículas más pequeñas (péptidos) mediante un proceso llamado hidrolización. Al estar "pre-digerido", el cuerpo lo absorbe más fácil y rápido. Se utiliza comúnmente para mejorar la salud de la piel, articulaciones, uñas, cabello y para favorecer la recuperación muscular. MODO DE USO Disolver un scoop (12grs) del producto, en 250 Ml de agua. Revolver hasta su completa disolución. Utilizar la cuchara del envase. INGREDIENTES Colágeno hidrolizado, ARO: saborizante de: pomelo/uva (según corresponda), citrato de magnesio, vitamina C, acido cítrico, carbonato de magnesio, COL: Cúrcuma, acido hialuronico, EDU: sucralosa y acesulfame K. PUEDE CONTENER DERIVADO DE LECHE Y DE SOJA`,
     price: 18720,
-    image: `${import.meta.env.BASE_URL}src/assets/colagenoMultifruta-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/colagenoMultifruta-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -889,7 +889,7 @@ rawProducts.push(
     category: 'COLAGENOS Y RESVERATROL',
     description: `El colágeno hidrolizado PITBULL SUPLEMENTOS es colágeno que fue dividido en partículas más pequeñas (péptidos) mediante un proceso llamado hidrolización. Al estar “pre-digerido”, el cuerpo lo absorbe más fácil y rápido. Se utiliza comúnmente para mejorar la salud de la piel, articulaciones, uñas, cabello y para favorecer la recuperación muscular. MODO DE USO Disolver un scoop (12grs) del producto, en 250 Ml de agua. Revolver hasta su completa disolución. Utilizar la cuchara del envase. INGREDIENTES Colágeno hidrolizado, ARO: saborizante de: pomelo/uva (según corresponda), citrato de magnesio, vitamina C, acido cítrico, carbonato de magnesio, COL: Cúrcuma, acido hialuronico, EDU: sucralosa y acesulfame K. PUEDE CONTENER DERIVADO DE LECHE Y DE SOJA`,
     price: 18720,
-    image: `${import.meta.env.BASE_URL}src/assets/colagenoUva-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/colagenoUva-trans.png`,
     brand: 'PITBULL'
   },
   {
@@ -898,7 +898,7 @@ rawProducts.push(
     category: 'AMINOACIDOS',
     description: `La glutamina es un aminoácido que se encuentra de forma natural en nuestro cuerpo. Es considerado un aminoácido no esencial, lo que significa que el cuerpo puede producirlo. Sin embargo, en situaciones de estrés físico, como durante el ejercicio intenso o enfermedades, la demanda de glutamina puede superar la capacidad del cuerpo para producirla. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Preferentemente después de entrenar. INGREDIENTES L-Glutamina.`,
     price: 23790,
-    image: `${import.meta.env.BASE_URL}src/assets/glutaminaPitbull-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/glutaminaPitbull-trans.png`,
     brand: 'PITBULL'
   }
 )
@@ -1735,7 +1735,7 @@ Disponible en los deliciosos sabores: Banana, Chocolate, Cookies & Cream, Dulce 
 Contenido: 20 unidades (46g cada una)
 Modo de uso: Consumir 1 barra como snack entre comidas o después del entrenamiento. Ideal para complementar la ingesta proteica diaria.`,
     price: 36400,
-    image: `${import.meta.env.BASE_URL}src/assets/ironBar20gentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/ironBar20gentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1772,7 +1772,7 @@ Beneficios:
 Contenido: 250 gramos
 Modo de uso: Mezclar 5g (1 cucharadita) con 250ml de agua o jugo, tomar 1 vez por día. Período de carga: 20g por día por 5 días, luego 5g diarios.`,
     price: 24830,
-    image: `${import.meta.env.BASE_URL}src/assets/creatina250gentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/creatina250gentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1790,7 +1790,7 @@ Beneficios:
 Contenido: 500 gramos
 Modo de uso: Mezclar 5g (1 cucharadita) con 250ml de agua o jugo, tomar 1 vez por día. Período de carga: 20g por día por 5 días, luego 5g diarios.`,
     price: 44200,
-    image: `${import.meta.env.BASE_URL}src/assets/creatina500gentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/creatina500gentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1809,7 +1809,7 @@ Presentación: 60 cápsulas blandas
 Contenido: 84 gramos
 Modo de uso: Tomar 1-2 cápsulas por día con las comidas o según indicación médica. Mantener refrigerado después de abrir.`,
     price: 34450,
-    image: `${import.meta.env.BASE_URL}src/assets/omegaGentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/omegaGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1828,7 +1828,7 @@ Sabor: Turbo Coffee
 Contenido: 6 unidades
 Modo de uso: Consumir 1 gel 30-45 minutos antes del entrenamiento. No exceder 2 geles por día debido al contenido de cafeína.`,
     price: 22620,
-    image: `${import.meta.env.BASE_URL}src/assets/ironGelGentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/ironGelGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1847,7 +1847,7 @@ Sabor: Red Berries (Frutos Rojos)
 Contenido: 400 gramos
 Modo de uso: Mezclar 1 scoop (10g) con 250ml de agua fría, consumir 30 minutos antes del entrenamiento. Comenzar con medio scoop para evaluar tolerancia.`,
     price: 30940,
-    image: `${import.meta.env.BASE_URL}src/assets/preWorkGentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/preWorkGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1866,7 +1866,7 @@ Disponible en los deliciosos sabores: Chocolate, Vainilla
 Contenido: 1000 gramos
 Modo de uso: Mezclar 1 scoop (30g) con 250ml de agua fría o leche. Consumir 1-2 veces por día, preferentemente después del entrenamiento y entre comidas.`,
     price: 48100,
-    image: `${import.meta.env.BASE_URL}src/assets/wheyProtein1kgGentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/wheyProtein1kgGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1884,7 +1884,7 @@ Beneficios:
 Contenido: 3000 gramos
 Modo de uso: Mezclar 1 scoop (30g) con 250ml de agua fría o leche. Consumir 1-2 veces por día, preferentemente después del entrenamiento y entre comidas.`,
     price: 131300,
-    image: `${import.meta.env.BASE_URL}src/assets/wheyProtein1kgGentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/wheyProtein1kgGentech-trans.png`,
     brand: 'GENTECH'
   },
   {
@@ -1903,7 +1903,7 @@ Presentación: 60 comprimidos
 Contenido: 72 gramos
 Modo de uso: Tomar 1 comprimido por día con el desayuno o según indicación médica. No exceder la dosis recomendada.`,
     price: 10920,
-    image: `${import.meta.env.BASE_URL}src/assets/multivitaminicoGentech-trans.png`,
+    image: `${import.meta.env.BASE_URL}images/multivitaminicoGentech-trans.png`,
     brand: 'GENTECH'
   }
 )

@@ -19,8 +19,8 @@
   align-items: center;
   justify-content: center;
   background: #1a1a1a;
-  padding: 2rem;
-  min-height: 200px;
+  padding: 1.25rem;
+  min-height: 150px;
   overflow: hidden;
 }
 
@@ -28,17 +28,17 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  max-height: 250px;
+  max-height: 180px;
 }
 
 /* Ajustes solo para productos Pitbull en la lista */
 .product-card.pitbull .product-image {
-  padding: 0.8rem;
-  min-height: 220px;
+  padding: 0.6rem;
+  min-height: 160px;
 }
 .product-card.pitbull .product-img {
   max-width: 100%;
-  max-height: 320px;
+  max-height: 220px;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -49,7 +49,7 @@
 }
 
 .product-info {
-  padding: 1.5rem;
+  padding: 0.9rem 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -57,15 +57,15 @@
 }
 
 .product-name {
-  font-size: 1.3rem;
-  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  margin: 0 0 0.4rem 0;
   color: #FFD700;
   text-align: center;
   width: 100%;
 }
 
 .product-price {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-weight: bold;
   color: #FFD700;
   margin-top: auto;
@@ -73,7 +73,7 @@
   display: inline-block;
   border: 2px solid #FFD700;
   border-radius: 999px;
-  padding: 0.35rem 1.4rem;
+  padding: 0.25rem 1rem;
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.45), 0 2px 8px rgba(255, 215, 0, 0.2);
   background: rgba(255, 215, 0, 0.06);
   letter-spacing: 0.5px;
@@ -82,22 +82,22 @@
 
 @media (max-width: 768px) {
   .product-name {
-    font-size: 1.2rem;
+    font-size: 0.95rem;
   }
 
   .product-price {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
   }
 }
 
 @media (max-width: 480px) {
   .product-image {
-    padding: 1.5rem;
-    min-height: 180px;
+    padding: 1rem;
+    min-height: 130px;
   }
 
   .product-card.pitbull .product-image {
-    min-height: 200px;
+    min-height: 150px;
   }
 
   .product-emoji {

@@ -1,3 +1,7 @@
+html {
+  font-size: 87.5%; /* base 14px en lugar de 16px — achica todo el texto proporcionalmente */
+}
+
 * {
   margin: 0;
   padding: 0;

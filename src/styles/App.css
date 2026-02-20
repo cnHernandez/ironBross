@@ -330,13 +330,13 @@
 .breadcrumb-actual {
   color: #FFD700;
   font-weight: 600;
-  margin-left: 0.5rem;
+  margin-left: 0;
   text-transform: uppercase;
 }
 /* Separador del breadcrumb */
 .breadcrumb-sep {
   color: #FFD700;
-  margin: 0 0.5rem;
+  margin: 0;
   font-weight: 600;
 }
 /* Categorías principales */

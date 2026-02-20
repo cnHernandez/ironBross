@@ -116,8 +116,12 @@
 
 .cart-item-image {
   font-size: 3rem;
-  width: 60px;
-  height: 60px;
+  /* Caja de imagen estándar y cuadrada */
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  flex: 0 0 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +134,7 @@
 .cart-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .cart-item-info {
@@ -147,6 +151,7 @@
   margin: 0;
   color: #cccccc;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .quantity-controls {
@@ -191,6 +196,7 @@
   font-size: 1.1rem;
   min-width: 70px;
   text-align: right;
+  white-space: nowrap;
 }
 
 .remove-btn {
@@ -230,6 +236,7 @@
   font-weight: bold;
   color: #FFD700;
   font-size: 2rem;
+  white-space: nowrap;
 }
 
 .whatsapp-btn {
@@ -295,6 +302,16 @@
     font-size: 1.3rem;
   }
 
+  /* Tablet: reducir caja de imagen para mejor encaje */
+  .cart-item-image {
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    min-height: 90px;
+    flex: 0 0 90px;
+    font-size: 3rem;
+  }
+
   .total-amount {
     font-size: 1.75rem;
   }
@@ -323,9 +340,19 @@
     padding: 0.75rem;
   }
 
+  /* Mobile: caja más pequeña y layout en columna */
+  .cart-item {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
   .cart-item-image {
-    width: 50px;
-    height: 50px;
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    min-height: 72px;
+    flex: 0 0 72px;
     font-size: 2.5rem;
   }
 

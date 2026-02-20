@@ -141,13 +141,7 @@ function Cart({ items, onUpdateQuantity, onRemoveItem, totalPrice, onSendOrder, 
                     {formatCurrency(getNumericPrice(item) * item.quantity)}
                   </div>
 
-                  <button 
-                    className="remove-btn"
-                    onClick={() => onRemoveItem(item.id)}
-                    title="Eliminar"
-                  >
-                    🗑️
-                  </button>
+                  {/* remove button intentionally removed per UI request */}
                 </div>
               ))}
             </div>

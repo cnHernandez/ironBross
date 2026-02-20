@@ -31,6 +31,7 @@ const rawProducts = [
     category: 'PROTEINAS Y GANADORES DE PESO',
     price: 47450,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-whey-protein-2lb-doypack-vainilla-7abe5238c0f9f77b8117501819090274-1024-1024_bicvek.webp',
+    description: 'STAR NUTRITION WHEY PROTEIN es una proteína de suero concentrada de alta calidad, ideal para deportistas y personas activas que buscan complementar su ingesta diaria de proteínas. En su práctico formato doypack, ofrece un suplemento proteico delicioso y efectivo para favorecer la recuperación y el desarrollo muscular después del entrenamiento.\n\nBeneficios:\n\n• Proteína de suero concentrada de alta calidad\n• Rico en aminoácidos esenciales y BCAAs\n• Favorece la recuperación y el desarrollo muscular\n• Rápida absorción post-entrenamiento\n• Práctico envase doypack con cierre zip\n• Excelente relación calidad-precio\n\nDisponible en los deliciosos sabores: VAINILLA, CHOCOLATE, COOKIES & CREAM, FRUTILLA, BANANA\n\nContenido: 908 gramos (2 libras)\n\nModo de uso: Mezclar 1 medida (30g) en 200-250ml de agua o leche. Consumir 1-3 porciones diarias, preferentemente después del entrenamiento o como complemento proteico en cualquier momento del día. Para una mejor disolución, utilizar shaker o batidora.',
     brand: 'STAR NUTRITION'
   },
   {
@@ -57,6 +58,7 @@ const rawProducts = [
     category: 'AMINOACIDOS',
     price: 29380,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-mtor-bcaa-270g-blue-raz-086b1f9393925f1c8d17502063829379-1024-1024_fm4cfy.webp',
+    description: 'STAR NUTRITION MTOR BCAA es un suplemento avanzado de aminoácidos de cadena ramificada (BCAAs) en proporción 2:1:1 (Leucina, Isoleucina, Valina) con co-factores metabólicos que activan la vía mTOR, responsable de la síntesis proteica y el crecimiento muscular. Esta fórmula superior está diseñada para maximizar la recuperación, prevenir el catabolismo muscular y optimizar el desarrollo de masa magra en deportistas de todos los niveles.\n\nBeneficios:\n\n• Activa la vía mTOR para potenciar la síntesis proteica\n• Reduce el catabolismo muscular durante entrenamientos intensos\n• Acelera la recuperación entre sesiones de entrenamiento\n• Proporciona energía durante el ejercicio y reduce la fatiga\n• Favorece la hidratación y el rendimiento muscular\n• Preserva la masa muscular durante períodos de definición\n\nDisponible en los deliciosos sabores: BLUE RAZ, FRUIT PUNCH, GRAPE ATTACK, GREEN LEMONADE, STRAWBERRY LIME\n\nContenido: 270 gramos (30 porciones aproximadamente)\n\nModo de uso: Mezclar 1 medida (9g) en 200-250ml de agua. Consumir 1 porción antes, durante o después del entrenamiento según el objetivo deseado. Para prevenir el catabolismo, tomar durante el entrenamiento. Para optimizar la recuperación, tomar inmediatamente después del entrenamiento. Para mejores resultados, puede combinarse con otros suplementos de la línea STAR NUTRITION.',
     brand: 'STAR NUTRITION'
   },
   {
@@ -228,7 +230,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 37700,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-pump-3d-evolution-ripped-315-grs-strawberry-lime-51eb2b71eed1b854c317501808792439-1024-1024_zfmbu2.webp',
-    description: 'STAR NUTRITION PUMP 3D EVOLUTION RIPPED es un pre-entreno premium de triple acción que combina potenciadores de energía, maximizadores de bomba muscular y quemadores de grasa en una fórmula avanzada.\n\nBeneficios:\n\n• Triple acción: energía + pump + quema de grasa\n• Proporciona energía explosiva y sostenida\n• Maximiza la vasodilatación y la bomba muscular\n• Activa el metabolismo y favorece la quema de grasa\n• Mejora el enfoque mental y la concentración\n• Optimiza el rendimiento en entrenamientos de alta intensidad\n\nContenido: 315 gramos (30 porciones aproximadamente)\n\nModo de uso: Mezclar 1 medida (10.5g) en 250ml de agua fría y consumir 20-30 minutos antes del entrenamiento. No exceder la dosis recomendada.'
+    description: 'STAR NUTRITION PUMP 3D EVOLUTION RIPPED es un pre-entreno premium de triple acción que combina potenciadores de energía, maximizadores de bomba muscular y quemadores de grasa en una fórmula avanzada. Diseñado para atletas exigentes que buscan llevar su rendimiento al siguiente nivel mientras favorecen la definición muscular y la pérdida de grasa durante los entrenamientos de alta intensidad.\n\nBeneficios:\n\n• Triple acción: energía + pump + quema de grasa\n• Proporciona energía explosiva y sostenida\n• Maximiza la vasodilatación y la bomba muscular\n• Activa el metabolismo y favorece la quema de grasa\n• Mejora el enfoque mental y la concentración\n• Optimiza el rendimiento en entrenamientos de alta intensidad\n\nDisponible en los deliciosos sabores: LEMONADE, STRAWBERRY-LIME\n\nContenido: 315 gramos (30 porciones aproximadamente)\n\nModo de uso: Mezclar 1 medida (10.5g) en 250ml de agua fría y consumir 20-30 minutos antes del entrenamiento. Para entrenamientos de máxima intensidad, se puede tomar 1.5 medidas. No consumir después de las 18:00hs o 6 horas antes de dormir. No exceder la dosis recomendada.'
   },
   {
     id: 24,
@@ -237,7 +239,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 40950,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-just-plant-2-lbs-7f5bc8a7052c51838f17501813976470-1024-1024_modymo.webp',
-    description: 'STAR NUTRITION JUST PLANT es una proteína 100% vegetal formulada a base de arveja y arroz, ideal para dietas veganas y vegetarianas.\n\nBeneficios:\n\n• 100% proteína vegetal\n• Perfil completo de aminoácidos esenciales\n• Excelente digestibilidad\n• Libre de lactosa, colesterol y gluten\n• Ideal para dietas veganas y vegetarianas\n\nContenido: 908 gramos (2 libras)\n\nModo de uso: Mezclar 1 medida (30g) en 200-250ml de agua o bebida vegetal. Consumir 1-2 porciones diarias.'
+    description: 'STAR NUTRITION JUST PLANT es una proteína 100% vegetal de alta calidad, desarrollada para satisfacer las necesidades nutricionales de deportistas veganos y vegetarianos. Formulada a base de proteína de arveja, arroz y otras fuentes vegetales, proporciona un perfil completo de aminoácidos esenciales para favorecer la recuperación muscular y el desarrollo de masa magra.\n\nBeneficios:\n\n• 100% proteína de origen vegetal\n• Alto contenido proteico por porción\n• Perfil completo de aminoácidos esenciales\n• Excelente digestibilidad\n• Libre de lactosa, colesterol y gluten\n• Ideal para dietas veganas, vegetarianas e intolerantes a la lactosa\n\nDisponible en los deliciosos sabores: Sabor neutro que puede combinarse con frutas, cacao u otros ingredientes para variar el sabor\n\nContenido: 908 gramos (2 libras)\n\nModo de uso: Mezclar 1 medida (30g) en 200-250ml de agua, leche vegetal o tu bebida preferida. Consumir 1-2 porciones diarias, preferentemente después del entrenamiento o como complemento proteico en cualquier momento del día. Agitar en shaker o batir con batidora para una mejor disolución.'
   },
   {
     id: 25,
@@ -246,7 +248,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 20930,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-thermo-fuel-max-120-caps-7f4903d8b20a5ca40d17502053862225-1024-1024_ksuhcx.webp',
-    description: 'STAR NUTRITION THERMO FUEL MAX es un potente quemador de grasa termogénico diseñado para acelerar el metabolismo y promover la quema de grasas.\n\nBeneficios:\n\n• Acelera el metabolismo\n• Potencia la oxidación de grasas\n• Aumenta los niveles de energía\n• Mejora el enfoque mental\n• Ayuda a controlar el apetito\n\nContenido: 120 cápsulas\n\nModo de uso: Tomar 2 cápsulas por la mañana y 2 cápsulas antes del entrenamiento. No exceder la dosis recomendada.'
+    description: 'STAR NUTRITION THERMO FUEL MAX es un potente quemador de grasa termogénico diseñado para acelerar el metabolismo, aumentar la temperatura corporal y promover la quema de grasas. Formulado con una combinación estratégica de ingredientes activos, este suplemento ayuda a maximizar la pérdida de grasa mientras proporciona energía y concentración durante los entrenamientos y a lo largo del día.\n\nBeneficios:\n\n• Acelera el metabolismo y promueve la termogénesis\n• Potencia la oxidación de grasas durante el ejercicio\n• Aumenta los niveles de energía y la capacidad de resistencia\n• Mejora el enfoque mental y la concentración\n• Ayuda a controlar el apetito\n• Optimiza los resultados de dietas y programas de pérdida de peso\n\nDisponible en los deliciosos sabores: Presentación en cápsulas (sin sabor)\n\nContenido: 120 cápsulas\n\nModo de uso: Tomar 2 cápsulas por la mañana con el desayuno y 2 cápsulas 30 minutos antes del entrenamiento. En días sin entrenamiento, tomar 2 cápsulas por la mañana y 2 cápsulas antes del almuerzo. Para mayor sensibilidad, comenzar con 1 cápsula por toma y aumentar gradualmente. No consumir después de las 16:00hs para evitar afectar el sueño. No exceder la dosis recomendada.'
   },
   {
     id: 26,
@@ -255,7 +257,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 19110,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-zma-90-caps-b391e775b5a56075c017502058635936-1024-1024_ikxnag.webp',
-    description: 'STAR NUTRITION ZMA combina Zinc, Magnesio y Vitamina B6 para optimizar la recuperación muscular, el descanso nocturno y el rendimiento deportivo.\n\nBeneficios:\n\n• Favorece la recuperación muscular\n• Mejora la calidad del sueño\n• Optimiza niveles hormonales naturales\n• Refuerza el sistema inmunológico\n\nContenido: 90 cápsulas\n\nModo de uso: Tomar 3 cápsulas antes de dormir con el estómago vacío.'
+    description: 'STAR NUTRITION ZMA es un suplemento formulado con una combinación específica de Zinc, Magnesio y Vitamina B6, nutrientes esenciales que trabajan en sinergia para optimizar la recuperación muscular, el descanso nocturno y los niveles hormonales. Este suplemento está especialmente diseñado para deportistas y personas activas que buscan mejorar su rendimiento físico, potenciar la recuperación y optimizar los resultados de sus entrenamientos.\n\nBeneficios:\n\n• Favorece la recuperación muscular y el crecimiento de tejidos\n• Contribuye a optimizar los niveles hormonales naturales\n• Mejora la calidad del sueño y el descanso nocturno\n• Ayuda a mantener un sistema inmunológico saludable\n• Contribuye al metabolismo energético normal\n• Previene deficiencias de zinc y magnesio comunes en deportistas\n\nDisponible en los deliciosos sabores: Presentación en cápsulas (sin sabor)\n\nContenido: 90 cápsulas\n\nModo de uso: Tomar 3 cápsulas preferentemente antes de dormir con el estómago vacío para una mejor absorción. Para mejores resultados, consumir de forma constante durante al menos 8 semanas. No exceder la dosis recomendada.'
   },
   {
     id: 27,
@@ -264,7 +266,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 26780,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-hmb-180-caps-296a42e519638c918017502062026924-1024-1024_ytewnk.webp',
-    description: 'STAR NUTRITION HMB es un suplemento anti-catabólico derivado de la leucina que ayuda a preservar la masa muscular y mejorar la recuperación.\n\nBeneficios:\n\n• Reduce el catabolismo muscular\n• Favorece la síntesis proteica\n• Mejora la recuperación\n• Preserva la masa muscular en definición\n\nContenido: 180 cápsulas\n\nModo de uso: Tomar 3 cápsulas 3 veces al día con las comidas. No exceder la dosis recomendada.'
+    description: 'STAR NUTRITION HMB (Beta-Hidroxi Beta-Metilbutirato) es un metabolito activo de la leucina que actúa como un potente agente anti-catabólico para proteger y preservar la masa muscular. Este suplemento avanzado está especialmente formulado para deportistas que buscan prevenir la degradación muscular durante entrenamientos intensos, períodos de definición o dietas hipocalóricas, favoreciendo la recuperación y el desarrollo muscular a largo plazo.\n\nBeneficios:\n\n• Reduce el catabolismo y la degradación muscular\n• Favorece la síntesis proteica y el crecimiento muscular\n• Mejora la recuperación después de entrenamientos intensos\n• Preserva la masa muscular durante períodos de definición\n• Potencia la fuerza y el rendimiento deportivo\n• Proporciona resultados notables con uso constante\n\nDisponible en los deliciosos sabores: Presentación en cápsulas (sin sabor)\n\nContenido: 180 cápsulas\n\nModo de uso: Tomar 3 cápsulas 3 veces al día, preferentemente con las comidas. Para optimizar resultados, se recomienda tomar una dosis 30-45 minutos antes del entrenamiento y otra inmediatamente después. Para mejores resultados, consumir de forma constante durante al menos 8-12 semanas. No exceder la dosis recomendada.'
   },
   {
     id: 28,
@@ -345,7 +347,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 93600,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-mutantmass-5-kilos-zipper-pack-vainilla-ice-cream-a06e4bee602fe7eebe17501881535079-1024-1024_h6jmsm.webp',
-    description: 'STAR NUTRITION MUTANTMASS en su formato económico de 5 kilos con cierre zipper es un ganador de peso premium, desarrollado para personas que buscan aumentar su masa muscular de forma sostenida y efectiva. Esta fórmula avanzada combina proteínas de múltiples fuentes, carbohidratos complejos y grasas esenciales.\n\nBeneficios:\n\n• Elevado aporte calórico para maximizar el aumento de peso\n• Matriz proteica de liberación secuencial\n• Mezcla estratégica de carbohidratos\n• Contiene creatina para potenciar el volumen muscular\n• Formato económico de larga duración\n\nDisponible en los deliciosos sabores: VAINILLA ICE CREAM, CHOCOLATE SUIZO, COOKIES & CREAM, STRAWBERRY CREAM\n\nContenido: 5000 gramos (5 kilos)\n\nModo de uso: Mezclar 3 medidas (100g) en 300-350ml de agua o leche. Consumir 1-2 porciones diarias, preferentemente después del entrenamiento y/o entre comidas.'
+    description: 'STAR NUTRITION MUTANTMASS en su formato económico de 5 kilos con cierre zipper es un ganador de peso premium, desarrollado para personas que buscan aumentar su masa muscular de forma sostenida y efectiva. Esta fórmula avanzada combina proteínas de múltiples fuentes, carbohidratos complejos y grasas esenciales, aportando las calorías y nutrientes necesarios para favorecer un aumento de peso saludable, especialmente en personas con metabolismo acelerado o dificultad para ganar masa.\n\nBeneficios:\n\n• Elevado aporte calórico para maximizar el aumento de peso\n• Matriz proteica de liberación secuencial para nutrición constante\n• Mezcla estratégica de carbohidratos para energía sostenida\n• Contiene creatina para potenciar el volumen y la fuerza muscular\n• Formato económico de 5 kilos con cierre zipper para mayor duración\n• Ideal para ciclos de volumen y ganancia de masa a largo plazo\n\nDisponible en los deliciosos sabores: VAINILLA ICE CREAM, CHOCOLATE SUIZO, COOKIES & CREAM, STRAWBERRY CREAM\n\nContenido: 5000 gramos (5 kilos)\n\nModo de uso: Mezclar 3 medidas (100g) en 300-350ml de agua o leche. Consumir 1-2 porciones diarias, preferentemente después del entrenamiento y/o entre comidas como complemento calórico. Para una mejor disolución, utilizar shaker o batidora. Acompañar con una dieta adecuada y entrenamiento regular para obtener mejores resultados.'
   },
   /*{
     id: 37,
@@ -363,7 +365,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 7800,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-caffeine-200-x-30caps-2a57ca6dfef96413cc17501728493075-1024-1024_aajagr.webp',
-    description: 'STAR NUTRITION Caffeine 200 es un suplemento de cafeína anhidra que provee 200mg por cápsula para maximizar la energía, mejorar el enfoque mental y potenciar el rendimiento físico.\n\nBeneficios:\n\n• Aumenta los niveles de energía\n• Mejora el rendimiento físico\n• Acelera el metabolismo\n• Mejora la concentración\n\nContenido: 30 cápsulas\n\nModo de uso: Tomar 1 cápsula 30 minutos antes del entrenamiento o cuando se necesite un impulso de energía.'
+    description: 'STAR NUTRITION Caffeine 200 es un suplemento de cafeína anhidra que provee 200mg por cápsula para maximizar la energía, mejorar el enfoque mental y potenciar el rendimiento físico. Ideal antes de tus entrenamientos o cuando necesites un impulso extra de energía.\n\nBeneficios:\n\n• Aumenta los niveles de energía y alerta mental\n• Mejora el rendimiento físico durante el ejercicio\n• Acelera el metabolismo\n• Ayuda a la movilización de ácidos grasos\n• Mejora la concentración y el enfoque\n• Formato conveniente de cápsulas de dosificación precisa\n\nContenido: 30 cápsulas\n\nModo de uso: Tomar 1 cápsula 30 minutos antes del entrenamiento o cuando se necesite un impulso de energía. No exceder la dosis recomendada. No consumir después de las 4 pm si eres sensible a la cafeína.'
   },
   {
     id: 39,
@@ -372,7 +374,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 7930,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-vitamin-c-60-caps-62de7e1fbb33ddab4917501740959509-1024-1024_gpp1hw.webp',
-    description: 'STAR NUTRITION Vitamin C es un suplemento esencial para fortalecer el sistema inmunológico y promover una óptima salud.\n\nBeneficios:\n\n• Fortalece el sistema inmunológico\n• Poderoso antioxidante\n• Favorece la producción de colágeno\n• Reduce la fatiga\n\nContenido: 60 cápsulas\n\nModo de uso: Tomar 1 cápsula diaria con alimentos.'
+    description: 'STAR NUTRITION Vitamin C es un suplemento esencial para fortalecer el sistema inmunológico y promover una óptima salud. La vitamina C es crucial para la producción de colágeno, la absorción de hierro y la protección antioxidante de las células.\n\nBeneficios:\n\n• Fortalece el sistema inmunológico\n• Poderoso antioxidante que combate los radicales libres\n• Favorece la producción natural de colágeno\n• Mejora la absorción de hierro\n• Contribuye a la salud de piel, huesos y vasos sanguíneos\n• Ayuda a reducir el cansancio y la fatiga\n\nContenido: 60 cápsulas\n\nModo de uso: Tomar 1 cápsula diaria con alimentos. Puede incrementarse a 2 cápsulas diarias en períodos de mayor necesidad (invierno, estrés, actividad física intensa).'
   },
  /* {
     id: 40,
@@ -390,7 +392,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 26520,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-100-beta-alanina-300grs-e4c0fb71b92733bb2817501811100270-1024-1024_cuyiyo.webp',
-    description: 'STAR NUTRITION 100% BETA ALANINA es un suplemento de alto rendimiento que ayuda a retrasar la fatiga muscular.\n\nBeneficios:\n\n• Retrasa la fatiga\n• Aumenta la resistencia\n• Mejora el rendimiento\n\nContenido: 300 gramos\n\nModo de uso: Tomar 1 medida (3g) antes del entrenamiento.'
+    description: 'STAR NUTRITION 100% BETA ALANINA es un suplemento de alto rendimiento que proporciona este aminoácido en su forma pura y más efectiva. La Beta Alanina es fundamental para la producción de carnosina, un dipéptido que ayuda a tamponar el ácido láctico en los músculos, permitiéndote entrenar más fuerte y durante más tiempo antes de sentir la fatiga muscular.\n\nBeneficios:\n\n• Retrasa la aparición de la fatiga muscular\n• Aumenta la resistencia durante entrenamientos de alta intensidad\n• Mejora el rendimiento en ejercicios de fuerza-resistencia\n• Ayuda a soportar el entrenamiento en condiciones de acidosis muscular\n• Permite realizar más repeticiones antes del fallo muscular\n• Potencia los resultados de entrenamiento a largo plazo\n\nDisponible en los deliciosos sabores: Presentación en polvo (sabor neutro)\n\nContenido: 300 gramos (100 porciones aproximadamente)\n\nModo de uso: Tomar 1 medida (3g) mezclada con agua o jugo, preferentemente 30 minutos antes del entrenamiento. Para mejores resultados, se recomienda fraccionar la dosis diaria en 2-3 tomas de 1.5-2g. Es normal experimentar una sensación de hormigueo en la piel durante los primeros días de uso. No exceder la dosis recomendada.'
   },
   {
     id: 42,
@@ -399,7 +401,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 40950,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-just-whey-2-lbs-981b900f9c97dbb06017501814560702-1024-1024_x6ft08.webp',
-    description: 'STAR NUTRITION JUST WHEY es una proteína de suero concentrada de alta calidad, sin aditivos ni saborizantes.\n\nBeneficios:\n\n• Alta pureza\n• Rápida absorción\n• Versátil\n\nContenido: 908 gramos\n\nModo de uso: Mezclar 1 medida (30g) en agua o leche.'
+    description: 'STAR NUTRITION JUST WHEY es una proteína de suero de leche concentrada de alta calidad, diseñada para proporcionar un aporte proteico puro y efectivo. Sin aditivos ni saborizantes, esta proteína ofrece la pureza que los atletas más exigentes buscan para complementar su dieta y favorecer la recuperación y el desarrollo muscular.\n\nBeneficios:\n\n• Suero de leche concentrado de alta calidad\n• Sin saborizantes ni aditivos artificiales\n• Elevado valor biológico y rápida absorción\n• Alto contenido de aminoácidos esenciales y BCAAs\n• Ideal para aumentar la ingesta proteica diaria\n• Versátil: se puede mezclar con otros ingredientes\n\nDisponible en los deliciosos sabores: Sabor neutro que permite combinarlo con frutas, cacao u otros ingredientes para variar el sabor\n\nContenido: 908 gramos (2 libras)\n\nModo de uso: Mezclar 1 medida (30g) en 200-250ml de agua, leche o tu bebida preferida. Consumir 1-3 porciones diarias, preferentemente después del entrenamiento o como complemento proteico en cualquier momento del día. Para una mejor disolución, utilizar shaker o batidora.'
   },
   {
     id: 43,
@@ -408,7 +410,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 15080,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-l-carnitine-60-comp-3e6e252c182bf4414617502054878333-1024-1024_gy3wqh.webp',
-    description: 'STAR NUTRITION L-CARNITINE es un suplemento diseñado para optimizar el metabolismo de las grasas.\n\nBeneficios:\n\n• Favorece la quema de grasa\n• Mejora el rendimiento\n\nContenido: 60 comprimidos\n\nModo de uso: Tomar 2 comprimidos antes del entrenamiento.'
+    description: 'STAR NUTRITION L-CARNITINE en comprimidos es un suplemento específicamente diseñado para optimizar el transporte de ácidos grasos hacia las mitocondrias, donde son convertidos en energía. La L-Carnitina es un aminoácido natural que juega un papel fundamental en el metabolismo de las grasas, ayudando a mejorar el rendimiento deportivo y a favorecer la pérdida de grasa corporal cuando se combina con ejercicio regular y una alimentación adecuada.\n\nBeneficios:\n\n• Favorece el transporte de ácidos grasos hacia las mitocondrias\n• Optimiza la conversión de grasa en energía\n• Mejora el rendimiento y la resistencia física\n• Reduce la fatiga durante el ejercicio\n• Contribuye a la recuperación post-entrenamiento\n• Ayuda a preservar la masa muscular durante períodos de definición\n\nDisponible en los deliciosos sabores: Presentación en comprimidos (sin sabor)\n\nContenido: 60 comprimidos\n\nModo de uso: Tomar 2 comprimidos 30 minutos antes del entrenamiento o actividad cardiovascular. En días sin entrenamiento, tomar 2 comprimidos por la mañana en ayunas. Para mejores resultados, combinar con una dieta equilibrada y ejercicio regular. No exceder la dosis recomendada.'
   },
   {
     id: 44,
@@ -417,7 +419,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 14560,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-l-carnitine-liquid-lima-500-307acb5fa941c83d1b17502058003138-1024-1024_ssjegk.webp',
-    description: 'STAR NUTRITION L-CARNITINE LIQUID es un suplemento líquido de rápida absorción para optimizar el uso de grasa como energía.\n\nContenido: 500 ml\n\nModo de uso: Tomar 15ml antes del entrenamiento.'
+    description: 'STAR NUTRITION L-CARNITINE LIQUID es un suplemento en forma líquida sin TACC que aporta L-Carnitina de alta pureza para optimizar el metabolismo de las grasas. Su formato líquido asegura una rápida absorción y biodisponibilidad, facilitando el transporte de ácidos grasos hacia las mitocondrias donde son utilizados como fuente de energía. Ideal para deportistas y personas activas que buscan mejorar su composición corporal y rendimiento.\n\nBeneficios:\n\n• Rápida absorción y biodisponibilidad por su formato líquido\n• Favorece el uso de la grasa como fuente de energía\n• Mejora el rendimiento en actividades cardiovasculares\n• Contribuye a reducir la fatiga durante el ejercicio\n• Sin TACC (apto para celíacos)\n• Delicioso sabor y fácil de consumir\n\nDisponible en los deliciosos sabores: LIMA\n\nContenido: 500 mililitros\n\nModo de uso: Tomar 15ml (aproximadamente 1 cucharada) 30 minutos antes del entrenamiento o actividad cardiovascular. En días sin entrenamiento, tomar 15ml por la mañana en ayunas. Agitar bien antes de usar. Puede diluirse en agua si se prefiere. Una vez abierto, conservar en refrigerador. Para mejores resultados, combinar con una dieta equilibrada y ejercicio regular. No exceder la dosis recomendada.'
   },
   {
     id: 45,
@@ -426,7 +428,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 35750,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-essential-amino-limon-360-d1b88d8e0678b6299f17502069244526-1024-1024_cnhhwx.webp',
-    description: 'STAR NUTRITION ESSENTIAL AMINO aporta los 9 aminoácidos esenciales para optimizar la recuperación y síntesis proteica.\n\nContenido: 360 gramos\n\nModo de uso: Mezclar 1 medida en agua durante o después del entrenamiento.'
+    description: 'STAR NUTRITION ESSENTIAL AMINO es un suplemento completo que aporta los 9 aminoácidos esenciales (EAAs) que el cuerpo no puede producir por sí mismo, incluyendo los BCAAs en proporciones óptimas. Esta fórmula avanzada proporciona el espectro completo de aminoácidos necesarios para maximizar la síntesis proteica, optimizar la recuperación muscular y potenciar el rendimiento durante entrenamientos de alta intensidad.\n\nBeneficios:\n\n• Contiene los 9 aminoácidos esenciales para una nutrición completa\n• Optimiza la síntesis proteica y la recuperación muscular\n• Previene el catabolismo durante entrenamientos prolongados\n• Mejora la resistencia y reduce la fatiga muscular\n• Favorece el desarrollo de masa muscular magra\n• Ideal para consumir durante y después del entrenamiento\n\nDisponible en los deliciosos sabores: LIMÓN\n\nContenido: 360 gramos (30 porciones aproximadamente)\n\nModo de uso: Mezclar 1 medida (12g) en 200-300ml de agua. Consumir 1 porción durante el entrenamiento para prevenir el catabolismo o inmediatamente después para maximizar la recuperación. En días de entrenamiento intenso, puede tomarse 1 porción adicional entre comidas. Para mejores resultados, puede combinarse con otros suplementos de la línea STAR NUTRITION.'
   },
   {
     id: 46,
@@ -435,7 +437,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 16640,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-l-arginina-gh-150-grs-ddd9385aa28d5555ab17502079732667-1024-1024_a4up3v.webp',
-    description: 'STAR NUTRITION L-ARGININA GH favorece la producción de óxido nítrico y el pump muscular.\n\nContenido: 150 gramos\n\nModo de uso: Tomar 1 medida antes del entrenamiento.'
+    description: 'STAR NUTRITION L-ARGININA GH es un suplemento de L-Arginina pura, un aminoácido semi-esencial que actúa como precursor del óxido nítrico, favoreciendo la vasodilatación y el pump muscular. Además, contribuye a estimular la liberación natural de hormona de crecimiento (GH), potenciando la recuperación y el desarrollo muscular. Este aminoácido fundamental mejora el flujo sanguíneo, el transporte de nutrientes a los músculos y optimiza el rendimiento durante los entrenamientos intensos.\n\nBeneficios:\n\n• Favorece la producción de óxido nítrico y la vasodilatación\n• Mejora el bombeo muscular y la congestión durante el entrenamiento\n• Contribuye a la liberación natural de hormona de crecimiento\n• Optimiza el transporte de nutrientes y oxígeno a los músculos\n• Potencia la recuperación post-entrenamiento\n• Mejora el rendimiento en ejercicios de alta intensidad\n\nDisponible en los deliciosos sabores: Polvo sin sabor que puede mezclarse con cualquier bebida\n\nContenido: 150 gramos (30 porciones aproximadamente)\n\nModo de uso: Mezclar 1 medida (5g) en 200ml de agua o jugo. Consumir 1 porción 30-40 minutos antes del entrenamiento para maximizar el pump muscular. Para potenciar la liberación de hormona de crecimiento, tomar 1 porción antes de dormir con el estómago vacío. No exceder la dosis recomendada.'
   },
   {
     id: 47,
@@ -444,7 +446,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 55900,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-l-citrulline-x-300grs-5c77590d2f4d90f37517501728964975-1024-1024_eooosz.webp',
-    description: 'STAR NUTRITION L-Citrulline mejora el flujo sanguíneo y el rendimiento durante el entrenamiento.\n\nContenido: 300 gramos\n\nModo de uso: Tomar 3g antes del entrenamiento.'
+    description: 'STAR NUTRITION L-Citrulline es un aminoácido no esencial que promueve la vasodilatación y mejora el flujo sanguíneo, optimizando el rendimiento durante el entrenamiento. Aumenta los niveles de óxido nítrico para lograr mejores bombeos musculares y mayor resistencia.\n\nBeneficios:\n\n• Incrementa la producción de óxido nítrico\n• Mejora el bombeo muscular durante el entrenamiento\n• Aumenta el flujo sanguíneo a los músculos\n• Reduce la fatiga muscular\n• Mejora la recuperación post-entrenamiento\n• Fórmula pura sin aditivos innecesarios\n\nDisponible en los deliciosos sabores: Sin sabor\n\nContenido: 300 gramos (300g)\n\nModo de uso: Mezclar 3 gramos (aproximadamente 1 medida) en 200ml de agua o bebida preferida. Consumir 30 minutos antes del entrenamiento para maximizar los beneficios. Puede combinarse con otros ingredientes pre-entreno como cafeína o beta-alanina.'
   },
   {
     id: 48,
@@ -453,7 +455,7 @@ const rawProducts = [
     brand: 'STAR NUTRITION',
     price: 52650,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-nitro-whey-2lbs-vainilla-60726758596b9592cb17501817935760-1024-1024_njt34s.webp',
-    description: 'STAR NUTRITION NITRO WHEY es una proteína avanzada de rápida absorción diseñada para maximizar la recuperación muscular.\n\nContenido: 908 gramos\n\nModo de uso: Mezclar 1 medida en agua o leche después del entrenamiento.'
+    description: 'STAR NUTRITION NITRO WHEY es una fórmula avanzada de proteína de suero que combina concentrado y aislado de whey para ofrecer un perfil proteico superior. Desarrollada específicamente para deportistas que buscan potenciar la recuperación muscular y maximizar el crecimiento de masa magra, esta proteína de rápida absorción contiene enzimas digestivas para optimizar su asimilación.\n\nBeneficios:\n\n• Fórmula dual de concentrado y aislado de suero\n• Alto contenido proteico con perfil completo de aminoácidos\n• Contiene enzimas digestivas para mejorar la absorción\n• Rica en BCAAs y glutamina para potenciar la recuperación\n• Rápida asimilación post-entrenamiento\n• Excelente solubilidad y delicioso sabor\n\nDisponible en los deliciosos sabores: VAINILLA, FRUTILLA, CHOCOLATE\n\nContenido: 908 gramos (2 libras)\n\nModo de uso: Mezclar 1 medida (30g) en 200-250ml de agua o leche. Consumir 1-3 porciones diarias, preferentemente después del entrenamiento o como complemento proteico en cualquier momento del día. Para una mejor disolución, utilizar shaker o batidora.'
   }
 ]
 // Productos GOLD
@@ -656,7 +658,7 @@ rawProducts.push(
     id: 70,
     name: 'BCAA PRO 120 CAPS',
     category: 'AMINOACIDOS',
-    description: 'XTRENGHT BCAA Pro es un suplemento de aminoácidos ramificados en cápsulas que proporciona la proporción óptima 2:1:1 de Leucina, Isoleucina y Valina. Estos aminoácidos esenciales son fundamentales para la síntesis proteica, la recuperación muscular y la prevención del catabolismo durante entrenamientos intensos.',
+    description: 'XTRENGHT BCAA Pro es un suplemento de aminoácidos ramificados en cápsulas que proporciona la proporción óptima 2:1:1 de Leucina, Isoleucina y Valina. Estos aminoácidos esenciales son fundamentales para la síntesis proteica, la recuperación muscular y la prevención del catabolismo durante entrenamientos intensos.\n\nBeneficios:\n\n• Estimula la síntesis de proteínas musculares\n• Previene la degradación muscular durante el ejercicio\n• Acelera la recuperación entre sesiones de entrenamiento\n• Reduce el dolor muscular post-entrenamiento\n• Formato en cápsulas para mayor comodidad y precisión\n• Fácil de transportar y dosificar\n• Ideal para consumir en cualquier momento del día\n\nDisponible en: Frasco de 120 cápsulas\n\nContenido: 120 cápsulas (40 porciones)\n\nModo de uso: Consumir 3 cápsulas con agua, preferentemente antes o durante el entrenamiento. En días de entrenamiento intenso, puede consumirse una dosis adicional después del ejercicio para potenciar la recuperación. En días de descanso, tomar 3 cápsulas en cualquier momento del día.',
     price: 12350,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918182/xtrenght-bcaa-pro-120-caps-d76054810b95334fca17502115228286-1024-1024_oqszza.webp',
     brand: 'XTRENGHT'
@@ -665,7 +667,7 @@ rawProducts.push(
     id: 71,
     name: 'BETA ALANINE 180 CAPS',
     category: 'AMINOACIDOS',
-    description: 'XTRENGHT Beta Alanine es un suplemento avanzado en cápsulas diseñado para aumentar los niveles de carnosina muscular, lo que retrasa la aparición de fatiga y mejora significativamente la resistencia durante entrenamientos de alta intensidad.',
+    description: 'XTRENGHT Beta Alanine es un suplemento avanzado en cápsulas diseñado para aumentar los niveles de carnosina muscular, lo que retrasa la aparición de fatiga y mejora significativamente la resistencia durante entrenamientos de alta intensidad. Ideal para deportistas que buscan superar plateaus de rendimiento y extender sus límites físicos.\n\nBeneficios:\n\n• Retrasa la aparición de la fatiga muscular\n• Aumenta la capacidad de trabajo en series de alta repetición\n• Mejora el rendimiento en entrenamientos de resistencia\n• Incrementa la capacidad buffer contra la acidez muscular\n• Permite entrenar con mayor intensidad y volumen\n• Formato en cápsulas para dosificación precisa\n• Evita el efecto parestesia (hormigueo) asociado al polvo\n\nDisponible en: Frasco de 180 cápsulas\n\nContenido: 180 cápsulas (60 porciones)\n\nModo de uso: Consumir 3 cápsulas con agua aproximadamente 30-45 minutos antes del entrenamiento. Para una dosificación más efectiva, puede dividirse en 2 tomas diarias de 3 cápsulas cada una. Los mejores resultados se obtienen con el consumo constante durante al menos 4 semanas para saturar los niveles de carnosina muscular.',
     price: 13520,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918197/xtrenght-beta-alanine-180-caps-f0c11d48e28b0e81be17502116568701-1024-1024_ltqtwp.webp',
     brand: 'XTRENGHT'
@@ -674,7 +676,7 @@ rawProducts.push(
     id: 72,
     name: 'CARNITINE 90 CAPS',
     category: 'AMINOACIDOS',
-    description: 'XTRENGHT L-Carnitine en cápsulas es un suplemento premium de L-Carnitina, ideal para deportistas que buscan optimizar su metabolismo de grasas y mejorar su rendimiento físico.',
+    description: 'XTRENGHT L-Carnitine en cápsulas es un suplemento premium de L-Carnitina, un compuesto natural que juega un papel fundamental en el transporte de ácidos grasos hacia las mitocondrias, donde son convertidos en energía. Ideal para deportistas que buscan optimizar su metabolismo de grasas y mejorar su rendimiento físico.\n\nBeneficios:\n\n• Optimiza el transporte de grasas hacia las mitocondrias\n• Mejora la utilización de grasas como fuente de energía\n• Aumenta la resistencia durante ejercicios aeróbicos\n• Reduce la fatiga muscular y mejora la recuperación\n• Apoya la pérdida de grasa corporal durante dietas\n• Formato en cápsulas para mayor precisión y comodidad\n• Complemento ideal para programas de definición muscular\n\nDisponible en: Frasco de 90 cápsulas\n\nContenido: 90 cápsulas (45 porciones)\n\nModo de uso: Consumir 2 cápsulas con agua, preferentemente 30 minutos antes del ejercicio cardiovascular o en ayunas. Para mayor efectividad, mantener una hidratación adecuada. Puede complementarse con otros suplementos de la línea XTRENGHT para potenciar los resultados durante fases de definición.',
     price: 12350,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918220/xtrenght-l-carnitine-90-caps-dbaeaa60f2d822ba2017502117111975-1024-1024_jlmk3q.webp',
     brand: 'XTRENGHT'
@@ -683,7 +685,7 @@ rawProducts.push(
     id: 73,
     name: 'GLUTAMINE 300GRS',
     category: 'AMINOACIDOS',
-    description: 'XTRENGHT Glutamine es un suplemento de L-Glutamina pura de alta calidad, diseñado para optimizar la recuperación muscular y fortalecer el sistema inmunológico.',
+    description: 'XTRENGHT Glutamine es un suplemento de L-Glutamina pura de alta calidad, diseñado para optimizar la recuperación muscular y fortalecer el sistema inmunológico. La glutamina es el aminoácido más abundante en el tejido muscular y juega un papel crucial en la recuperación post-entrenamiento y la salud intestinal.\n\nBeneficios:\n\n• Acelera la recuperación muscular después del entrenamiento\n• Reduce el dolor muscular y la fatiga\n• Fortalece el sistema inmunológico\n• Promueve la salud intestinal y digestiva\n• Previene el catabolismo muscular\n• Ayuda a mantener el balance de nitrógeno positivo\n• Contribuye a la hidratación celular\n\nDisponible en: Formato neutro sin sabor\n\nContenido: 300 gramos (60 porciones)\n\nModo de uso: Mezclar 1 scoop (5g) en 200ml de agua o jugo. Consumir preferentemente después del entrenamiento o antes de dormir. Para resultados óptimos, puede consumirse una dosis adicional en ayunas para mejorar la salud intestinal e inmunológica.',
     price: 26520,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918225/xtrenght-glutamine-300-grs-c3b8938cad061d43bc17502115839549-1024-1024_pu9qui.webp',
     brand: 'XTRENGHT'
@@ -692,7 +694,7 @@ rawProducts.push(
     id: 74,
     name: 'HYDRO BCAA PRO 360GRS',
     category: 'AMINOACIDOS',
-    description: 'XTRENGHT Hydro BCAA es un suplemento avanzado de aminoácidos de cadena ramificada (BCAAs) en formato hidrosoluble para máxima absorción.',
+    description: 'XTRENGHT Hydro BCAA es un suplemento avanzado de aminoácidos de cadena ramificada (BCAAs) en formato hidrosoluble para máxima absorción. Formulado con una proporción óptima 2:1:1 de Leucina, Isoleucina y Valina, ayuda a promover la recuperación muscular, prevenir el catabolismo y mejorar el rendimiento durante el entrenamiento.\n\nBeneficios:\n\n• Promueve la síntesis de proteínas musculares\n• Reduce la degradación muscular durante el ejercicio\n• Mejora la resistencia y el rendimiento deportivo\n• Acelera la recuperación entre entrenamientos\n• Fórmula hidrosoluble para máxima absorción\n• Proporciona energía durante el entrenamiento\n• Ayuda a prevenir el catabolismo muscular\n\nDisponible en los deliciosos sabores: Fruit Punch y Blue Razz\n\nContenido: 360 gramos (30 porciones)\n\nModo de uso: Mezclar 1 scoop (12g) en 200-250ml de agua. Consumir durante el entrenamiento para máxima eficacia o entre comidas. En días de entrenamiento intenso, se puede consumir antes, durante y después del ejercicio para una óptima recuperación y rendimiento.',
     price: 24830,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918245/xtrenght-hydro-bcaa-360-grs-fruit-puch-48b928f36df193a14317581169134426-1024-1024_d94ful.webp',
     brand: 'XTRENGHT'
@@ -701,7 +703,7 @@ rawProducts.push(
     id: 75,
     name: 'CREATINE 250GRS',
     category: 'CREATINAS',
-    description: 'XTRENGHT Creatine es un suplemento de monohidrato de creatina micronizada de la más alta pureza, diseñado para aumentar la fuerza, la potencia y el rendimiento.',
+    description: 'XTRENGHT Creatine es un suplemento de monohidrato de creatina micronizada de la más alta pureza, diseñado para aumentar la fuerza, la potencia y el rendimiento durante entrenamientos de alta intensidad. La creatina es uno de los suplementos más estudiados y efectivos para mejorar el rendimiento deportivo y el desarrollo muscular.\n\nBeneficios:\n\n• Aumenta la producción de ATP para mayor energía durante el entrenamiento\n• Mejora la fuerza y la potencia muscular\n• Incrementa la capacidad de repeticiones en series de alta intensidad\n• Acelera la recuperación entre series\n• Promueve la volumización celular muscular\n• Formato micronizado para mayor solubilidad y absorción\n• 100% monohidrato de creatina pura sin aditivos\n\nDisponible en: Formato neutro sin sabor\n\nContenido: 250 gramos (50 porciones)\n\nModo de uso: Mezclar 1 scoop (5g) en 200ml de agua, jugo o bebida de preferencia. Para fase de carga (opcional): consumir 4 dosis diarias durante 5-7 días. Fase de mantenimiento: consumir 1 dosis diaria, preferentemente después del entrenamiento junto con carbohidratos para maximizar la absorción.',
     price: 25220,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918253/xtrenght-creatine-250-grs-7d3175448f48c2feea17502116052851-1024-1024_jg8u89.webp',
     brand: 'XTRENGHT'
@@ -710,7 +712,7 @@ rawProducts.push(
     id: 76,
     name: 'CREATINE 500GRS',
     category: 'CREATINAS',
-    description: 'XTRENGHT Creatine 500 GRS es un suplemento de monohidrato de creatina micronizada de máxima pureza en formato económico.',
+    description: 'XTRENGHT Creatine 500 GRS es un suplemento de monohidrato de creatina micronizada de máxima pureza en formato económico, ideal para ciclos prolongados de entrenamiento. Diseñado para aumentar significativamente la fuerza, potencia y rendimiento durante ejercicios de alta intensidad, este formato de mayor tamaño ofrece mejor rendimiento por porción.\n\nBeneficios:\n\n• Aumenta la producción de ATP para mayor energía explosiva\n• Mejora la fuerza, potencia y resistencia muscular\n• Incrementa la capacidad de repeticiones en series de alta intensidad\n• Acelera la recuperación entre series y entrenamientos\n• Promueve la volumización celular para mayor desarrollo muscular\n• Formato micronizado para máxima solubilidad y absorción\n• 100% monohidrato de creatina pura sin aditivos ni rellenos\n\nDisponible en: Formato neutro sin sabor\n\nContenido: 500 gramos (100 porciones)\n\nModo de uso: Mezclar 1 scoop (5g) en 200ml de agua, jugo o bebida de preferencia. Para fase de carga (opcional): consumir 4 dosis diarias durante 5-7 días. Fase de mantenimiento: consumir 1 dosis diaria, preferentemente después del entrenamiento junto con carbohidratos para maximizar la absorción y retención muscular.',
     price: 49400,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918266/xtrenght-creatine-500-grs-288da4621db1a0fed017502116296856-1024-1024_pqygdk.webp',
     brand: 'XTRENGHT'
@@ -719,7 +721,7 @@ rawProducts.push(
     id: 77,
     name: 'NITROX 180 CAPS',
     category: 'PRE ENTRENOS',
-    description: 'XTRENGHT Nitrox es un potente suplemento pre-entrenamiento en cápsulas diseñado para maximizar la energía, el rendimiento y el bombeo muscular.',
+    description: 'XTRENGHT Nitrox es un potente suplemento pre-entrenamiento en cápsulas diseñado para maximizar la energía, el rendimiento y el bombeo muscular. Su fórmula avanzada proporciona un aumento significativo en la concentración, la resistencia y la fuerza durante los entrenamientos más intensos.\n\nBeneficios:\n\n• Aumenta los niveles de energía y la capacidad de entrenamiento\n• Mejora la concentración y el enfoque mental\n• Potencia la vasodilatación para un bombeo muscular superior\n• Retrasa la fatiga muscular y aumenta la resistencia\n• Formato en cápsulas para mayor comodidad y dosificación precisa\n• No contiene azúcares ni calorías adicionales\n• Efectos sostenidos durante todo el entrenamiento\n\nDisponible en: Frasco de 180 cápsulas\n\nContenido: 180 cápsulas (60 porciones)\n\nModo de uso: Consumir 3 cápsulas con agua aproximadamente 30 minutos antes del entrenamiento. Para usuarios principiantes, se recomienda comenzar con 1-2 cápsulas para evaluar la tolerancia. No consumir más de 3 cápsulas por toma ni más de 3 cápsulas en un período de 24 horas.',
     price: 13390,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918275/xtrenght-nitrox-180-caps-1b7b9678836547634c17502114897108-1024-1024_gilyc3.webp',
     brand: 'XTRENGHT'
@@ -728,7 +730,7 @@ rawProducts.push(
     id: 78,
     name: 'ADVANCE WHEY 2LB',
     category: 'PROTEINAS Y GANADORES DE PESO',
-    description: 'XTRENGHT Advanced Whey Protein es una fórmula superior que combina tres fuentes de proteína de suero (isolate, hidrolizado y concentrado).',
+    description: 'XTRENGHT Advanced Whey Protein es una fórmula superior que combina tres fuentes de proteína de suero (isolate, hidrolizado y concentrado) para proporcionar la combinación perfecta de absorción rápida y sostenida. Diseñada para atletas exigentes que buscan maximizar el desarrollo muscular y la recuperación óptima.\n\nBeneficios:\n\n• Blend de proteínas de suero de alta calidad (Isolate + Hidrolizado + Concentrado)\n• Mayor biodisponibilidad y absorción más efectiva\n• Alto contenido proteico por porción\n• Menor contenido de lactosa y grasas\n• Perfil completo de aminoácidos esenciales\n• Ideal para fases de definición y aumento muscular\n• Mayor digestibilidad y asimilación\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla, Banana y Cookies\n\nContenido: 907 gramos (2 LBS)\n\nModo de uso: Mezclar 1 scoop (30g) en 200ml de agua o leche. Para máximos resultados, consumir inmediatamente después del entrenamiento para aprovechar la ventana anabólica y optimizar la recuperación muscular.',
     price: 49400,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918283/xtrenght-advanced-whey-protein-2-lbs-chocolate-bd03733eb7fa1190c517502104246421-1024-1024_r4btht.webp',
     brand: 'XTRENGHT'
@@ -737,7 +739,7 @@ rawProducts.push(
     id: 79,
     name: 'BEST WHEY 2LB',
     category: 'PROTEINAS Y GANADORES DE PESO',
-    description: 'XTRENGHT Best Whey es una proteína de suero premium diseñada para maximizar la recuperación muscular y el crecimiento.',
+    description: 'XTRENGHT Best Whey es una proteína de suero premium diseñada para maximizar la recuperación muscular y el crecimiento. Con su fórmula de rápida absorción, Best Whey te proporciona los aminoácidos esenciales que tu cuerpo necesita para construir y reparar el tejido muscular después del entrenamiento.\n\nBeneficios:\n\n• Alto contenido proteico por porción\n• Rápida absorción para máxima recuperación muscular\n• Bajo en carbohidratos y grasas\n• Rica en aminoácidos esenciales y BCAAs\n• Fácil disolución y delicioso sabor\n• Ideal para después del entrenamiento o entre comidas\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla, Banana y Cookies\n\nContenido: 907 gramos (2 LBS)\n\nModo de uso: Mezclar 1 scoop (30g) en 200ml de agua o leche. Consumir después del entrenamiento o entre comidas para maximizar la recuperación y el crecimiento muscular.',
     price: 42900,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918313/xtrenght-best-whey-2-lbs-chocolate-b831e06cf715eda02c17502094071340-1024-1024_ynlla2.webp',
     brand: 'XTRENGHT'
@@ -746,7 +748,7 @@ rawProducts.push(
     id: 80,
     name: 'BEST WHEY 3KG BIG SIZE',
     category: 'PROTEINAS Y GANADORES DE PESO',
-    description: 'XTRENGHT Best Whey Big Size es una proteína de suero premium en formato económico de 3 kg.',
+    description: 'XTRENGHT Best Whey Big Size es una proteína de suero premium en formato económico de 3 kg, diseñada para deportistas que buscan maximizar su desarrollo muscular a largo plazo. Esta versión de mayor tamaño te ofrece todos los beneficios de nuestra fórmula Best Whey con mayor duración y mejor costo por porción.\n\nBeneficios:\n\n• Mayor rendimiento por envase con 100 porciones aproximadamente\n• Alto contenido proteico por porción\n• Rápida absorción para máxima recuperación muscular\n• Bajo en carbohidratos y grasas\n• Rica en aminoácidos esenciales y BCAAs\n• Excelente relación calidad-precio\n• Ideal para consumo frecuente y a largo plazo\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla y Banana\n\nContenido: 3000 gramos (3 KG)\n\nModo de uso: Mezclar 1 scoop (30g) en 200ml de agua o leche. Consumir después del entrenamiento o entre comidas para maximizar la recuperación y el crecimiento muscular. Este formato es ideal para deportistas con consumo regular y constante.',
     price: 128050,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918307/xtrenght-best-whey-2-lbs-chocolate-b831e06cf715eda02c17502094071340-1024-1024_n3f0p4.webp',
     brand: 'XTRENGHT'
@@ -755,7 +757,7 @@ rawProducts.push(
     id: 81,
     name: 'NITROGAIN 1.5KG',
     category: 'PROTEINAS Y GANADORES DE PESO',
-    description: 'XTRENGHT Nitrogain es un ganador de peso premium diseñado para deportistas que buscan aumentar su masa muscular de forma efectiva.',
+    description: 'XTRENGHT Nitrogain es un ganador de peso premium diseñado para deportistas que buscan aumentar su masa muscular de forma efectiva. Con una fórmula balanceada de proteínas, carbohidratos complejos y nutrientes esenciales, Nitrogain es el complemento ideal para quienes tienen dificultad para ganar peso o necesitan un aporte calórico adicional.\n\nBeneficios:\n\n• Fórmula rica en calorías para ganar masa muscular\n• Blend de proteínas de alta calidad para crecimiento muscular\n• Carbohidratos complejos para energía sostenida\n• Aporta nutrientes esenciales para el desarrollo muscular\n• Fácil digestión y asimilación\n• Ideal para hardgainers o personas con metabolismo acelerado\n• Perfecto para períodos de volumen muscular\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla y Cookies\n\nContenido: 1500 gramos (1.5 KG)\n\nModo de uso: Mezclar 2 scoops (70g) en 300-350ml de leche o agua. Consumir 1-2 veces al día, preferentemente después del entrenamiento y/o antes de dormir para maximizar el aporte calórico y proteico. Para mejores resultados, combinar con un plan de alimentación hipercalórico y un entrenamiento de fuerza consistente.',
     price: 25870,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918335/xtrenght-nitrogain-1-5-kg-chocolate-878f720271f29bc17317502111693875-1024-1024_s1a33y.webp',
     brand: 'XTRENGHT'
@@ -764,7 +766,7 @@ rawProducts.push(
     id: 82,
     name: 'NITROGAIN 5KG BIG SIZE',
     category: 'PROTEINAS Y GANADORES DE PESO',
-    description: 'XTRENGHT Nitrogain Big Size es un ganador de peso premium en formato económico de 5 kg.',
+    description: 'XTRENGHT Nitrogain Big Size es un ganador de peso premium en formato económico de 5 kg, ideal para deportistas con objetivos intensivos de ganancia muscular a largo plazo. Esta versión de mayor tamaño proporciona todos los beneficios de la fórmula original Nitrogain con un mejor rendimiento y costo por porción.\n\nBeneficios:\n\n• Mayor rendimiento con aproximadamente 70 porciones por envase\n• Fórmula rica en calorías para ganar masa muscular efectivamente\n• Blend de proteínas de alta calidad para óptimo crecimiento muscular\n• Carbohidratos complejos para energía sostenida durante todo el día\n• Aporta todos los nutrientes esenciales para el desarrollo muscular\n• Excelente relación calidad-precio\n• Ideal para períodos prolongados de volumen muscular\n\nDisponible en los deliciosos sabores: Chocolate y Vainilla\n\nContenido: 5000 gramos (5 KG)\n\nModo de uso: Mezclar 2 scoops (70g) en 300-350ml de leche o agua. Consumir 1-2 veces al día, preferentemente después del entrenamiento y/o antes de dormir para maximizar el aporte calórico y proteico. Este formato es ideal para deportistas con consumo regular y constante que buscan resultados a largo plazo.',
     price: 67600,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918323/xtrenght-nitrogain-big-size-5-kg-chocolate-64b8305efcbe31409217502113311659-1024-1024_mimjnp.webp',
     brand: 'XTRENGHT'
@@ -773,7 +775,7 @@ rawProducts.push(
     id: 83,
     name: 'CUTTER 120CAPS',
     category: 'VITAMINAS',
-    description: 'XTRENGHT Cutter es un potente quemador de grasa en cápsulas formulado con ingredientes específicos para acelerar el metabolismo, suprimir el apetito y aumentar los niveles de energía.',
+    description: 'XTRENGHT Cutter es un potente quemador de grasa en cápsulas formulado con ingredientes específicos para acelerar el metabolismo, suprimir el apetito y aumentar los niveles de energía. Diseñado para apoyar tus objetivos de definición muscular y pérdida de grasa corporal, Cutter es el complemento ideal para tu programa de entrenamiento y dieta.\n\nBeneficios:\n\n• Acelera el metabolismo basal para mayor quema calórica\n• Promueve la movilización y oxidación de grasas\n• Ayuda a controlar el apetito y los antojos\n• Aumenta los niveles de energía y foco mental\n• Preserva la masa muscular durante la fase de definición\n• Formato en cápsulas para mayor precisión y comodidad\n• Fórmula termogénica avanzada para resultados visibles\n\nDisponible en: Frasco de 120 cápsulas\n\nContenido: 120 cápsulas (60 porciones)\n\nModo de uso: Consumir 2 cápsulas con agua por la mañana en ayunas o 30 minutos antes del desayuno. Para mayor efecto, puede tomarse una segunda dosis de 2 cápsulas aproximadamente 30 minutos antes del entrenamiento. No consumir después de las 17:00 hs para evitar alteraciones del sueño. No exceder las 4 cápsulas diarias.',
     price: 11050,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918328/xtrenght-cutter-120-caps-dc48832355c86fe02817502116814602-1024-1024_clikle.webp',
     brand: 'XTRENGHT'
@@ -813,7 +815,7 @@ rawProducts.push(
     id: 98,
     name: 'WHEY PROTEIN 2LBS DOYPACK VAINILLA',
     category: 'PROTEINAS Y GANADORES DE PESO',
-    description: "Este suplemento a base de proteína de suero lácteo. Cada servicio te aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entreno o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.",
+    description: `Este suplemento a base de proteína de suero lácteo. Cada servicio te aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular, acelerar la recuperación post-entrenamiento o complementar una dieta equilibrada. MODO DE USO Disolver un scoop del producto (32g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. Contiene derivados de leche, puede contener derivados de soja.`,
     price: 39000,
     image: `${import.meta.env.BASE_URL}src/assets/doyPackVainillaPitbull-trans.png`,
     brand: 'PITBULL'
@@ -831,7 +833,8 @@ rawProducts.push(
     id: 100,
     name: 'CITRATO DE MAGNESIO 300 G',
     category: 'MAGNESIO Y OMEGA 3',
-    price: 31850,
+    description: `El magnesio es un mineral esencial involucrado en múltiples funciones corporales, como la contraccion muscular, la produccion de energia y el equilibrio electrolitico. Cada porcion de 2.5 gramos suministra magnesio en una forma de alta biodisponiblidad, lo que permite que el cuerpo lo absorba y lo utilice de manera eficiente. BENEFICIOS Apoya la funcion muscular. Mejora el rendimiento fisico. Regula el sistema nervioso. Colabora con el mantenimiento de la salud ósea. Favorece el equilibrio electrolitico. MODO DE USO Diluir media cuchara de té (2,5grs) en un vaso de agua. Consumir con abundante agua en cualquier momento del dia. Ingesta diaria: 2,5Grs (1/2 cucharada de té) INGREDIENTES Citrato de magnesio. PUEDE CONTENER DERIVADOS DE LECHE Y SOJA`,
+    price: 14950,
     image: `${import.meta.env.BASE_URL}src/assets/citratoMagnesio-trans.png`,
     brand: 'PITBULL'
   },
@@ -848,7 +851,8 @@ rawProducts.push(
     id: 102,
     name: 'CREATINA 402 G SABORIZADA UVA',
     category: 'CREATINAS',
-    price: 32500,
+    description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento fisico, particularmente en actividades de alta intensidad. Cada porcion tu ayuda a aumentar los niveles de fosfocreatina en los musculos, proporcionando mas energia rapida para esfuerzos explosivos como levantamientos de pesas, sprints y dportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (6.7grs) en 200ml de agua. Puedes consumirlo antes o despues de entrenar. INGREDIENTES Monohidrato de creatina, ARO: Saborizante de multifruta, ACI: Ácido citrico, ANAH: Dióxido de silicio, EDU : Sucralosa. Puede contener derivados de leche y soja.`,
+    price: 18720,
     image: `${import.meta.env.BASE_URL}src/assets/creatinaUva-trans.png`,
     brand: 'PITBULL'
   },
@@ -856,7 +860,8 @@ rawProducts.push(
     id: 103,
     name: 'CREATINA MICRONIZED 1KG',
     category: 'CREATINAS',
-    price: 100100,
+    description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento físico, particularmente en actividades de alta intensidad. Cada porción ayuda a aumentar los niveles de fosfocreatina en los músculos, proporcionando más energía rápida para esfuerzos explosivos como levantamientos de pesas, sprints y deportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Puedes consumirlo antes o después de entrenar. INGREDIENTES Monohidrato de creatina`,
+    price: 50700,
     image: `${import.meta.env.BASE_URL}src/assets/creatina1kgPitbull-trans.png`,
     brand: 'PITBULL'
   },
@@ -864,7 +869,8 @@ rawProducts.push(
     id: 104,
     name: 'CREATINA MICRONIZED 300 G',
     category: 'CREATINAS',
-    price: 55250,
+    description: `La creatina en polvo es un suplemento ampliamente utilizado para mejorar el rendimiento físico, particularmente en actividades de alta intensidad. Cada porción ayuda a aumentar los niveles de fosfocreatina en los músculos, proporcionando más energía rápida para esfuerzos explosivos como levantamientos de pesas, sprints y deportes de potencia. Este suplemento es ideal para quienes buscan aumentar la fuerza, mejorar el rendimiento deportivo y ganar masa muscular. MODO DE USO Disolver un scoop (5g) en 200ml de agua o jugo. Puedes consumirlo antes o después de entrenar. INGREDIENTES Monohidrato de creatina`,
+    price: 23790,
     image: `${import.meta.env.BASE_URL}src/assets/creatina300Pitbull-trans.png`,
     brand: 'PITBULL'
   },
@@ -872,7 +878,8 @@ rawProducts.push(
     id: 105,
     name: 'COLAGENO SPORT 240 G MULTIFRUTA',
     category: 'COLAGENOS Y RESVERATROL',
-    price: 36400,
+    description: `El colágeno hidrolizado PITBULL SUPLEMENTOS es colágeno que fue dividido en partículas más pequeñas (péptidos) mediante un proceso llamado hidrolización. Al estar "pre-digerido", el cuerpo lo absorbe más fácil y rápido. Se utiliza comúnmente para mejorar la salud de la piel, articulaciones, uñas, cabello y para favorecer la recuperación muscular. MODO DE USO Disolver un scoop (12grs) del producto, en 250 Ml de agua. Revolver hasta su completa disolución. Utilizar la cuchara del envase. INGREDIENTES Colágeno hidrolizado, ARO: saborizante de: pomelo/uva (según corresponda), citrato de magnesio, vitamina C, acido cítrico, carbonato de magnesio, COL: Cúrcuma, acido hialuronico, EDU: sucralosa y acesulfame K. PUEDE CONTENER DERIVADO DE LECHE Y DE SOJA`,
+    price: 18720,
     image: `${import.meta.env.BASE_URL}src/assets/colagenoMultifruta-trans.png`,
     brand: 'PITBULL'
   },

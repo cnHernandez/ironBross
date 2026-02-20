@@ -4,7 +4,7 @@ import ProductCard from './ProductCard'
 import '../styles/ProductList.css'
 
 
-function ProductList({ onSelectProduct, selectedCategory, viewType, onSetFilter }) {
+function ProductList({ onSelectProduct, selectedCategory, viewType, onSetFilter, filterResetKey }) {
   const cardsRef = useRef({})
   const [brandFilter, setBrandFilter] = useState('all')
   const [categoryFilter, setCategoryFilter] = useState('all')
@@ -13,7 +13,7 @@ function ProductList({ onSelectProduct, selectedCategory, viewType, onSetFilter 
   useEffect(() => {
     setBrandFilter('all')
     setCategoryFilter('all')
-  }, [selectedCategory])
+  }, [selectedCategory, filterResetKey])
 
   let productsToShow = products
   let categoryProducts = null

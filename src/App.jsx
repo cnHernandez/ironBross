@@ -28,6 +28,7 @@ function App() {
   const [showProducts, setShowProducts] = useState(false)
   const [viewType, setViewType] = useState(null) // 'brand' | 'category' | null
   const [activeFilter, setActiveFilter] = useState(null)
+  const [filterResetKey, setFilterResetKey] = useState(0)
 
   const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
@@ -451,7 +452,11 @@ function App() {
                 {viewType === 'category' ? (
                   <>
                     <span className="breadcrumb-sep"> &gt; </span>
-                    <span className="breadcrumb-actual">{upperCase(categoryLabel)}</span>
+                    {brandLabel ? (
+                      <span className="breadcrumb-link" style={{cursor:'pointer', color:'#FFD700'}} onClick={() => { setActiveFilter(null); setFilterResetKey(k => k + 1) }}>{upperCase(categoryLabel)}</span>
+                    ) : (
+                      <span className="breadcrumb-actual">{upperCase(categoryLabel)}</span>
+                    )}
                     {brandLabel && (
                       <>
                         <span className="breadcrumb-sep"> &gt; </span>
@@ -462,7 +467,11 @@ function App() {
                 ) : (
                   <>
                     <span className="breadcrumb-sep"> &gt; </span>
-                    <span className="breadcrumb-actual">{upperCase(brandLabel)}</span>
+                    {categoryLabel ? (
+                      <span className="breadcrumb-link" style={{cursor:'pointer', color:'#FFD700'}} onClick={() => { setActiveFilter(null); setFilterResetKey(k => k + 1) }}>{upperCase(brandLabel)}</span>
+                    ) : (
+                      <span className="breadcrumb-actual">{upperCase(brandLabel)}</span>
+                    )}
                     {categoryLabel && (
                       <>
                         <span className="breadcrumb-sep"> &gt; </span>
@@ -478,6 +487,7 @@ function App() {
                   selectedCategory={selectedCategory}
                   viewType={viewType}
                   onSetFilter={(f) => setActiveFilter(f)}
+                  filterResetKey={filterResetKey}
                 />
               </section>
             </>

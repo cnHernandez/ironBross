@@ -92,23 +92,36 @@
 
 @media (max-width: 480px) {
   .product-image {
-    padding: 1rem;
-    min-height: 130px;
+    padding: 0.6rem;
+    min-height: 90px;
+  }
+
+  .product-img {
+    max-height: 110px;
   }
 
   .product-card.pitbull .product-image {
-    min-height: 150px;
+    min-height: 100px;
+  }
+
+  .product-card.pitbull .product-img {
+    max-height: 130px;
   }
 
   .product-emoji {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 
   .product-info {
-    padding: 1.25rem;
+    padding: 0.6rem 0.5rem;
   }
 
   .product-name {
-    font-size: 1.1rem;
+    font-size: 0.78rem;
+  }
+
+  .product-price {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
   }
 }

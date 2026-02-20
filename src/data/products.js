@@ -949,7 +949,7 @@ rawProducts.push(
   Contenido: 146 gramos
   
   Modo de uso: Mezclar 1 medida (5g) con 200ml de agua. Para prevenir el catabolismo, consumir durante el entrenamiento para optimizar la recuperación, consumir inmediatamente después del mismo para aumentar la disponibilidad de aminoácidos, tomar entre comidas. Ideal para deportistas que realizan entrenamientos intensos o de larga duración.`,
-    price: 1716,
+    price: 17160,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771433987/truemade_amino_full_lemonade-146gr-1-3770dac0bc29fa905017527993887847-1024-1024_a0wz5o.webp',
     brand: 'ENA'
   },
@@ -973,7 +973,7 @@ rawProducts.push(
   Contenido: 120 cápsulas
   
   Modo de uso: Tomar 4 cápsulas antes del entrenamiento y 4 cápsulas después. En días de descanso, tomar 4 cápsulas en ayunas para mantener un estado anabólico y preservar la masa muscular.`,
-    price: 1365,
+    price: 13650,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434003/bcaa-12-1-1-1-a34bc520c00201fb2617531114388193-1024-1024_yw1k0i.webp',
     brand: 'ENA'
   },
@@ -997,7 +997,7 @@ rawProducts.push(
   Contenido: 90 cápsulas
   
   Modo de uso: Tomar 3 cápsulas antes del entrenamiento y 3 cápsulas después. En días de descanso, tomar 3 cápsulas en cualquier momento del día para ayudar a la recuperación y preservación muscular.`,
-    price: 1261,
+    price: 12610,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771434013/bcaa_211-90caps-b5e0ef8cab2a6ac20817531121486810-1024-1024_jb5lqz.webp',
     brand: 'ENA'
   },

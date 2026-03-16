@@ -255,7 +255,7 @@ const rawProducts = [
     name: 'STAR NUTRITION ZMA 90 CAPS',
     category: 'MAGNESIO Y OMEGA 3',
     brand: 'STAR NUTRITION',
-    price: 19110,
+    price: 18330,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-zma-90-caps-b391e775b5a56075c017502058635936-1024-1024_ikxnag.webp',
     description: 'STAR NUTRITION ZMA es un suplemento formulado con una combinación específica de Zinc, Magnesio y Vitamina B6, nutrientes esenciales que trabajan en sinergia para optimizar la recuperación muscular, el descanso nocturno y los niveles hormonales. Este suplemento está especialmente diseñado para deportistas y personas activas que buscan mejorar su rendimiento físico, potenciar la recuperación y optimizar los resultados de sus entrenamientos.\n\nBeneficios:\n\n• Favorece la recuperación muscular y el crecimiento de tejidos\n• Contribuye a optimizar los niveles hormonales naturales\n• Mejora la calidad del sueño y el descanso nocturno\n• Ayuda a mantener un sistema inmunológico saludable\n• Contribuye al metabolismo energético normal\n• Previene deficiencias de zinc y magnesio comunes en deportistas\n\nDisponible en los deliciosos sabores: Presentación en cápsulas (sin sabor)\n\nContenido: 90 cápsulas\n\nModo de uso: Tomar 3 cápsulas preferentemente antes de dormir con el estómago vacío para una mejor absorción. Para mejores resultados, consumir de forma constante durante al menos 8 semanas. No exceder la dosis recomendada.'
   },
@@ -363,7 +363,7 @@ const rawProducts = [
     name: 'STAR NUTRITION Caffeine 200 x 30Caps',
     category: 'PRE ENTRENOS',
     brand: 'STAR NUTRITION',
-    price: 7800,
+    price: 15080,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-caffeine-200-x-30caps-2a57ca6dfef96413cc17501728493075-1024-1024_aajagr.webp',
     description: 'STAR NUTRITION Caffeine 200 es un suplemento de cafeína anhidra que provee 200mg por cápsula para maximizar la energía, mejorar el enfoque mental y potenciar el rendimiento físico. Ideal antes de tus entrenamientos o cuando necesites un impulso extra de energía.\n\nBeneficios:\n\n• Aumenta los niveles de energía y alerta mental\n• Mejora el rendimiento físico durante el ejercicio\n• Acelera el metabolismo\n• Ayuda a la movilización de ácidos grasos\n• Mejora la concentración y el enfoque\n• Formato conveniente de cápsulas de dosificación precisa\n\nContenido: 30 cápsulas\n\nModo de uso: Tomar 1 cápsula 30 minutos antes del entrenamiento o cuando se necesite un impulso de energía. No exceder la dosis recomendada. No consumir después de las 4 pm si eres sensible a la cafeína.'
   },
@@ -399,7 +399,7 @@ const rawProducts = [
     name: 'STAR NUTRITION JUST WHEY 2 LBS',
     category: 'PROTEINAS Y GANADORES DE PESO',
     brand: 'STAR NUTRITION',
-    price: 40950,
+    price: 44200,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/star-nutrition-just-whey-2-lbs-981b900f9c97dbb06017501814560702-1024-1024_x6ft08.webp',
     description: 'STAR NUTRITION JUST WHEY es una proteína de suero de leche concentrada de alta calidad, diseñada para proporcionar un aporte proteico puro y efectivo. Sin aditivos ni saborizantes, esta proteína ofrece la pureza que los atletas más exigentes buscan para complementar su dieta y favorecer la recuperación y el desarrollo muscular.\n\nBeneficios:\n\n• Suero de leche concentrado de alta calidad\n• Sin saborizantes ni aditivos artificiales\n• Elevado valor biológico y rápida absorción\n• Alto contenido de aminoácidos esenciales y BCAAs\n• Ideal para aumentar la ingesta proteica diaria\n• Versátil: se puede mezclar con otros ingredientes\n\nDisponible en los deliciosos sabores: Sabor neutro que permite combinarlo con frutas, cacao u otros ingredientes para variar el sabor\n\nContenido: 908 gramos (2 libras)\n\nModo de uso: Mezclar 1 medida (30g) en 200-250ml de agua, leche o tu bebida preferida. Consumir 1-3 porciones diarias, preferentemente después del entrenamiento o como complemento proteico en cualquier momento del día. Para una mejor disolución, utilizar shaker o batidora.'
   },
@@ -573,7 +573,7 @@ rawProducts.push(
     name: "100% WHEY PROTEIN 2LBS",
     category: "PROTEINAS Y GANADORES DE PESO",
     description: "La proteína de suero de leche 100% Whey Protein de GOLD NUTRITION es una fuente premium de proteínas de rápida absorción diseñada para ayudarte a desarrollar y mantener masa muscular magra.\nBeneficios:\n• Contiene 24g de proteína por porción para óptima recuperación muscular\n• Baja en carbohidratos y grasas\n• Fórmula de rápida absorción\n• Ayuda a la recuperación y crecimiento muscular\n• Delicioso sabor gourmet\n• Alta concentración de aminoácidos esenciales\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla, Strawberry Shake\nContenido: 908 gramos (2 libras)\nModo de uso: Mezclar una medida (30g) con 200-250ml de agua o leche. Consumir 1-3 porciones diarias, preferentemente antes o después del entrenamiento y/o entre comidas.",
-    price: 45500,
+    price: 47970,
     image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912856/100-why-protein-2lb-vainilla-1-f2393dc2308f18ceb017496510202313-1024-1024_yylsrd.webp",
     brand: "GOLD"
   },
@@ -582,7 +582,7 @@ rawProducts.push(
     name: "100% WHEY PROTEIN 5LBS",
     category: "PROTEINAS Y GANADORES DE PESO",
     description: "La proteína de suero de leche 100% Whey Protein de GOLD NUTRITION es una fuente premium de proteínas de rápida absorción en formato económico de 5 libras, diseñada para ayudarte a desarrollar y mantener masa muscular magra a largo plazo.\nBeneficios:\n• Contiene 24g de proteína por porción para óptima recuperación muscular\n• Baja en carbohidratos y grasas\n• Fórmula de rápida absorción\n• Ayuda a la recuperación y crecimiento muscular\n• Delicioso sabor gourmet\n• Formato económico de mayor duración\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla, Strawberry Shake\nContenido: 2268 gramos (5 libras)\nModo de uso: Mezclar una medida (30g) con 200-250ml de agua o leche. Consumir 1-3 porciones diarias, preferentemente antes o después del entrenamiento y/o entre comidas.",
-    price: 109070,
+    price: 115050,
     image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912868/100-why-protein-5-lb-vainilla-1-48ebb7191935fe7f0317496510587737-1024-1024_naz14w.webp",
     brand: "GOLD"
   },
@@ -591,7 +591,7 @@ rawProducts.push(
     name: "ISO GOLD PROTEIN 2LBS",
     category: "PROTEINAS Y GANADORES DE PESO",
     description: "ISO Gold Protein Hidrolized de GOLD NUTRITION es una proteína de suero aislada e hidrolizada premium, desarrollada para una absorción ultrarrápida y máxima pureza proteica, ideal para deportistas exigentes y personas intolerantes a la lactosa.\nBeneficios:\n• Máxima concentración proteica (90% de proteína)\n• Absorción ultrarrápida gracias al proceso de hidrólisis\n• Prácticamente libre de lactosa y grasas\n• Contribuye a la rápida recuperación y desarrollo muscular\n• Mínimo impacto digestivo\n• Ideal para periodos de definición muscular\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla\nContenido: 908 gramos (2 libras)\nModo de uso: Mezclar una medida (30g) con 200-250ml de agua fría. Consumir preferentemente después del entrenamiento para máxima absorción y aprovechamiento. También puede consumirse entre comidas o en cualquier momento que necesites un aporte rápido de proteínas.",
-    price: 66950,
+    price: 70720,
     image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912877/gold-nutrition-protein-iso-gold-cocolate-1-2l-907g-204c60e21b34550cd717496511862205-1024-1024_sgetju.webp",
     brand: "GOLD"
   },
@@ -618,7 +618,7 @@ rawProducts.push(
     name: "WHEY RIPPED 2LBS",
     category: "PROTEINAS Y GANADORES DE PESO",
     description: "Whey Ripped de GOLD NUTRITION combina proteína de suero de alta calidad con ingredientes termogénicos y lipolíticos, creando un suplemento único que ayuda al desarrollo muscular mientras favorece la pérdida de grasa corporal.\nBeneficios:\n• 22g de proteína por porción para desarrollo y mantenimiento muscular\n• Contiene L-Carnitina y cafeína para potenciar la quema de grasas\n• Extracto de té verde con potente efecto termogénico\n• Ayuda a mantener un metabolismo acelerado\n• Apoya la recuperación muscular\n• Ideal para fases de definición muscular\nDisponible en los deliciosos sabores: Gourmet Milk Chocolate, Gourmet Vainilla\nContenido: 908 gramos (2 libras)\nModo de uso: Mezclar una medida (35g) con 200-250ml de agua. Consumir 1-2 porciones diarias, preferentemente por la mañana y/o después del entrenamiento. Por su contenido de cafeína, evitar el consumo 5 horas antes de dormir.",
-    price: 49660,
+    price: 52390,
     image: "https://res.cloudinary.com/dzfpmiqds/image/upload/v1770912912/whey-ripped-chocolate-1-dc3e4527420d0cf38f17496515540450-1024-1024_mjr0o6.webp",
     brand: "GOLD"
   },
@@ -659,7 +659,7 @@ rawProducts.push(
     name: 'BCAA PRO 120 CAPS',
     category: 'AMINOACIDOS',
     description: 'XTRENGHT BCAA Pro es un suplemento de aminoácidos ramificados en cápsulas que proporciona la proporción óptima 2:1:1 de Leucina, Isoleucina y Valina. Estos aminoácidos esenciales son fundamentales para la síntesis proteica, la recuperación muscular y la prevención del catabolismo durante entrenamientos intensos.\n\nBeneficios:\n\n• Estimula la síntesis de proteínas musculares\n• Previene la degradación muscular durante el ejercicio\n• Acelera la recuperación entre sesiones de entrenamiento\n• Reduce el dolor muscular post-entrenamiento\n• Formato en cápsulas para mayor comodidad y precisión\n• Fácil de transportar y dosificar\n• Ideal para consumir en cualquier momento del día\n\nDisponible en: Frasco de 120 cápsulas\n\nContenido: 120 cápsulas (40 porciones)\n\nModo de uso: Consumir 3 cápsulas con agua, preferentemente antes o durante el entrenamiento. En días de entrenamiento intenso, puede consumirse una dosis adicional después del ejercicio para potenciar la recuperación. En días de descanso, tomar 3 cápsulas en cualquier momento del día.',
-    price: 12350,
+    price: 14430,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918182/xtrenght-bcaa-pro-120-caps-d76054810b95334fca17502115228286-1024-1024_oqszza.webp',
     brand: 'XTRENGHT'
   },
@@ -668,7 +668,7 @@ rawProducts.push(
     name: 'BETA ALANINE 180 CAPS',
     category: 'AMINOACIDOS',
     description: 'XTRENGHT Beta Alanine es un suplemento avanzado en cápsulas diseñado para aumentar los niveles de carnosina muscular, lo que retrasa la aparición de fatiga y mejora significativamente la resistencia durante entrenamientos de alta intensidad. Ideal para deportistas que buscan superar plateaus de rendimiento y extender sus límites físicos.\n\nBeneficios:\n\n• Retrasa la aparición de la fatiga muscular\n• Aumenta la capacidad de trabajo en series de alta repetición\n• Mejora el rendimiento en entrenamientos de resistencia\n• Incrementa la capacidad buffer contra la acidez muscular\n• Permite entrenar con mayor intensidad y volumen\n• Formato en cápsulas para dosificación precisa\n• Evita el efecto parestesia (hormigueo) asociado al polvo\n\nDisponible en: Frasco de 180 cápsulas\n\nContenido: 180 cápsulas (60 porciones)\n\nModo de uso: Consumir 3 cápsulas con agua aproximadamente 30-45 minutos antes del entrenamiento. Para una dosificación más efectiva, puede dividirse en 2 tomas diarias de 3 cápsulas cada una. Los mejores resultados se obtienen con el consumo constante durante al menos 4 semanas para saturar los niveles de carnosina muscular.',
-    price: 13520,
+    price: 15730,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918197/xtrenght-beta-alanine-180-caps-f0c11d48e28b0e81be17502116568701-1024-1024_ltqtwp.webp',
     brand: 'XTRENGHT'
   },
@@ -677,7 +677,7 @@ rawProducts.push(
     name: 'CARNITINE 90 CAPS',
     category: 'AMINOACIDOS',
     description: 'XTRENGHT L-Carnitine en cápsulas es un suplemento premium de L-Carnitina, un compuesto natural que juega un papel fundamental en el transporte de ácidos grasos hacia las mitocondrias, donde son convertidos en energía. Ideal para deportistas que buscan optimizar su metabolismo de grasas y mejorar su rendimiento físico.\n\nBeneficios:\n\n• Optimiza el transporte de grasas hacia las mitocondrias\n• Mejora la utilización de grasas como fuente de energía\n• Aumenta la resistencia durante ejercicios aeróbicos\n• Reduce la fatiga muscular y mejora la recuperación\n• Apoya la pérdida de grasa corporal durante dietas\n• Formato en cápsulas para mayor precisión y comodidad\n• Complemento ideal para programas de definición muscular\n\nDisponible en: Frasco de 90 cápsulas\n\nContenido: 90 cápsulas (45 porciones)\n\nModo de uso: Consumir 2 cápsulas con agua, preferentemente 30 minutos antes del ejercicio cardiovascular o en ayunas. Para mayor efectividad, mantener una hidratación adecuada. Puede complementarse con otros suplementos de la línea XTRENGHT para potenciar los resultados durante fases de definición.',
-    price: 12350,
+    price: 14300,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918220/xtrenght-l-carnitine-90-caps-dbaeaa60f2d822ba2017502117111975-1024-1024_jlmk3q.webp',
     brand: 'XTRENGHT'
   },
@@ -686,7 +686,7 @@ rawProducts.push(
     name: 'GLUTAMINE 300GRS',
     category: 'AMINOACIDOS',
     description: 'XTRENGHT Glutamine es un suplemento de L-Glutamina pura de alta calidad, diseñado para optimizar la recuperación muscular y fortalecer el sistema inmunológico. La glutamina es el aminoácido más abundante en el tejido muscular y juega un papel crucial en la recuperación post-entrenamiento y la salud intestinal.\n\nBeneficios:\n\n• Acelera la recuperación muscular después del entrenamiento\n• Reduce el dolor muscular y la fatiga\n• Fortalece el sistema inmunológico\n• Promueve la salud intestinal y digestiva\n• Previene el catabolismo muscular\n• Ayuda a mantener el balance de nitrógeno positivo\n• Contribuye a la hidratación celular\n\nDisponible en: Formato neutro sin sabor\n\nContenido: 300 gramos (60 porciones)\n\nModo de uso: Mezclar 1 scoop (5g) en 200ml de agua o jugo. Consumir preferentemente después del entrenamiento o antes de dormir. Para resultados óptimos, puede consumirse una dosis adicional en ayunas para mejorar la salud intestinal e inmunológica.',
-    price: 26520,
+    price: 30940,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918225/xtrenght-glutamine-300-grs-c3b8938cad061d43bc17502115839549-1024-1024_pu9qui.webp',
     brand: 'XTRENGHT'
   },
@@ -695,7 +695,7 @@ rawProducts.push(
     name: 'HYDRO BCAA PRO 360GRS',
     category: 'AMINOACIDOS',
     description: 'XTRENGHT Hydro BCAA es un suplemento avanzado de aminoácidos de cadena ramificada (BCAAs) en formato hidrosoluble para máxima absorción. Formulado con una proporción óptima 2:1:1 de Leucina, Isoleucina y Valina, ayuda a promover la recuperación muscular, prevenir el catabolismo y mejorar el rendimiento durante el entrenamiento.\n\nBeneficios:\n\n• Promueve la síntesis de proteínas musculares\n• Reduce la degradación muscular durante el ejercicio\n• Mejora la resistencia y el rendimiento deportivo\n• Acelera la recuperación entre entrenamientos\n• Fórmula hidrosoluble para máxima absorción\n• Proporciona energía durante el entrenamiento\n• Ayuda a prevenir el catabolismo muscular\n\nDisponible en los deliciosos sabores: Fruit Punch y Blue Razz\n\nContenido: 360 gramos (30 porciones)\n\nModo de uso: Mezclar 1 scoop (12g) en 200-250ml de agua. Consumir durante el entrenamiento para máxima eficacia o entre comidas. En días de entrenamiento intenso, se puede consumir antes, durante y después del ejercicio para una óptima recuperación y rendimiento.',
-    price: 24830,
+    price: 28990,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918245/xtrenght-hydro-bcaa-360-grs-fruit-puch-48b928f36df193a14317581169134426-1024-1024_d94ful.webp',
     brand: 'XTRENGHT'
   },
@@ -731,7 +731,7 @@ rawProducts.push(
     name: 'ADVANCE WHEY 2LB',
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: 'XTRENGHT Advanced Whey Protein es una fórmula superior que combina tres fuentes de proteína de suero (isolate, hidrolizado y concentrado) para proporcionar la combinación perfecta de absorción rápida y sostenida. Diseñada para atletas exigentes que buscan maximizar el desarrollo muscular y la recuperación óptima.\n\nBeneficios:\n\n• Blend de proteínas de suero de alta calidad (Isolate + Hidrolizado + Concentrado)\n• Mayor biodisponibilidad y absorción más efectiva\n• Alto contenido proteico por porción\n• Menor contenido de lactosa y grasas\n• Perfil completo de aminoácidos esenciales\n• Ideal para fases de definición y aumento muscular\n• Mayor digestibilidad y asimilación\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla, Banana y Cookies\n\nContenido: 907 gramos (2 LBS)\n\nModo de uso: Mezclar 1 scoop (30g) en 200ml de agua o leche. Para máximos resultados, consumir inmediatamente después del entrenamiento para aprovechar la ventana anabólica y optimizar la recuperación muscular.',
-    price: 49400,
+    price: 57850,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918283/xtrenght-advanced-whey-protein-2-lbs-chocolate-bd03733eb7fa1190c517502104246421-1024-1024_r4btht.webp',
     brand: 'XTRENGHT'
   },
@@ -740,7 +740,7 @@ rawProducts.push(
     name: 'BEST WHEY 2LB',
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: 'XTRENGHT Best Whey es una proteína de suero premium diseñada para maximizar la recuperación muscular y el crecimiento. Con su fórmula de rápida absorción, Best Whey te proporciona los aminoácidos esenciales que tu cuerpo necesita para construir y reparar el tejido muscular después del entrenamiento.\n\nBeneficios:\n\n• Alto contenido proteico por porción\n• Rápida absorción para máxima recuperación muscular\n• Bajo en carbohidratos y grasas\n• Rica en aminoácidos esenciales y BCAAs\n• Fácil disolución y delicioso sabor\n• Ideal para después del entrenamiento o entre comidas\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla, Banana y Cookies\n\nContenido: 907 gramos (2 LBS)\n\nModo de uso: Mezclar 1 scoop (30g) en 200ml de agua o leche. Consumir después del entrenamiento o entre comidas para maximizar la recuperación y el crecimiento muscular.',
-    price: 42900,
+    price: 48100,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918313/xtrenght-best-whey-2-lbs-chocolate-b831e06cf715eda02c17502094071340-1024-1024_ynlla2.webp',
     brand: 'XTRENGHT'
   },
@@ -749,7 +749,7 @@ rawProducts.push(
     name: 'BEST WHEY 3KG BIG SIZE',
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: 'XTRENGHT Best Whey Big Size es una proteína de suero premium en formato económico de 3 kg, diseñada para deportistas que buscan maximizar su desarrollo muscular a largo plazo. Esta versión de mayor tamaño te ofrece todos los beneficios de nuestra fórmula Best Whey con mayor duración y mejor costo por porción.\n\nBeneficios:\n\n• Mayor rendimiento por envase con 100 porciones aproximadamente\n• Alto contenido proteico por porción\n• Rápida absorción para máxima recuperación muscular\n• Bajo en carbohidratos y grasas\n• Rica en aminoácidos esenciales y BCAAs\n• Excelente relación calidad-precio\n• Ideal para consumo frecuente y a largo plazo\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla y Banana\n\nContenido: 3000 gramos (3 KG)\n\nModo de uso: Mezclar 1 scoop (30g) en 200ml de agua o leche. Consumir después del entrenamiento o entre comidas para maximizar la recuperación y el crecimiento muscular. Este formato es ideal para deportistas con consumo regular y constante.',
-    price: 128050,
+    price: 144300,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918307/xtrenght-best-whey-2-lbs-chocolate-b831e06cf715eda02c17502094071340-1024-1024_n3f0p4.webp',
     brand: 'XTRENGHT'
   },
@@ -758,7 +758,7 @@ rawProducts.push(
     name: 'NITROGAIN 1.5KG',
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: 'XTRENGHT Nitrogain es un ganador de peso premium diseñado para deportistas que buscan aumentar su masa muscular de forma efectiva. Con una fórmula balanceada de proteínas, carbohidratos complejos y nutrientes esenciales, Nitrogain es el complemento ideal para quienes tienen dificultad para ganar peso o necesitan un aporte calórico adicional.\n\nBeneficios:\n\n• Fórmula rica en calorías para ganar masa muscular\n• Blend de proteínas de alta calidad para crecimiento muscular\n• Carbohidratos complejos para energía sostenida\n• Aporta nutrientes esenciales para el desarrollo muscular\n• Fácil digestión y asimilación\n• Ideal para hardgainers o personas con metabolismo acelerado\n• Perfecto para períodos de volumen muscular\n\nDisponible en los deliciosos sabores: Chocolate, Vainilla, Frutilla y Cookies\n\nContenido: 1500 gramos (1.5 KG)\n\nModo de uso: Mezclar 2 scoops (70g) en 300-350ml de leche o agua. Consumir 1-2 veces al día, preferentemente después del entrenamiento y/o antes de dormir para maximizar el aporte calórico y proteico. Para mejores resultados, combinar con un plan de alimentación hipercalórico y un entrenamiento de fuerza consistente.',
-    price: 25870,
+    price: 33800,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918335/xtrenght-nitrogain-1-5-kg-chocolate-878f720271f29bc17317502111693875-1024-1024_s1a33y.webp',
     brand: 'XTRENGHT'
   },
@@ -767,7 +767,7 @@ rawProducts.push(
     name: 'NITROGAIN 5KG BIG SIZE',
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: 'XTRENGHT Nitrogain Big Size es un ganador de peso premium en formato económico de 5 kg, ideal para deportistas con objetivos intensivos de ganancia muscular a largo plazo. Esta versión de mayor tamaño proporciona todos los beneficios de la fórmula original Nitrogain con un mejor rendimiento y costo por porción.\n\nBeneficios:\n\n• Mayor rendimiento con aproximadamente 70 porciones por envase\n• Fórmula rica en calorías para ganar masa muscular efectivamente\n• Blend de proteínas de alta calidad para óptimo crecimiento muscular\n• Carbohidratos complejos para energía sostenida durante todo el día\n• Aporta todos los nutrientes esenciales para el desarrollo muscular\n• Excelente relación calidad-precio\n• Ideal para períodos prolongados de volumen muscular\n\nDisponible en los deliciosos sabores: Chocolate y Vainilla\n\nContenido: 5000 gramos (5 KG)\n\nModo de uso: Mezclar 2 scoops (70g) en 300-350ml de leche o agua. Consumir 1-2 veces al día, preferentemente después del entrenamiento y/o antes de dormir para maximizar el aporte calórico y proteico. Este formato es ideal para deportistas con consumo regular y constante que buscan resultados a largo plazo.',
-    price: 67600,
+    price: 89050,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918323/xtrenght-nitrogain-big-size-5-kg-chocolate-64b8305efcbe31409217502113311659-1024-1024_mimjnp.webp',
     brand: 'XTRENGHT'
   },
@@ -776,7 +776,7 @@ rawProducts.push(
     name: 'CUTTER 120CAPS',
     category: 'VITAMINAS',
     description: 'XTRENGHT Cutter es un potente quemador de grasa en cápsulas formulado con ingredientes específicos para acelerar el metabolismo, suprimir el apetito y aumentar los niveles de energía. Diseñado para apoyar tus objetivos de definición muscular y pérdida de grasa corporal, Cutter es el complemento ideal para tu programa de entrenamiento y dieta.\n\nBeneficios:\n\n• Acelera el metabolismo basal para mayor quema calórica\n• Promueve la movilización y oxidación de grasas\n• Ayuda a controlar el apetito y los antojos\n• Aumenta los niveles de energía y foco mental\n• Preserva la masa muscular durante la fase de definición\n• Formato en cápsulas para mayor precisión y comodidad\n• Fórmula termogénica avanzada para resultados visibles\n\nDisponible en: Frasco de 120 cápsulas\n\nContenido: 120 cápsulas (60 porciones)\n\nModo de uso: Consumir 2 cápsulas con agua por la mañana en ayunas o 30 minutos antes del desayuno. Para mayor efecto, puede tomarse una segunda dosis de 2 cápsulas aproximadamente 30 minutos antes del entrenamiento. No consumir después de las 17:00 hs para evitar alteraciones del sueño. No exceder las 4 cápsulas diarias.',
-    price: 11050,
+    price: 12870,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1770918328/xtrenght-cutter-120-caps-dc48832355c86fe02817502116814602-1024-1024_clikle.webp',
     brand: 'XTRENGHT'
   }
@@ -798,7 +798,7 @@ rawProducts.push(
     name: 'WHEY PROTEIN 2LBS VAINILLA',
     category: 'PROTEINAS Y GANADORES DE PESO',
     description: `Este suplemento a base de proteína de suero lácteo está disponible en sabor vainilla. Cada servicio aporta 24 gramos de proteína de alta calidad y tan solo 1,4 gramos de carbohidratos. Esta cantidad es ideal para quienes buscan incrementar su ingesta diaria de proteínas con el objetivo de promover el desarrollo muscular y acelerar la recuperación post-entrenamiento.  MODO DE USO: Disolver un scoop del producto (34g) en 200ml de agua o leche. Batir enérgicamente por 30 segundos y consumir preferentemente justo después de finalizar la actividad física. INGREDIENTES: Proteína concentrada de suero lácteo, cacao, saborizante de chocolate, goma xántica, sucralosa y glicosidos de esteviol. CONTIENE DERIVADOS DE LECHE, PUEDE CONTENER DERIVADOS DE SOJA.`,
-    price: 42250,
+    price: 39000,
     image: `${import.meta.env.BASE_URL}images/wheyProteinVainilla-trans.png`,
     brand: 'PITBULL'
   },
@@ -1635,7 +1635,7 @@ rawProducts.push(
   Contenido: 930 gramos (2,05 LB)
   
   Modo de uso: Mezclar 1 medida (30g) con 200ml de agua fría o leche descremada. Ideal para consumir después del entrenamiento o en cualquier momento que necesites un aporte extra de proteínas.`,
-    price: 58700,
+    price: 50700,
     image: 'https://res.cloudinary.com/dzfpmiqds/image/upload/v1771439103/tmwp2lb-930gr-vainilla_2-1-f398e8687d4b3cd76217528021654905-1024-1024_fnnxcy.webp',
     brand: 'ENA'
   },

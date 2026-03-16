@@ -1,91 +1,137 @@
-# Iron Bross Shop - Tienda Online con React
+# Iron Bross Shop — Tienda Online de Suplementos Deportivos
 
-Aplicación web de carrito de compras desarrollada con React y Vite.
+Aplicación web de e-commerce desarrollada con **React + Vite**, especializada en la venta de suplementos deportivos y nutricionales.
 
-## 🚀 Características
+---
 
-- **Catálogo de productos**: Visualización de productos con imágenes, descripciones y precios
-- **Carrito de compras**: Agregar, eliminar y modificar cantidades de productos
-- **Menú de navegación**: Header con navegación y acceso rápido al carrito
-- **Integración con WhatsApp**: Envío automático del pedido por WhatsApp
-- **Diseño responsive**: Adaptable a dispositivos móviles y desktop
+## 🚀 Funcionalidades
+
+### 🔍 Buscador en tiempo real
+- Búsqueda de productos desde el header, disponible en toda la navegación.
+- Dropdown con resultados en vivo que incluye miniatura y nombre del producto.
+- Al seleccionar un resultado se abre directamente el detalle del producto.
+
+### 🏷️ Categorías de productos
+El catálogo está organizado en **8 categorías**, cada una con imagen propia:
+
+| Categoría | Slug |
+|---|---|
+| Aminoácidos | `aminoacidos` |
+| Creatinas | `creatinas` |
+| Pre Entrenos | `pre-entrenos` |
+| Proteínas y Ganadores de Peso | `proteinas-y-ganadores-de-peso` |
+| Colágenos y Resveratrol | `colagenos-y-resveratrol` |
+| Magnesio y Omega 3 | `magnesio-y-omega-3` |
+| Quemadores | `quemadores` |
+| Vitaminas | `vitaminas` |
+
+### 🏢 Marcas disponibles
+El catálogo incluye productos de **6 marcas** con navegación dedicada por marca:
+- ENA
+- Star Nutrition
+- Gold
+- Xtrenght
+- Pitbull
+- Gentech
+
+### 🛒 Carrito de compras
+- Agregar productos desde el listado o el detalle del producto.
+- Modificar cantidades directamente en el carrito.
+- Eliminar ítems individualmente.
+- Contador de ítems visible en el header en todo momento.
+- Panel lateral (overlay) que no interrumpe la navegación.
+- Formato de precios en pesos argentinos (ARS).
+
+### 📦 Detalle de producto
+- Vista completa con imagen, nombre, marca, descripción y precio.
+- Botón de agregar al carrito.
+- Navegación de regreso al listado anterior.
+
+### 🔎 Filtros en listados
+- Dentro de una **categoría**: filtro por marca.
+- Dentro de una **marca**: filtro por categoría.
+- Ambos filtros se resetean automáticamente al cambiar de vista.
+
+### 🧭 Breadcrumb de navegación
+- Ruta visible en todo momento al navegar por categorías, marcas y productos.
+- Cada segmento es clickeable para volver a la vista anterior.
+
+### 📲 Pedido por WhatsApp
+- El botón "Enviar pedido" en el carrito genera automáticamente un mensaje con el detalle completo: productos, cantidades, subtotales y total.
+- Abre directamente WhatsApp con el mensaje prellenado, listo para enviar.
+- Botón flotante de WhatsApp disponible en toda la página para contacto directo.
+
+### 🎬 Sección multimedia
+- Banner hero en la página principal.
+- Video de gimnasio en reproducción automática (muted, loop).
+
+### 🔗 Redes sociales
+- Accesos directos a **Instagram** y **correo electrónico** desde la sección de contacto.
+
+### 🖼️ Gestión de imágenes
+- Imágenes de productos servidas desde Cloudinary y desde archivos locales (`public/images/`).
+- Imagen de placeholder automática ante errores de carga.
+
+---
+
+## 🛠️ Stack tecnológico
+
+| Tecnología | Versión |
+|---|---|
+| React | ^18.3.1 |
+| Vite | ^6.0.5 |
+| @vitejs/plugin-react | ^4.3.4 |
+
+---
 
 ## 📋 Requisitos
 
-- Node.js (versión 14 o superior)
-- npm o yarn
+- Node.js 14 o superior
+- npm
 
-## 🛠️ Instalación
+---
 
-1. Instalar las dependencias:
+## ⚙️ Instalación y uso
+
 ```bash
+# Instalar dependencias
 npm install
-```
 
-## 🎯 Uso
-
-### Modo desarrollo
-```bash
+# Modo desarrollo (http://localhost:5173)
 npm run dev
-```
 
-La aplicación estará disponible en `http://localhost:5173`
-
-### Compilar para producción
-```bash
+# Compilar para producción
 npm run build
-```
 
-### Vista previa de la compilación
-```bash
+# Vista previa del build
 npm run preview
 ```
 
+---
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura del proyecto
 
 ```
 ironBross/
 ├── public/
+│   └── images/              # Imágenes de productos locales y placeholder
 ├── src/
+│   ├── assets/              # Logos, banners e imágenes de categorías
 │   ├── components/
-│   │   ├── Header.jsx          # Componente del menú de navegación
-│   │   ├── Header.css
-│   │   ├── ProductList.jsx     # Lista de productos
-│   │   ├── ProductList.css
-│   │   ├── ProductCard.jsx     # Tarjeta individual de producto
-│   │   ├── ProductCard.css
-│   │   ├── Cart.jsx            # Carrito de compras
-│   │   └── Cart.css
-│   ├── App.jsx                 # Componente principal
-│   ├── App.css
-│   ├── main.jsx               # Punto de entrada
-│   └── index.css              # Estilos globales
+│   │   ├── Header.jsx           # Header con logo, buscador y carrito
+│   │   ├── ProductListSearch.jsx    # Buscador con dropdown en tiempo real
+│   │   ├── ProductList.jsx      # Listado con filtros por marca/categoría
+│   │   ├── ProductCard.jsx      # Tarjeta individual de producto
+│   │   ├── ProductDetail.jsx    # Vista de detalle de producto
+│   │   └── Cart.jsx             # Panel de carrito de compras
+│   ├── data/
+│   │   └── products.js          # Base de datos de productos y utilidades
+│   ├── styles/              # Archivos CSS por componente
+│   ├── App.jsx              # Componente raíz y lógica de navegación
+│   └── main.jsx             # Entry point
 ├── index.html
-├── package.json
 ├── vite.config.js
-└── README.md
+└── package.json
 ```
-
-
-### Cambiar Colores
-
-Los colores principales están en los archivos CSS de cada componente. El gradiente principal es:
-- Color primario: `#667eea`
-- Color secundario: `#764ba2`
-
-## 🌐 Tecnologías Utilizadas
-
-- **React 18.3.1**: Librería para construir interfaces de usuario
-- **Vite 6.0.5**: Herramienta de compilación rápida
-- **CSS3**: Estilos y animaciones
-
-## 📱 Funcionalidad de WhatsApp
-
-Al hacer clic en "Enviar Pedido por WhatsApp", la aplicación:
-1. Genera un mensaje formateado con todos los productos del carrito
-2. Calcula el total del pedido
-3. Abre WhatsApp Web/App con el mensaje prellenado
-4. El usuario solo necesita presionar enviar
 
 

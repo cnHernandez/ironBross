@@ -5,12 +5,14 @@ import ProductList from './components/ProductList'
 import ProductDetail from './components/ProductDetail'
 import './styles/App.css'
 import bannerIron from './assets/bannerIron.jpeg'
-import categoriaCreatina from './assets/categoriaCreatina.png'
-import categoriaPreentreno from './assets/categoriaPreentreno.png'
-import categoriaProteina from './assets/categoriaProteina.png'
-import categoriaMagnesio from './assets/categoriaMagnesio.png'
-import categoriaAmino from './assets/categoriaAmino.png'
-import categoriaColageno from './assets/categoriaColageno.png'
+import categoriaCreatina from './assets/CreatinaCat.jpeg'
+import categoriaPreentreno from './assets/PreEntrenoCat.jpeg'
+import categoriaProteina from './assets/ProteinaCat.jpeg'
+import categoriaMagnesio from './assets/MagnesioOmegaCat.jpeg'
+import categoriaAmino from './assets/AminoCat.jpeg'
+import categoriaColageno from './assets/ColagenosCat.jpeg'
+import categoriaQuemadores from './assets/QuemadoresCat.jpeg'
+import categoriaVitaminas from './assets/VitaminasCat.jpeg'
 import enaAmarillo from './assets/enaAmarillo.png'
 import starNutrition from './assets/starNutrition.png'
 import xtreinght from './assets/xtreinght.png'
@@ -65,7 +67,8 @@ function App() {
       'proteinas-y-ganadores-de-peso': 'Proteínas y Ganadores',
       'magnesio-y-omega-3': 'Magnesio y Omega 3',
       'colagenos-y-resveratrol': 'Colágenos y Resveratrol',
-      'vitaminas': 'Vitaminas'
+      'vitaminas': 'Vitaminas',
+      'quemadores': 'Quemadores'
     }
     if (brands[k]) return brands[k]
     if (categories[k]) return categories[k]
@@ -168,7 +171,7 @@ function App() {
     const encodedMessage = encodeURIComponent(message)
     
     // Número de WhatsApp configurado para enviar pedidos (formato internacional sin + ni espacios)
-    const phoneNumber = '5491166493737'
+    const phoneNumber = '5491176538103'
     
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
     
@@ -248,6 +251,14 @@ function App() {
                 </div>
                 <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('magnesio-y-omega-3'); setSelectedProduct(null); setViewType('category'); }}>
                   <img src={categoriaMagnesio} alt="Magnesio y Omega 3" className="categoria-img" />
+                </div>
+              </div>
+              <div className="categoria-row">
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('quemadores'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaQuemadores} alt="Quemadores" className="categoria-img" />
+                </div>
+                <div className="categoria-tile" onClick={() => { setShowProducts(true); setSelectedCategory('vitaminas'); setSelectedProduct(null); setViewType('category'); }}>
+                  <img src={categoriaVitaminas} alt="Vitaminas" className="categoria-img" />
                 </div>
               </div>
             </div>
@@ -507,7 +518,7 @@ function App() {
 
     {/* Icono flotante de WhatsApp */}
     <a
-      href="https://wa.me/5491166493737"
+      href="https://wa.me/5491176538103"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-float"

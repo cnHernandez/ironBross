@@ -364,7 +364,7 @@ function App() {
               <a className="cta-amarilla__icon-wrapper" href="https://www.instagram.com/ironbrosnutrition/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <img className="cta-amarilla__icon" src={instagramIcon} alt="Instagram" />
               </a>
-              <a className="cta-amarilla__icon-wrapper" href="mailto:ironbrosnutricion@gmail.com" aria-label="Email">
+              <a className="cta-amarilla__icon-wrapper" href="https://mail.google.com/mail/?view=cm&fs=1&to=ironbrosnutricion@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
                 <img className="cta-amarilla__icon" src={mailIcon} alt="Email" />
               </a>
             </div>
